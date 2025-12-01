@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyle Bemmann</title>
+    <link href="/images/doctor.png" rel="icon" type="image/x-icon" />
+    <meta property="og:image" content="https://kylebemmann.github.io/images/i-am-god.png">
+    <meta name="twitter:image" content"https://kylebemmann.github.io/images/i-am-god.png">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link href="/css/nav.css" rel="stylesheet" />
+      <link href="/css/style.css" rel="stylesheet" />
+      
+      <style>
+   :root {
+  /* Background Colors: */
+  --background-color: #1C486B;
+ }
+ 
+body {
+  background: var(--background-color);
+}
+
+</style>
+  </head>
+  <body>
+ 
+ <section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!">My Art</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">My Spirituality</a>
+          <ul class="nav-dropdown">
+            <li>
+          <a href="/">About Your Teacher</a>
+             </li>
+             <li>
+         <a href="/pages/foundation">Foundation</a>
+             </li>
+            <li>
+        <a href="https://kylebemmann-school.carrd.co/">Art School</a>
+           </li>
+           <li>
+        <a href="/pages/sex">Sacred Sexuality</a>
+           </li>
+          <li>
+      <a href="/pages/chakra">Kundalini Yoga</a>
+            </li>
+          </ul>
+           </li>
+             <li>
+          <a href="#!">I'm A Fool</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="/pages/kabbalah">The Tree of Knowledge</a>
+              </li>
+              <li>
+      <a href="/pages/fool">The Fool's Journey</a>
+      </li>
+      <li>
+      <a href="/pages/alphabet">The Hebrew Alphabet</a>
+      </li>
+      <li>
+      <a href="/pages/zodiac">The Zodiac</a>
+            </li>
+          </ul>
+        </li>
+             <li>
+          <a href="#!">I Need A Doctor</a>
+          <ul class="nav-dropdown">
+            <li>
+                 <a href="/pages/doctor">The Teachings of Hermes Trismegistus</a>
+            </li>
+          </ul>
+        </li>
+             <li>
+          <a href="#!">Christianity</a>
+          <ul class="nav-dropdown">
+               <li>
+      <a href="/pages/choice">My Christian Journey</a>
+      </li>
+        <li>
+      <a href="/pages/church">My Church Family</a>
+      </li>
+      <li>
+      <a href="/pages/sabbath">The Sabbath</a>
+      </li>
+      <li>
+      <a href="/pages/holy-days">Biblical Holy Days</a>
+      </li>
+      <li>
+      <a href="/pages/holidays">Worldly Holidays</a>
+      </li>
+       <li>
+      <a href="/pages/catholic">Counterfeit Christianity</a>
+            </li>
+      <li>
+      <a href="/pages/eventually">Eventually He Will Return</a>
+      </li>
+          </ul>
+        </li> 
+            <li>
+          <a href="#!">Twins</a>
+          <ul class="nav-dropdown">
+                <li>
+      <a href="https://kylebemmann.carrd.co/">Twin 1</a>
+      </li>
+      <li>
+      <a href="https://simplymekyleb.carrd.co/">Twin 2</a>
+            </li>
+          </ul>
+        </li>
+             <li>
+          <a href="#!">It's Just A Theory</a>
+          <ul class="nav-dropdown">
+            <li>
+                <a href="/pages/visual">Visual Hallucinations</a>
+                </li>
+                <li>
+      <a href="/pages/audio">Auditory Hallucinations</a>
+      </li>
+      <li>
+      <a href="/pages/radio">Thought Broadcasting</a>
+            </li>
+             <li>
+                 <a href="/pages/art">Exposing The Occult</a>
+            </li>
+          </ul>
+        </li>   
+      </ul>
+    </nav>
+  </div>
+</section>
+      
+
+
+ <div class="header">
+<img class="header-image" alt="" src="/images/doctor2.jpg" style=/>
+
+<section id="header-title">
+      <div class="header-title">Hermeticism</div>
+
+      
+     
+     
+</section>
+
+<section id="content">
+  
+    
+   <h1 style="padding-top: 10px; margin-top: 10px;">Hermes Trismegistus</h1>
+     <img class="circle-img" src="/images/hermes.jpg" />
+     <p>Hermes Trismegistus is a legendary figure associated with various fields like alchemy, astrology, and philosophy, including a role as a "doctor" of esoteric knowledge, but he is not a medical doctor in the modern sense. The association with medicine stems from the Egyptian god Thoth, who was considered a god of knowledge and magic, and his symbol, the caduceus, is sometimes incorrectly used as a symbol for medicine.</p>
+     <p>Hermeticism is a philosophical and religious tradition rooted in the teachings attributed to Hermes Trismegistus, a legendary figure believed to be a synthesis of the Greek god Hermes and the Egyptian god Thoth. It encompasses a range of ideas about the nature of the universe, the divine, and the human soul, often intertwined with magical practices. Hermeticism emphasizes the interconnectedness of all things and the potential for human enlightenment and transformation through knowledge and spiritual practices.</p>
+    
+     
+ </section>
+
+
+   <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script>
+
+  </body>
+</html>
+
+
+ 
+
+
