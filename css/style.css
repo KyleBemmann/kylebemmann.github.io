@@ -1,0 +1,360 @@
+/* -------------------------------------------------------- */
+/* VARIABLES */
+/* -------------------------------------------------------- */
+
+/* Variables are used like this: var(--text-color) */
+:root {
+
+
+  /* Text: */
+  --font: Helvetica, sans-serif;
+  --heading-font: Helvetica, sans-serif;
+  --font-size: 14px;
+
+  /* Other Settings: */
+  --margin: 10px;
+  --padding: 20px;
+  --border: none;
+  --background-color: #09493d;
+  --round-borders: 20px;
+  --sidebar-width: 200px;
+}
+
+
+/* -------------------------------------------------------- */
+/* BASICS */
+/* -------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: var(--font-size);
+  color: var(--text-color);
+  font-family: var(--font);
+  line-height: 1.2;
+  font-family: Helvetica;
+  padding: var(--margin);
+  margin-top: -5px;
+  background: #444
+  
+}
+
+::selection {
+  /* (Text highlighted by the user) */
+  background: rgba(0, 0, 0, 0.2);
+}
+
+mark {
+  /* Text highlighted by using the <mark> element */
+  text-shadow: 1px 1px 4px var(--link-color);
+  background-color: inherit;
+  color: var(--text-color);
+}
+
+/* Links: */
+a {
+  text-decoration: underline;
+}
+
+a,
+a:visited {
+  color: var(--link-color);
+}
+
+a:hover,
+a:focus {
+  color: var(--link-color-hover);
+  text-decoration: none;
+}
+
+ 
+/* -------------------------------------------------------- */
+/* CONTENT */
+/* -------------------------------------------------------- */
+
+
+
+/* COLUMNS: */
+
+.two-columns {
+  display: flex;
+  align-items: center
+}
+
+.two-columns > * {
+  flex: 1 1 0;
+  margin: 0;
+}
+
+.two-columns > *:first-child {
+  padding-right: 0.75em;
+}
+
+.two-columns > *:last-child {
+  padding-left: 0.75em;
+}
+
+
+
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.column2 {
+  float: left;
+  width: 16.66%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+/* -------------------------------------------------------- */
+/* My Stuff */
+/* -------------------------------------------------------- */
+
+    
+/* Header */
+
+  .header-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0px 0px;
+  max-width: 1000px;
+  top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+ #header-title {
+  background-color: #eeeeee; /* RGB color */
+  position: relative;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0px 0px 20px 20px;
+  max-width: 1000px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+} 
+
+.header-title {
+  font-family: var(--heading-font);
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 15px;
+}
+
+/* Content */
+
+ #content {
+  background-color: #eeeeee; /* RGB color */
+  position: relative;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 20px 20px;
+  max-width: 1000px;
+  padding-bottom: 10px;
+}
+
+.info-paragraph {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+hr {
+  height: 2px; /* Set the desired thickness */
+  background-color: #e6e6e6; /* Set the desired color */
+  border: none; /* Remove the default border */
+}
+
+h1 {
+  text-align: center; 
+  font-weight: bold; 
+}
+h2 { 
+  font-weight: bold;
+}
+p {
+  margin: 20px;
+}
+
+.right-align {
+  font-size: 120px;
+  float: right;
+}
+
+
+/* Button */
+
+.container {
+  display: flex; /* Enables CSS flexbox */
+  justify-content: center; /* Centers horizontally */
+  border-radius: 20px;
+}
+
+
+button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 4px 2px;
+  border-radius: 10px;
+}
+
+
+.button {
+  background-color: dodgerblue;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 4px 4px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #4467c4;
+  color: white;
+}
+
+.button:hover {
+  background-color: #4467c4;
+  color: white;
+}
+
+/* Scroll To Top*/
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #8B0000; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+  width: 60px;
+  height: 60px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+ 
+/* Images*/
+
+.circle-img {
+  margin: auto;
+  width: 200px;
+  display: block;
+  Border-radius: 50%;
+  
+  }
+  
+.image-holy {
+  display: block;
+  width: 90%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: auto;
+  height: auto;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.image-fool {
+  display: block;
+  width: 70%;
+  height: auto;
+  margin: auto;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.image-chakra {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 20px 20px;
+}
+  
+.inline-image {
+  display: block;
+  width: 90%;
+  height: auto;
+  border-radius: 20px 20px 20px 20px;
+  margin: auto;
+}
+
+/* Hide Mobile Version On Desktop */
+#div2 {
+    display: none;
+}
+
+
+/* Hide element if the viewport width is 600px or less */
+@media screen and (max-width: 600px) {
+  #div1 {
+    display: none;
+  }
+  #div2 {
+    display: block;}
+}
+  }
+
+/* Mobile */
+
+
+@media only screen and (max-width: 798px) {
+  
+.header-image {
+  top: -10px;
+}
+    
+#header-title {
+       margin-top: -10px;
+     }
+  
+}
+
+
+
+
+
+
+
+
+
+
