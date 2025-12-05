@@ -368,8 +368,8 @@ main h6 {
 /* MOBILE RESPONSIVE */
 /* -------------------------------------------------------- */
 
-/* CSS Code for devices < 798px */
-@media (max-width: 798px) {
+/* CSS Code for devices < 800px */
+@media (max-width: 800px) {
   body {
     font-size: 14px;
   }
@@ -409,9 +409,7 @@ main h6 {
     width: 100%;
   }
   
-  header {
-  margin-top: -20px;
-}
+
 
   #skip-to-content-link {
     font-size: 1rem;
@@ -419,6 +417,12 @@ main h6 {
 }
 
 
+/* CSS Code for devices < 798px */
+@media (max-width: 798px) {
+  header {
+  margin-top: -20px;
+}
+}
 
 
 
