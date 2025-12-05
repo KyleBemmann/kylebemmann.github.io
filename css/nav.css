@@ -4,10 +4,14 @@
 
 
 .navigation {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-top: -5px;
   height: 50px;
   background: #262626;
   display: flex;
-   border-radius: 40px 40px 40px 40px;
+   border-radius: 0px 0px 20px 20px;
    max-width: 1000px;
    margin-left: auto;
    margin-right: auto;
@@ -189,4 +193,5 @@ article {
   max-width: 1000px;
   margin: 0 auto;
   padding: 10px;
+
 }
