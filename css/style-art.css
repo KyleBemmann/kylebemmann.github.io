@@ -117,6 +117,7 @@ nav {
 
 header {
   grid-area: header;
+  margin-top: -10px;
 }
 
 /* -------------------------------------------------------- */
@@ -394,6 +395,7 @@ main h6 {
   }
 
 
+
   main {
     max-height: none;
     padding: 15px;
@@ -412,6 +414,13 @@ main h6 {
   }
 }
 
+/* CSS Code for devices < 600px */
+@media (max-width: 600px) {
+
+header {
+  margin-top: -20px;
+}
+}
 
 
 
