@@ -6,6 +6,9 @@
 
 .two-columns {
   align-items: start;
+    width: 98%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 p { 
