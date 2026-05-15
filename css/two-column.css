@@ -9,7 +9,7 @@ h2 {
 
 
     
-    p { 
+    p, ul, li { 
   text-align: justify;
 
   }
