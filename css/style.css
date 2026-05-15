@@ -448,11 +448,17 @@ button:hover {
     display: block;
   }
 
+#div4 {
+    display: none;
+}
+
 @media screen and (max-width: 800px) {
   #div3 {
     display: none;
   }
-
+  #div4 {
+    display: block;
+  }
 
 /* Hide element if the viewport width is 600px or less */
 @media screen and (max-width: 600px) {
