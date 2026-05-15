@@ -26,7 +26,7 @@ h2 {
 /* CSS Code for devices < 800px */
 @media (max-width: 800px) {
   p { 
-  
-  width: 120%;
+  text-align: justify;
+  width: 140%;
   }
 }
