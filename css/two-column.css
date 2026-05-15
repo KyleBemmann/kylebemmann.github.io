@@ -8,8 +8,10 @@ h2 {
 
 
 
+    @media screen and (max-width: 800px) {
+  
     p { 
   text-align: justify;
-  width: 140%;
-    }
+
+  }
 }
