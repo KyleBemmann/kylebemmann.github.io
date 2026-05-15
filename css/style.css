@@ -444,6 +444,15 @@ button:hover {
     display: none;
 }
 
+  #div3 {
+    display: block;
+  }
+
+@media screen and (max-width: 800px) {
+  #div3 {
+    display: none;
+  }
+
 
 /* Hide element if the viewport width is 600px or less */
 @media screen and (max-width: 600px) {
