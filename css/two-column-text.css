@@ -13,6 +13,11 @@ p {
   width: 160%;
   }
 
+h2 {
+  margin-left: 0px;
+}
+
+
 .right-align {
   font-size: 120px;
   float: right;
