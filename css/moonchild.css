@@ -1,0 +1,42 @@
+
+ a {
+   color: dodgerblue;
+ }
+ 
+  a:hover {
+   color: #00008B;
+ }
+ 
+h2 {
+  
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  font-size: 1.6em;
+  
+}
+
+/* CSS Code for devices < 800px */
+@media (max-width: 500px) {
+
+h2 {
+  font-size: 1.3em;
+  }  
+}
+
+
+
+/* -------------------------------------------------------- */
+/* MOBILE RESPONSIVE */
+/* -------------------------------------------------------- */
+
+/* CSS Code for devices < 800px */
+@media (max-width: 798px) {
+  
+  .circle-img {
+  width: 150px;
+}
+
+
+  
+}

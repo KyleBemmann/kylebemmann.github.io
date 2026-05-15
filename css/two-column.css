@@ -1,0 +1,17 @@
+h2 {
+  margin-left: 0px;
+}
+
+.two-columns {
+  align-items: start;
+}
+
+  #div3 {
+    display: block;
+  }
+
+@media screen and (max-width: 800px) {
+  #div3 {
+    display: none;
+  }
+}

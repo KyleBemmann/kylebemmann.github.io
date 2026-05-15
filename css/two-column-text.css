@@ -1,0 +1,27 @@
+
+.sidebar-title {
+  text-align: center;
+
+}
+
+.two-columns {
+  align-items: start;
+}
+
+p { 
+  
+  width: 160%;
+  }
+
+.right-align {
+  font-size: 120px;
+  float: right;
+}
+
+/* CSS Code for devices < 800px */
+@media (max-width: 800px) {
+  p { 
+  
+  width: 120%;
+  }
+}
