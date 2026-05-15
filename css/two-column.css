@@ -22,5 +22,12 @@ ul, li, p {
   padding-right: 5px;
   margin: 5px;
  }
+
+ @media only screen and (max-width: 798px) {
+ #content ul, #content li, #content ol {
+  
+  padding-right: 0px;
+ }
+ }
  
 
