@@ -1,0 +1,7 @@
+@media only screen and (max-width: 798px) {
+
+.header-image, #header-title, #content {
+  top: 65px;
+}
+
+}
