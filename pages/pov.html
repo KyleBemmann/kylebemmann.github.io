@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Change your site title: (It is shown in the tab) -->
+    <title>My Point of View</title>
+
+    <!-- Change your site description: (It is shown in Google results) -->
+    <meta content="Kyle Bemmann's Mind" name="description" />
+
+    <!-- Setting character encoding and viewport size. Do not remove. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <link href="/images/favicon/painting.png" rel="icon" type="image/x-icon" />
+
+
+    <meta property="og:image" content="https://kylebemmann.github.io/images/social-art.jpg">
+    <meta name="twitter:image" content"https://kylebemmann.github.io/images/social-art.jpg">
+
+
+    <!-- CSS: -->
+    <!-- You will have to change this to "../style.css" if this HTML file is in a subfolder, to "../../style.css" if this HTML file is in 2 subfolders, etc. -->
+   <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/css/full-width.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+       <link href="/css/nav.css" rel="stylesheet" />
+                 <link href="/css/grid1.css" rel="stylesheet" />
+       <link href="/css/carousel.css" rel="stylesheet" />
+       
+
+    
+    <!-- JavaScript: -->
+    <!-- You will have to change this to "../layout.js" if this HTML file is in a subfolder, to "../../layout.js" if this HTML file is in 2 subfolders, etc. -->
+    <script src="scripts/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+    
+    <style>
+    
+/* Background Colors: */
+    
+ :root {
+  --background-color:  #253C4E;
+ }
+ 
+body {
+  background: var(--background-color);
+  max-width: 100%;
+}
+
+/* GALLERY FIX */
+
+ .row {
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+}
+
+/* CAROUSEL FIX */
+
+#content-scroll2 {
+  padding-top: 15px; 
+  padding-bottom: 0px; 
+  max-width:  970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#content-scroll {
+  padding-top: 15px; 
+  padding-bottom: 0px; 
+  max-width:  970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card::scroll-marker  {
+display: none;  
+}
+
+@media only screen and (min-width: 1000px) {
+
+.carousel::scroll-button(right), .carousel::scroll-button(left) {
+display: none; 
+}
+
+}
+
+@media only screen and (max-width: 800px) {
+  
+#content-scroll2 { 
+  max-width: 93vw;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#content-scroll { 
+  max-width: 780px;
+}
+
+}
+
+</style>
+
+  </head>
+  <body>
+
+<button id="myBtn" onclick="topFunction()" style='font-size:24px'><i class='fa fa-arrow-up'></i></button>
+
+    <div class="layout">
+    
+    
+         <!-- =============================================== -->
+      <!-- HEADER -->
+      <!-- =============================================== -->
+
+     <nav>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!">My Art</a>
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="nav-list">
+        <li>
+          <a href="#!">My Spirituality</a>
+          <ul class="nav-dropdown">
+            <li>
+          <a href="/">About Your Teacher</a>
+             </li>
+                 <li>
+          <a href="/pages/pov">My Point of View</a>
+             </li>
+                <li>
+                 <a href="/pages/life">A Day In My Life</a>
+            </li>
+            <li>
+        <a href="/pages/school">Art School</a>
+           </li>
+           <li>
+        <a href="/pages/sex">Sacred Sexuality</a>
+           </li>
+                  <li>
+         <a href="/pages/spirituality">A Typical Spiritual Woman</a>
+             </li>
+          <li>
+      <a href="/pages/kundalini">Kundalini Yoga</a>
+            </li>
+          </ul>
+           </li>
+             <li>
+          <a href="#!">I'm A Fool</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="/pages/kabbalah">The Kabbalistic Tree of Life</a>
+              </li>
+              <li>
+      <a href="/pages/fool">The Fool's Journey</a>
+      </li>
+      <li>
+      <a href="/pages/alphabet">The Hebrew Alphabet</a>
+      </li>
+      <li>
+      <a href="/pages/zodiac">The Zodiac</a>
+            </li>
+          </ul>
+        </li>
+             <li>
+          <a href="#!">I Need Jesus</a>
+          <ul class="nav-dropdown">
+                <li>
+                 <a href="/pages/kingdom">Announcing The Kingdom</a>
+            </li>
+            <li>
+                 <a href="/pages/doctor">Hermes Trismegistus</a>
+            </li>
+          
+               <li>
+                 <a href="/pages/sacrifice">A Sacrificial Change</a>
+            </li>
+              <li>
+                 <a href="/pages/93">Flight In Winter and Sabbath</a>
+            </li>
+            <li>
+      <a href="/pages/eventually">Eventually He Will Return</a>
+      </li>
+          </ul>
+        </li>
+             <li>
+          <a href="#!">Christianity</a>
+          <ul class="nav-dropdown">
+           <li>
+                 <a href="/pages/god">God The Father</a>
+            </li>
+           <li>
+                 <a href="/pages/manhood">I Am The One Who Knocks</a>
+            </li>
+               <li>
+      <a href="/pages/choice">My Christian Journey</a>
+      </li>
+      <li>
+      <a href="/pages/sabbath">The Sabbath</a>
+      </li>
+      <li>
+      <a href="/pages/holy-days">Biblical Holy Days</a>
+      </li>
+      <li>
+      <a href="/pages/holidays">Worldly Holidays</a>
+      </li>
+       <li>
+      <a href="/pages/catholic">Counterfeit Christianity</a>
+            </li>
+               <li>
+                 <a href="/pages/urn">Gnosticism Explained</a>
+            </li>
+          </ul>
+        </li> 
+               <li>
+          <a href="#!">My Family</a>
+          <ul class="nav-dropdown">
+                <li>
+                 <a href="/pages/family">My Church Family</a>
+            </li>
+              <li>
+                 <a href="/pages/arthur">Arthurian Lore</a>
+            </li>
+              <li>
+                 <a href="/pages/christmas">The Christmas Baby</a>
+            </li>
+              <li>
+                 <a href="/pages/believe">I Want To Believe</a>
+            </li>
+            
+             </ul>
+        </li>
+            <li>
+          <a href="#!">Twins</a>
+          <ul class="nav-dropdown">
+                    <li>
+      <a href="/pages/twin">Didymus Judas Thomas</a>
+      </li>
+                <li>
+      <a href="/pages/apollo">Twin 1</a>
+      </li>
+      <li>
+      <a href="/pages/walter-jr">Twin 2</a>
+            </li>
+          </ul>
+        </li>
+             <li>
+          <a href="#!">It's Just A Theory</a>
+          <ul class="nav-dropdown">
+          <li>
+                <a href="/pages/testing">Questioning Reality</a>
+                </li>
+           <li>
+      <a href="/pages/delusion">I'm So Delusional</a>
+            </li>
+             <li>
+                 <a href="/pages/art">Exposing The Occult</a>
+            </li>
+             <li>
+                 <a href="/pages/dog">God Backwards</a>
+            </li>
+             <li>
+                 <a href="/pages/neverending">The Neverending Story</a>
+            </li>
+              <li>
+                 <a href="/pages/moonchild">Stay Wild Moon Child</a>
+            </li>
+          </ul>
+        </li>   
+      </ul>
+    </nav>
+  </div>
+</section> 
+</nav>
+
+ <header>
+    <img class="header-image" alt="" src="/images/pov/header.jpg"/> 
+    <section id="header-title">
+      <div class="header-title">My Point of View</div>
+      
+ </section>
+    
+       </header>
+	      
+
+  
+<section-1 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content-scroll" style="">  
+
+    
+    <h2>Inverted Theology</h2>
+  <div id="div1">  
+<div class="carousel">
+  <div class="card"><img class="playlist-img" src="/images/pov/el.jpg" /> <h4>El</h4> </div>
+  <div class="card"><img class="playlist-img" src="/images/pov/yah-baal.jpg" />  <h4>Yahweh Is Not Baal</h4> </div>
+  <div class="card"><img class="playlist-img" src="/images/pov/asherah.jpg" /> <h4>Asherah (Yahweh's Wife)</h4>  </div>
+ </div>
+ </div>
+
+
+   <div id="div2">
+   
+  <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 45px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/pov/el.jpg" /> <h4>El</h4> </div>
+  <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/pov/yah-baal.jpg" /> <h4>Yahweh Is Not Baal</h4> </div>
+  <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%; margin-bottom: 10px;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/pov/asherah.jpg" /> <h4>Asherah (Yahweh's Wife)</h4> </div>
+
+
+    </div> 
+    
+    
+    
+     
+      </section> 
+        </section-1>  
+        
+<section-2 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content" style="">  
+   
+   <h2>From Adam To Jesus</h2>
+
+
+  <div id="div1">     
+    <div class="row">
+  <div class="column2">
+    <img class="profile-img" src="/images/pov/adam.jpg" alt="" style="width:100%;">
+ <a class="profile-link" style="color: black;">Adam</a>
+   </div>   
+ <div class="column2">
+  <img class="profile-img" src="/images/pov/noah.jpg" alt="" style="width:100%;">
+  <a class="profile-link" style="color: black;">Noah</a>
+  </div>
+  <div class="column2">
+  <img class="profile-img" src="/images/pov/moses.jpg" alt="" style="width:100%;">
+  <a class="profile-link" style="color: black;">Moses</a>
+  </div>
+  <div class="column2">
+  <img class="profile-img" src="/images/pov/samson.jpg" alt="" style="width:100%;">
+    <a class="profile-link" style="color: black;">Samson</a>
+  </div>
+  <div class="column2">
+  <img class="profile-img" src="/images/pov/jonah.jpg" alt="" style="width:100%;">
+  <a class="profile-link" style="color: black;">Jonah</a>
+  </div>
+  <div class="column2">
+    <img class="profile-img" src="/images/pov/jesus.jpg" alt="" style="width:100%;">
+  <a class="profile-link" style="color: black;">Jesus</a>
+  </div>
+  </div>
+  </div>
+  
+ <div id="div2">    
+       <div class="row">
+  <div class="column">
+    <img class="profile-img" src="/images/pov/adam.jpg" alt="" style="width:100%;">
+    <a class="profile-link" style="color: black;">Adam</a>
+  </div>   
+ <div class="column">
+    <img class="profile-img" src="/images/pov/noah.jpg" alt="" style="width:100%; ">
+    <a class="profile-link" style="color: black;">Noah</a>
+  </div>
+  <div class="column">
+<img class="profile-img" src="/images/pov/moses.jpg" alt="" style="width:100%;">
+<a class="profile-link" style="color: black;">Moses</a>
+  </div>
+  </div>
+  
+<div class="row">   
+  <div class="column">
+    <img class="profile-img" src="/images/pov/samson.jpg" alt="" style="width:100%; ">
+    <a class="profile-link" style="color: black;">Samson</a>
+  </div>
+  <div class="column">
+    <img class="profile-img" src="/images/pov/jonah.jpg" alt="" style="width:100%;">
+  <a class="profile-link" style="color: black;">Jonah</a>
+  </div>
+  <div class="column">
+    <img class="profile-img" src="/images/pov/jesus.jpg" alt="" style="width:100%;">
+  <a class="profile-link" style="color: black;">Jesus</a>
+  </div>
+  </div>
+</div>
+   
+   
+   </section>
+        </section-2> 
+        <section-3 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content" style="">  
+   
+<img class="inline-image" src="/images/pov/israel.jpg" />
+ 
+   
+   
+   </section>
+        </section-3> 
+        <section-4 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content" style="">  
+   
+   <h2>Judges To Kings</h2>
+
+
+<ul class="gallery">
+  <li><div class="card-gallery" style="" ><img class="playlist-img2" src="/images/pov/judges.jpg" /> <h4>Judges</h4> </div></li>
+  
+    <li><div class="card-gallery"><img class="playlist-img2" src="/images/pov/trans.jpg" /> <h4>Transition</h4> </div></li>
+
+
+  <li><div class="card-gallery"><img class="playlist-img2" src="/images/pov/kings.jpg" /> <h4>Kings</h4> </div></li>
+ </ul>
+ 
+   
+   
+   </section>
+        </section-4> 
+        <section-5 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content" style="">  
+   
+  <h2>Israel Rejects God As King</h2>
+
+
+<ul class="gallery">
+  <li><div class="card-gallery" style="" ><img class="playlist-img2" src="/images/pov/rejected.jpg" /> <h4>God Rejected</h4> </div></li>
+  
+    <li><div class="card-gallery"><img class="playlist-img2" src="/images/pov/divided.jpg" /> <h4>Kingdom Divided</h4> </div></li>
+
+
+  <li><div class="card-gallery"><img class="playlist-img2" src="/images/pov/exile.jpg" /> <h4>Exile and Return</h4> </div></li>
+ </ul>
+ 
+   
+   
+   </section>
+        </section-5> 
+        <section-6 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content" style="">  
+   
+<img class="inline-image" src="/images/pov/gospel.jpg"  />
+   
+   
+   </section>
+        </section-6> 
+        <section-7 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content" style="">  
+   
+   
+  <h2>12 ➜ 13 Years Old</h2>
+
+
+<ul class="gallery">
+  <li><div class="card-gallery" style="" ><img class="playlist-img2" src="/images/pov/12.jpg" /> <h4>Jesus Age 12</h4> </div></li>
+  
+    <li><div class="card-gallery"><img class="playlist-img2" src="/images/pov/bar.jpg" /> <h4>My Bar Mitzvah</h4> </div></li>
+
+
+  <li><div class="card-gallery"><img class="playlist-img2" src="/images/pov/understanding.jpg" /> <h4>Understanding</h4> </div></li>
+ </ul>
+   
+   </section>
+        </section-7> 
+        <section-8 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content" style="">  
+   
+   
+   <img class="inline-image" src="/images/pov/crossing.png" /> 
+   
+   </section>
+        </section-8> 
+        <section-9 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content" style="">  
+   
+   
+     <h2>Wisdom To Understanding</h2>
+
+
+<ul class="gallery">
+  <li><div class="card-gallery" style="" ><img class="playlist-img2" src="/images/pov/a.png" /> <h4>Path of Aleph</h4> </div></li>
+  
+    <li><div class="card-gallery"><img class="playlist-img2" src="/images/pov/ab.jpg" /> <h4>Point A ➜ Point B</h4> </div></li>
+
+
+  <li><div class="card-gallery"><img class="playlist-img2" src="/images/pov/b.png" /> <h4>Path of Beth</h4> </div></li>
+ </ul>
+   
+   </section>
+        </section-9> 
+        <section-10 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content" style="">  
+   
+   <img class="inline-image" src="/images/pov/eden.jpg" />
+      
+   
+   </section>
+        </section-10> 
+  
+        <section-11 id="content" style="padding-top: 0; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+   <section id="content-scroll2" style="padding-top: 0; padding-bottom: 0;">  
+
+    
+
+    
+  <div class="carousel2" style="padding-top: 0; padding-bottom: 0;">
+  <div class="card-square"><img class="post-scroll" src="/images/pov/square-0.jpg" /> </div>
+  <div class="card-square"><img class="post-scroll" src="/images/pov/square-1.jpg" />   </div>
+  <div class="card-square"><img class="post-scroll" src="/images/pov/square-2.png" />  </div>
+  <div class="card-square"><img class="post-scroll" src="/images/pov/square-3.jpg" />  </div>
+  <div class="card-square"><img class="post-scroll" src="/images/pov/square-4.png" />  </div>
+  <div class="card-square"><img class="post-scroll" src="/images/pov/square-6.jpg" />  </div>
+  <div class="card-square"><img class="post-scroll" src="/images/pov/square-5.jpg" />  </div>
+  <div class="card-square"><img class="post-scroll" src="/images/pov/jesus.jpg" />  </div>
+</div>
+       
+      
+      </section> 
+        </section-11> 
+       
+       
+       
+
+        
+     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script> </div>
+  
+
+
+    <!-- Add any additional Javascript code (<script></script>) here. -->
+    
+  <script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>  
+    
+  </body>
+</html>
+
+
+
+
+
+
+
+
