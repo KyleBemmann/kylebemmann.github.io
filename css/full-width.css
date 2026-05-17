@@ -1,0 +1,244 @@
+/* -------------------------------------------------------- */
+/* VARIABLES */
+/* -------------------------------------------------------- */
+
+/* Variables are used like this: var(--text-color) */
+:root {
+  /* Background Colors: */
+  --background-color: #09493d;
+  --content-background-color: #e5e7eb;
+  --sidebar-background-color: #e5e7eb;
+
+  /* Text Colors: */
+  --text-color: #000000;
+  --sidebar-text-color: #000000;
+  --link-color: #ffffff;
+  --link-color-hover: #ffffff;
+
+  /* Text: */
+  --font: Helvetica, sans-serif;
+  --heading-font: Helvetica, sans-serif;
+  --font-size: 14px;
+
+  /* Other Settings: */
+  --margin: 10px;
+  --padding: 20px;
+  --border: none;
+  --round-borders: 20px;
+  --sidebar-width: 200px;
+}
+
+/* -------------------------------------------------------- */
+/* BASICS */
+/* -------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: var(--font-size);
+  margin: 0;
+  padding: var(--margin);
+  color: var(--text-color);
+  font-family: var(--font);
+  line-height: 1.2;
+  background: var(--background-color);
+  background-image: url("");
+  
+}
+
+p, ul, li {
+ line-height: 1.5em; 
+}
+
+p {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+/* -------------------------------------------------------- */
+/* LAYOUT */
+/* -------------------------------------------------------- */
+
+.layout {
+  width: 1000px;
+  display: grid;
+
+  grid-template: "nav" auto "header" auto "main" auto "section-1" auto "section-2" auto "section-3" auto "section-4" auto "section-5" auto "section-6" auto "section-7" auto "section-8" auto "section-9" auto "section-10" auto "section-11" auto "section-12" auto "section-13" auto "section-14" auto "section-15" auto "section-16" auto "footer"  auto 
+}
+
+
+/* -------------------------------------------------------- */
+/* NAVIGATION BAR */
+/* -------------------------------------------------------- */
+
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* -------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------- */
+
+header {
+  grid-area: header;
+  margin-top: -10px;
+}
+
+/* -------------------------------------------------------- */
+/* SECTIONS */
+/* -------------------------------------------------------- */
+
+section-1 {
+  grid-area: section-1;
+  width: 100%;
+  margin-top: 10px;
+}
+
+
+section-2 {
+  grid-area: section-2;
+  width: 100% 
+  margin-top: 10px;
+}
+
+section-3 {
+  grid-area: section-3;
+  width: 100%;
+   margin-top: 10px;
+}
+
+section-4 {
+  grid-area: section-4;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-5 {
+  grid-area: section-5;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-6 {
+  grid-area: section-6;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-7 {
+  grid-area: section-7;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-8 {
+  grid-area: section-8;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-9 {
+  grid-area: section-9;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-10 {
+  grid-area: section-10;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-11 {
+  grid-area: section-11;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-12 {
+  grid-area: section-12;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-13 {
+  grid-area: section-13;
+   width: 100%;
+    margin-top: 10px;
+}
+
+
+section-14 {
+  grid-area: section-14;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-15 {
+  grid-area: section-15;
+   width: 100%;
+    margin-top: 10px;
+}
+
+section-16 {
+  grid-area: section-16;
+   width: 100%;
+    margin-top: 10px;
+}
+
+/* -------------------------------------------------------- */
+/* MOBILE RESPONSIVE */
+/* -------------------------------------------------------- */
+
+/* CSS Code for devices < 800px */
+@media (max-width: 800px) {
+
+body {
+    font-size: 14px;
+  }
+
+.layout {
+    width: 100%;
+    grid-template: "nav" auto "header" auto "section-1" auto "section-2" auto "section-3" auto "section-4" auto "section-5" auto "section-6" auto "section-7" auto "section-8" auto "section-9" auto "section-10" auto "section-11" auto "section-12" auto "section-13" auto "section-14" auto "section-15" auto "section-16"
+  }
+
+
+#skip-to-content-link {
+  font-size: 1rem;
+}
+
+header {
+padding-top: 10px;  
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

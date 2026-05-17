@@ -1,0 +1,219 @@
+/* -------------------------------------------------------- */
+/* VARIABLES */
+/* -------------------------------------------------------- */
+
+/* Variables are used like this: var(--text-color) */
+:root {
+  /* Background Colors: */
+  --background-color: #09493d;
+  --content-background-color: #e5e7eb;
+  --sidebar-background-color: #e5e7eb;
+
+  /* Text Colors: */
+  --text-color: #000000;
+  --sidebar-text-color: #000000;
+  --link-color: #ffffff;
+  --link-color-hover: #ffffff;
+
+  /* Text: */
+  --font: Helvetica, sans-serif;
+  --heading-font: Helvetica, sans-serif;
+  --font-size: 14px;
+
+  /* Other Settings: */
+  --margin: 10px;
+  --padding: 20px;
+  --border: none;
+  --round-borders: 20px;
+  --sidebar-width: 200px;
+}
+
+/* -------------------------------------------------------- */
+/* BASICS */
+/* -------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  font-size: var(--font-size);
+  margin: 0;
+  padding: var(--margin);
+  color: var(--text-color);
+  font-family: var(--font);
+  line-height: 1.2;
+  background: var(--background-color);
+  background-image: url("");
+  
+}
+
+
+p, ul, li {
+ line-height: 1.5em; 
+}
+
+p {
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+/* -------------------------------------------------------- */
+/* LAYOUT */
+/* -------------------------------------------------------- */
+
+.layout {
+  width: 1000px;
+  display: grid;
+  grid-gap: var(--margin);
+  grid-template: "nav nav" auto "header header" auto "leftSidebar main" auto "footer footer" auto / var(--sidebar-width)
+  /* Confused by the grid? Check out my tutorial: https://petrapixel.neocities.org/coding/positioning-tutorial#grid */
+}
+
+/* -------------------------------------------------------- */
+/* NAVIGATION BAR */
+/* -------------------------------------------------------- */
+
+nav {
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* -------------------------------------------------------- */
+/* HEADER */
+/* -------------------------------------------------------- */
+
+header {
+  grid-area: header;
+  margin-top: -10px;
+}
+
+/* -------------------------------------------------------- */
+/* SIDEBARS */
+/* -------------------------------------------------------- */
+
+aside {
+  grid-area: aside;
+  border: var(--border);
+  border-radius: var(--round-borders);
+  overflow: visible;
+  background: var(--sidebar-background-color);
+  padding: var(--padding);
+  color: var(--sidebar-text-color);
+  position: sticky;
+  top: 50px;
+  height: 580px;
+}
+
+.left-sidebar {
+  grid-area: leftSidebar;
+}
+
+.mobile-sidebar {
+  grid-area: mobileSidebar;
+  display: none;
+}
+
+.right-sidebar {
+  grid-area: rightSidebar;
+}
+
+.sidebar-title {
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: var(--heading-font);
+  text-align: center;
+}
+
+.sidebar-section:not(:last-child) {
+  margin-bottom: 3em;
+}
+
+.sidebar-section > *:not(p):not(ul):not(ol):not(blockquote) {
+  margin-top: 10px;
+  Border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* -------------------------------------------------------- */
+/* MAIN */
+/* -------------------------------------------------------- */
+
+main {
+  grid-area: main;
+  overflow-y: visible;
+  padding: 10px;
+  background: var(--content-background-color);
+  border: var(--border);
+  border-radius: var(--round-borders);
+  align-items: start;  
+}
+
+/* -------------------------------------------------------- */
+/* MOBILE RESPONSIVE */
+/* -------------------------------------------------------- */
+
+/* CSS Code for devices < 800px */
+@media (max-width: 800px) {
+
+body {
+    font-size: 14px;
+  }
+
+.layout {
+    width: 100%;
+    grid-template: "nav" auto "header" auto "mobileSidebar" auto "main" auto "footer" auto / 1fr;
+  }
+
+.mobile-sidebar {
+  display: block;
+  }
+
+.left-sidebar { 
+    display: none;
+  }
+.right-sidebar { 
+    display: none;
+  }
+
+  aside {
+    
+    padding: 9px;
+    font-size: 0.9em;
+    position: static;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  
+  .sidebar-title {
+    font-size: 2.2em;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    }
+
+  main {
+    max-height: none;
+    padding: 15px;
+    position: relative;
+    top: -10px;
+  }
+
+  #skip-to-content-link {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+
+
