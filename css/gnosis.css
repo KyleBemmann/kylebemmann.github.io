@@ -1,0 +1,33 @@
+ #content ul, #content li, #content ol {
+  
+  padding-right: 5px;
+  margin: 5px;
+ }
+ 
+h3 {
+  margin-left: 20px;
+  font-size: 1.2em;
+  text-align: left;
+  font-weight: bold;
+}
+
+h4 { 
+  text-align: left;
+}
+
+
+
+p, ul, li {
+  text-align: justify;
+}
+
+p {
+  
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+p, ul, li {
+ line-height: 1.5em; 
+}
