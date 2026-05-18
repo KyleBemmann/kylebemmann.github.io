@@ -448,6 +448,7 @@ button:hover {
   height: auto;
   border-radius: 20px 20px 20px 20px;
   margin: auto;
+  margin-bottom: 5px;
 }
 
 /* Hide Mobile Version On Desktop */
