@@ -432,6 +432,7 @@ button:hover {
   height: auto;
   margin: auto;
   border-radius: 20px 20px 20px 20px;
+  margin-bottom: 20px;
 }
 
 .image-chakra {
