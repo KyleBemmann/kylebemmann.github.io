@@ -1,0 +1,31 @@
+.apollobtn, .walterbtn {
+  display: flex; /* Enables CSS flexbox */
+  justify-content: center; /* Centers horizontally */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 0fr); /* 4 columns per row */
+  grid-template-rows: repeat(2, auto);    /* 2 rows */
+  gap: 0px;                           /* Space between icons */
+  justify-items: center;
+}
+  
+@media only screen and (max-width: 800px) {
+    
+.layout {
+    width: 100%;
+    grid-template: "nav" auto "header" auto "leftSidebar" auto "main" auto "footer" auto / 1fr;
+}
+
+.left-sidebar { 
+  display: block;
+}
+
+}

@@ -1,0 +1,37 @@
+.sidebar-title {
+  text-align: center;
+}
+
+.two-columns {
+  align-items: start;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2  {
+  margin-left: 10px;
+  padding-bottom: 30px;
+}
+
+p { 
+  text-align: justify;
+  width: 170%;
+}
+
+.right-align {
+  font-size: 120px;
+  float: right;
+}
+
+p, ul, li {
+ line-height: 1.5em; 
+}
+
+/* CSS Code for devices < 800px */
+@media (max-width: 798px) {
+p {
+  width: 140%;
+}
+  
+}
