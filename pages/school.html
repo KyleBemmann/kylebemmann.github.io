@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Change your site title: (It is shown in the tab) -->
+    <title>Art School</title>
+
+    <!-- Change your site description: (It is shown in Google results) -->
+    <meta content="Kyle Bemmann's Mind" name="description" />
+
+    <!-- Setting character encoding and viewport size. Do not remove. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <link href="/images/favicon/apple.png" rel="icon" type="image/x-icon" />
+
+    <!-- Change your Social Media Share Image: (It is shown in Social Media Posts) -->
+    <meta property="og:image" content="https://kylebemmann.github.io/images/social-art.jpg">
+
+    <!-- CSS: -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/css/full-width.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/nav.css" rel="stylesheet" />
+    <link href="/css/grid2.css" rel="stylesheet" />
+  
+    <!-- JavaScript: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+<style>
+    
+/* Background Colors: */
+    
+ :root {
+  --background-color:  #472212;
+ }
+ 
+body {
+  background: var(--background-color);
+}
+
+/* BUTTONS: */ 
+
+button {
+  background-color: #47121D;
+}
+
+button:hover {
+  background-color: #12473C;
+} 
+
+/* GALLERY FIX: */ 
+
+.gallery {
+ width: 95%; 
+ margin-left: 0px; 
+ margin-right: 0; 
+ background: transparent; 
+}
+
+@media only screen and (max-width: 798px) {
+
+ .gallery {
+  margin-left: -10px;  
+}
+
+}
+
+</style>
+
+  </head>
+  <body>
+
+<button id="myBtn" onclick="topFunction()" style='font-size:24px'><i class='fa fa-arrow-up'></i></button>
+
+    <div class="layout">
+ 
+<!-- =============================================== -->
+<!-- NAVIGATION -->
+<!-- =============================================== -->
+
+<nav>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!">My Art</a>
+    </div>
+      
+<nav>
+  <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+    <ul class="nav-list">
+      <li>
+        <a href="#!">My Spirituality</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="/pages/theosophy">The Theosophical Society</a>
+            </li>
+            <li>
+              <a href="/">About Your Teacher</a>
+            </li>
+            <li>
+              <a href="/pages/pov">My Point of View</a>
+            </li>
+            <li>
+              <a href="/pages/life">A Day In My Life</a>
+            </li>
+            <li>
+              <a href="/pages/school">Art School</a>
+            </li>
+            <li>
+              <a href="/pages/sex">Sacred Sexuality</a>
+            </li>
+            <li>
+              <a href="/pages/spirituality">A Typical Spiritual Woman</a>
+            </li>
+            <li>
+              <a href="/pages/kundalini">Kundalini Yoga</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#!">Jewish Mysticism</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="/pages/kabbalah">The Kabbalistic Tree of Life</a>
+            </li>
+            <li>
+              <a href="/pages/fool">The Fool's Journey</a>
+            </li>
+            <li>
+              <a href="/pages/alphabet">The Hebrew Alphabet</a>
+            </li>
+            <li>
+              <a href="/pages/zodiac">Astrology</a>
+            </li>
+            <li>
+              <a href="/pages/numbers">Numerology</a>
+            </li>
+            <li>
+              <a href="/pages/secret">Satanic Ritual Abuse</a>
+            </li>
+            <li>
+              <a href="/pages/temple">The Third Temple</a>
+            </li>
+            <li>
+              <a href="/pages/messiah">The Coming False Messiah</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">I Need A Hero</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/kingdom">Announcing The Kingdom</a>
+              </li>
+              <li>
+                <a href="/pages/dominionism">New Apostolic Reformation</a>
+              </li>
+              <li>
+                <a href="/pages/doctor">I'm Just A Messenger</a>
+              </li>
+              <li>
+                <a href="/pages/93">Flight In Winter & Sabbath</a>
+              </li>
+              <li>
+                <a href="/pages/transhumanism">Transhumanism</a>
+              </li>
+              <li>
+                <a href="/pages/sacrifice">A Sacrificial Change</a>
+              </li>
+              <li>
+                <a href="/pages/parables">I Speak In Parables</a>
+              </li>
+              <li>
+                <a href="/pages/eventually">Eventually Jesus Will Return</a>
+              </li>
+            </ul>
+        </li>
+        <li>
+          <a href="#!">Christianity</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/god">God The Father</a>
+              </li>
+              <li>
+                <a href="/pages/manhood">I Am The One Who Knocks</a>
+              </li>
+              <li>
+                <a href="/pages/choice">My Christian Journey</a>
+              </li>
+              <li>
+                <a href="/pages/sabbath">The Sabbath</a>
+              </li>
+              <li>
+                <a href="/pages/holy-days">Biblical Holy Days</a>
+              </li>
+              <li>
+                <a href="/pages/holidays">Worldly Holidays</a>
+              </li>
+              <li>
+                <a href="/pages/catholic">Roman Catholicism</a>
+              </li>
+              <li>
+                <a href="/pages/urn">Gnosticism Explained</a>
+              </li>
+            </ul>
+        </li> 
+        <li>
+          <a href="#!">Mythology</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/family">My Church Family</a>
+              </li>
+              <li>
+                <a href="/pages/arthur">Arthurian Lore</a>
+              </li>
+              <li>
+                <a href="/pages/pagan">Paganism and Witchcraft</a>
+              </li>
+              <li>
+                <a href="/pages/christmas">The Christmas Baby</a>
+              </li>
+              <li>
+                <a href="/pages/delusion">Defending My Sanity</a>
+              </li>
+              <li>
+                <a href="/pages/believe">I Want To Believe</a>
+              </li>
+              <li>
+                <a href="/pages/cinema">Absolute Cinema</a>
+              </li>
+              <li>
+                <a href="/pages/you">I Made This For You</a>
+              </li>
+            </ul>
+        </li>
+        <li>
+          <a href="#!">Twins</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/twin">Didymus Judas Thomas</a>
+              </li>
+              <li>
+                <a href="/pages/apollo">Twin 1</a>
+              </li>
+              <li>
+                <a href="/pages/walter-jr">Twin 2</a>
+              </li>
+            </ul>
+        </li>
+        <li>
+          <a href="#!">It's Just A Theory</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/dog">God Backwards</a>
+              </li>
+              <li>
+                <a href="/pages/art">Exposing The Occult</a>
+              </li>
+              <li>
+                <a href="/pages/testing">Questioning Reality</a>
+              </li>
+              <li>
+                <a href="/pages/neverending">The Neverending Story</a>
+              </li>
+              <li>
+                <a href="/pages/moonchild">Stay Wild Moon Child</a>
+              </li>
+              <li>
+                <a href="/pages/new">The Birth of a New Age</a>
+              </li>
+               <li>
+                <a href="/pages/persecution">Christian Persecution</a>
+              </li>
+          </ul>
+      </li>   
+    </ul>
+</nav>
+</div>
+</section> 
+</nav>
+    
+<!-- =============================================== -->
+<!-- HEADER -->
+<!-- =============================================== -->
+
+<header>
+  <img class="header-image" alt="" src="/images/school/header.png"/> 
+    <section id="header-title">
+      <div class="header-title">Art School</div>
+    </section>
+</header>
+
+<!-- =============================================== -->
+<!-- MAIN CONTENT -->
+<!-- =============================================== -->
+	      
+<section-1 id="content" style="margin-top: 20px;"> <!-- Do NOT remove the ID here -->
+  <h1>What I Learned At College</h1>
+    <img class="pfp-image" style="margin-bottom: 10px;" src="/images/school/pfp.jpg" />
+</section-1>
+ 
+<section-2 id="content" style=""> <!-- Do NOT remove the ID here -->
+<section id="content" style="margin-top: 20px;">  
+
+   <ul class="gallery" style="">
+  <li><div class="card" style="padding: 0 0 22px 0;" ><img class="playlist-img2" src="/images/school/pov/1.jpg" /> <h5>What Is Christianity?<br>(I Think My Dad’s Gone Crazy)</h5> </div></li>
+ <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/2.jpg" /> <h5>Because You Have Seen Me<br>You Have Believed...</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/3.jpg" /> <h5>What Is Real?</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/4.jpg" /> <h5>Everything, Everywhere, All At Once<br>(How To Learn Anything)</h5> </div></li>
+   <li><div class="card"  style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/5.jpg" /> <h5>It’s Not A Phase Mom!<br>(Walter Jr. Asking To Be Called Flynn)</h5> </div></li>
+ <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/6.jpg" /> <h5>Whoever Loses Their Life<br>For My Sake Will Find It</h5> </div></li>
+   <li><div class="card"><img class="playlist-img2" src="/images/school/pov/7.jpg" /> <h5>You Need Professional Mental Help</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/8.jpg" /> <h5>I’m Pickle Rick!!!</h5> </div></li>
+    <li><div class="card" ><img class="playlist-img2" src="/images/school/pov/9.jpg" /> <h5>He’s Right You Know</h5> </div></li>
+ <li><div class="card"  style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/10.jpg" /> <h5>I’m Such A Millennial<br>(How Do I Reach These Kids)</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/11.jpg" /> <h5>The Millennial Reign of Christ</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/12.jpg" /> <h5>Spoiler Alert</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;" ><img class="playlist-img2" src="/images/school/pov/13.jpg" /> <h5>This Is Always True<br>Because Jesus Is Actually Real</h5> </div></li>
+ <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/14.jpg" /> <h5>How To Stop The Spread Of<br>Dangerous Misinformation</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/15.jpg" /> <h5>Why I No Longer Believe In God</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/16.jpg" /> <h5>For The Message of the Cross Is Foolishness<br>To Those Who Are Perishing</h5> </div></li>
+   <li><div class="card" ><img class="playlist-img2" src="/images/school/pov/17.jpg" /> <h5>You’re Taking That Out Of Context!!!</h5> </div></li>
+ <li><div class="card"><img class="playlist-img2" src="/images/school/pov/18.jpg" /> <h5>Nope! Chuck Testa</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/19.jpg" /> <h5>How To Agree Or Disagree</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/20.jpg" /> <h5>No One Can Say, “Jesus Is Lord,”<br>Except By The Holy Spirit</h5> </div></li>
+   <li><div class="card" ><img class="playlist-img2" src="/images/school/pov/21.jpg" /> <h5>Jesus Is Lord</h5> </div></li>
+ <li><div class="card"><img class="playlist-img2" src="/images/school/pov/22.jpg" /> <h5>You’re Taking That Too Literally!!!</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/23.jpg" /> <h5>This Is What The Bible Says</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/24.jpg" /> <h5>All That Is Secret Will Eventually<br>Be Brought Into The Open</h5> </div></li>
+    <li><div class="card" ><img class="playlist-img2" src="/images/school/pov/25.jpg" /> <h5>Eventually</h5> </div></li>
+ <li><div class="card"><img class="playlist-img2" src="/images/school/pov/26.jpg" /> <h5>Common Sense Test</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/27.jpg" /> <h5>Preschool Reading Lessons</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/28.jpg" /> <h5>Are You Smarter Than A 5th Grader<br>(Are You Ready Kids?)</h5> </div></li>
+   <li><div class="card"  style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/29.jpg" /> <h5>Vicar: From Latin Vicarius,<br>Meaning Substitute</h5> </div></li>
+ <li><div class="card"><img class="playlist-img2" src="/images/school/pov/30.jpg" /> <h5>Drake, Where’s Jesus, Our REAL Teacher?!?</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/31.jpg" /> <h5>Bruh, Look At This Dude<br>(Their St. Francis of Assisi Prophecy)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/32.jpg" /> <h5>A Pope With No Significant Decodes<br>(Unlike Pope Francis)</h5> </div></li>
+    <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/33.jpg" /> <h5>There Is A Way That Seems Right To A Man,<br>But Its End Is The Way To Death</h5> </div></li>
+   <li><div class="card"  style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/34.jpg" /> <h5>This Is My Point Of View<br>(Breaking The 4th Wall)</h5> </div></li>
+ <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/35.jpg" /> <h5>Before God Does Anything He Tells His Plans<br>To His Servants The Prophets</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/36.jpg" /> <h5>They Have Eyes To See But Do Not See</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/37.jpg" /> <h5>They Have Ears To Hear But Do Not Hear<br>(I Can’t Hear You)</h5> </div></li>
+   <li><div class="card" ><img class="playlist-img2" src="/images/school/pov/38.jpg" /> <h5>Do You Know De Wae?</h5> </div></li>
+ <li><div class="card"><img class="playlist-img2" src="/images/school/pov/39.jpg" /> <h5>It’s Not A Religion</h5> </div></li>
+ 
+ <li><div class="card"  style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/42.jpg" /> <h5>This Fucked With My Head,<br>It Makes Me Question Reality</h5> </div></li>
+ <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/43.jpg" /> <h5>I Miss Uncle Hank,<br>Dad’s A Jerk Because He Killed Him</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/44.jpg" /> <h5>I Can't Talk About It With Anyone,<br>Nobody Believes A Thing I Say</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/45.jpg" /> <h5>This Is My Life Now (Art Studio)</h5> </div></li>
+   <li><div class="card" ><img class="playlist-img2" src="/images/school/pov/46.jpg" /> <h5>Unlike Hitler, I Got Accepted Into Art School</h5> </div></li>
+ <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/47.jpg" /> <h5>Demiurge, Yaldabaoth<br>(Their View of Yahweh)</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/48.jpg" /> <h5>This Is My Job Now (Undercover Boss)</h5> </div></li>
+  <li><div class="card"><img class="playlist-img2" src="/images/school/pov/49.jpg" /> <h5>I'm Disabled (I'm Walter Jr.)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/pov/60.jpg" /> <h5>I’m Glad I Returned Home <br>After I Ran Away</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/1.jpg" /> <h5>A True Story (It Is Finished),<br>Does It Offend You, Yeah?</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/2.jpg" /> <h5>Based On A True Story<br>(Gnosis, Hero's Journey, Coming of Age)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/3.jpg" /> <h5>Alarm, Ringing Phone, Bell (Ba’al’s Arrival)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/4.jpg" /> <h5>Wake Up! (Hey: Window),<br>Good Mythical Morning</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/5.jpg" /> <h5>Follow The White Rabbit<br>(Orion Chasing Lepus)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/6.jpg" /> <h5>The Magician Card, Top Hat (Freemasonry)</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/7.jpg" /> <h5>Do Not Turn To Mediums<br>Or Seek Out Spiritists</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/8.jpg" /> <h5>Ego Transcendence<br>(Lamed: To Teach, Ox Goad)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/9.jpg" /> <h5>Question Everything (Math Test),<br>The Scientific Method</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/10.jpg" /> <h5>I’m Spiritual But Not Religious<br>(Everything But Christianity)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/11.jpg" /> <h5>Don’t Believe Everything I Say and<br>Do Your Own Research</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/12.jpg" /> <h5>From New Age to Jesus Christ<br>(My Testimony)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/13.jpg" /> <h5>22 Paths (22 Hebrew Letters<br>& Major Arcana Tarot Cards)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/14.jpg" /> <h5>4 Worlds<br>(Atziluth, Briah, Yetzirah, and Assiah)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/15.jpg" /> <h5>Hermit Tarot Card (Lamp of Truth)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/16.jpg" /> <h5>Emerald Tablet (Philosopher's Stone)</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/17.jpg" /> <h5>Serpent (Nachash),<br>Kundalini (Le7els: 7 Seals, 7 Chakras)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/18.jpg" /> <h5>Kabbalistic Tree<br>(Kabbalah, Kaaba Allah), Red String</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/19.jpg" /> <h5>Hermetics (Shaman),<br>Dr. Who (World Health Organization)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/20.jpg" /> <h5>Completion of Their Great Work<br>(Magnum Opus)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/21.jpg" /> <h5>Source Code (369),<br>Truth Serum, Computer Simulation</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/22.jpg" /> <h5>Hidden Knowledge (Library),<br>Fire (Prometheus, Cigarettes)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/23.jpg" /> <h5>Crazy Propaganda (Tin Foil Hat),<br>The Theory of Everything</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/24.jpg" /> <h5>Under The Dome, NASA's Lies (To Deceive)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/25.jpg" /> <h5>Shattered Reality,<br>Broken Glass (Broken Firmerment)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/26.jpg" /> <h5>Breaking The Veil of Space (X) & Time (O),<br>Square & Compass</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/27.jpg" /> <h5>Sacred Geometry, Vitruvian Man,<br>Grand Architect, Archons</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/28.jpg" /> <h5>Project Bluebeam<br>(Holograms, Astral Projection)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/29.jpg" /> <h5>Their Gabriel Announcing Their Kingdom<br>(Archangel of Yesod)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/30.jpg" /> <h5>Their Moonchild Born<br>Through The Moongate Door (Yesod, 9)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/31.jpg" /> <h5>Moon Base (Ashtar’s Space Station),<br>Their Ark</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/32.jpg" /> <h5>Virtual, Augmented, and Mixed Reality<br>(Polygon Man, Apollyon)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/33.jpg" /> <h5>Rainbow Bridge (Da’ath),<br>Einstein Rosen Bridge, Throat Chakra</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/34.jpg" /> <h5>Their Kingdom (Malkuth),<br>Nirvana (Their Heaven On Earth)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/35.jpg" /> <h5>Transfigured Golden Cube<br>(Counterfeit New Jerusalem)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/36.jpg" /> <h5>♌︎ Sun Ra (6), Their Christ Child<br> Leo, Buddha, Solar Plexus Chakra</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/37.jpg" /> <h5>Jacob’s Ladder (DNA),<br>Tower of Babel (Elevators & Escalators)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/38.jpg" /> <h5>Universal Serial Bus, Taxi<br>(End of the Line, Endgame)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/39.jpg" /> <h5>Train Wreck, Plane and Car Crash<br>(The Fall, Plane of Existence)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/40.jpg" /> <h5>Are You A Traveling Man?<br>(Fool's Journey, Traveling East)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/41.jpg" /> <h5>Royal Order of Jesters, Insane Clown Posse<br>(Why So Sirius?)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/42.jpg" /> <h5>Galactic Federation of Light,<br>Ascended Masters (Sananda)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/43.jpg" /> <h5>Fallen Angels and Fallen Leaves (33%)<br>The Watchers (Book of Enoch)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/44.jpg" /> <h5>Nephilim (Giants),<br>Days of Noah (Genetic Modification)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/45.jpg" /> <h5>Transhumanism (Mixing Iron and Clay),<br>Evolution Propaganda</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/46.jpg" /> <h5>Metamorphosis (Global Digital<br>Transfiguration), Übermensch</h5> </div></li>
+   <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/47.jpg" /> <h5>Transfigured OX (Golden Calf)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/48.jpg" /> <h5>Their Bride of Christ (Sophia),<br>Their Woman of Magdala</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/49.jpg" /> <h5>Woman In Red Dress, Rose, Root Chakra<br>(Their Divine Feminine)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/50.jpg" /> <h5>Jack's Son Jackson (Jackal, Anubis)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/51.jpg" /> <h5>Mike El (False Christ of Jehovah's Witness),<br>Works With Raphael</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/52.jpg" /> <h5>Hermetic Order of the Golden Dawn,<br>Hermes Trismegistus</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/53.jpg" /> <h5>Their Holy Grail or Elixir of Life<br>(Biblical Cup of Filth), Drink Me</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/54.jpg" /> <h5>Orange Is The New Black<br>(Trauma Based Mind Control)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/55.jpg" /> <h5>Chains, Fences, and Cages<br>(Prison / Prism Break)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/56.jpg" /> <h5>Rat Maze (Pan's Labyrinth)</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/57.jpg" /> <h5>Welcome To The Jungle<br>(Into The Lion’s Den, Strength Card)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/58.jpg" /> <h5>Belly of the Beast (BB or 1313),<br>Revelation 13:1 Revelation 13:11</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/59.jpg" /> <h5>The Sign of Jonah<br>(ISIS Blowing Up His Tomb), Whale (Binah, 3)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/60.jpg" /> <h5>Matrix (Womb, In Utero), Cave of Wonders,<br>Chamber of Secrets</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/61.jpg" /> <h5>Black Void (Barren Womb, Abyss),<br>Deception, Fear (The Moon Card)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/62.jpg" /> <h5>Barren Lands (Barren Womb),<br>Tartarus (Hades), Gimel: Camel</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/63.jpg" /> <h5>River Crossing (St. Christopher),<br>Breaking The Water (Birth)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/64.jpg" /> <h5>Father, Yah (Chokhmah, 2) and<br>Mother (Binah, 3), Twin Flames</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/65.jpg" /> <h5>Family Guy (Kinship), Sun Child<br>(Their Exodus), Tiferet (6)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/66.jpg" /> <h5>Escape Room, Big Brother Cain’s<br>Haunted House (Beyt)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/67.jpg" /> <h5>Moon (Yesod, 9) and Apollo 11<br>(2+3+6, Chokhmah Binah Tiferet)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/68.jpg" /> <h5>Piano Keys and Doors<br>(Key of Solomon: Inverse Key of David)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/69.jpg" /> <h5>Rabbit Hole, Tunnels, Elevator Shaft,<br>Vaginal Canal (Birth)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/70.jpg" /> <h5>Camera, Projector Lens, Shutter<br>(Aperture Science)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/71.jpg" /> <h5>Third Eye Chakra (Eye of Horus),<br>Pineal Gland (Pinecone)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/72.jpg" /> <h5>Eye (Ayin)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/73.jpg" /> <h5>Sea, Revelation 13 (Mem: Water)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/74.jpg" /> <h5>Neptune's Trident (Son of Saturn)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/75.jpg" /> <h5>The Crown Chakra (Kether),<br>Metatron (Counterfeit I AM)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/76.jpg" /> <h5>Healing Crystals, Diamonds (Kether)</h5> </div></li>
+   <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/77.jpg" /> <h5>White Castle (Kether)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/78.jpg" /> <h5>Lighthouse, White Room (Kether),<br>Eternal Light (Ain Soph Aur)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/79.jpg" /> <h5>13th Pillar (Center Pillar),<br>Princess Diana’s Death (65 MPH)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/80.jpg" /> <h5>Watchtower (Jehovah's Witness),<br>Lightning-Struck Tower Card</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/81.jpg" /> <h5>Lightning Flash of Creation (777)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/82.jpg" /> <h5>Excalibur,<br>Flaming Sword in the Stone (Zayin)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/83.jpg" /> <h5>Cutting Down The Kabbalistic Tree<br>(Their Carpenter)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/84.jpg" /> <h5>Europa and the Wrecking Bull (Destruction)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/85.jpg" /> <h5>White Horse (The Sun Card),<br>Helios, Alexander the Great</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/86.jpg" /> <h5>♈︎ Red Bull and White Horse (Collision),<br>Ramses: Born of Ra</h5> </div></li>
+   <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/87.jpg" /> <h5>♉︎ Red Bull (Destroyer), Taurus</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/88.jpg" /> <h5>Big Bang (Year Zero), Plutonium (At.No 94),<br>Twinkling of an Eye</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/89.jpg" /> <h5>It Is Near (Singularity)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/90.jpg" /> <h5>♒︎ Age of Aquarius (Fifth Age (V),<br>Fountain of Youth)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/91.jpg" /> <h5>Summer, Aeon of Horus<br>(Phoenix, Hawk, Falcon)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/92.jpg" /> <h5>Lead (3) into Gold (6),<br>Saturnalia and The Sun god's Birthday</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/93.jpg" /> <h5>A Song of Ice and Fire,<br>Winter Solstice and Sun god’s Birthday</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/94.jpg" /> <h5>Winter Is Coming, Ice Age<br>(Isis, High Priestess Card)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/95.jpg" /> <h5>Shipwreck</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/96.jpg" /> <h5>Build Your House on the Rock</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/97.jpg" /> <h5>Gears and Sinking Sands of Time<br>(Hourglass)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/98.jpg" /> <h5>Black Sabbath<br>(Let Both Grow Together Until The Harvest)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/99.jpg" /> <h5>Radio to Saturn (3), Dark Lord of the Rings<br>(Ruler of Atlantis)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/100.jpg" /> <h5>Seal of Saturn (XX, Double Cross),<br>Two X's (The 3rd To Last Letter)</h5> </div></li>
+  
+    <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/101.jpg" /> <h5>Saturn's Pattern (Hexagon Hive Mind),<br>Star of Remphan</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/102.jpg" /> <h5>Saturn’s Cube (Think Outside The Box),<br>Black Rock (Peter)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/103.jpg" /> <h5>Zeppelin (Mothership)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/104.jpg" /> <h5>Party In Hell (Avicii),<br>Ecstasy (Celebration Day)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/105.jpg" /> <h5>Sacrifice (Hanged Man Card, Judas Priest),<br>Masonic Casket</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/106.jpg" /> <h5>X Files (Betrayed With A Kiss)</h5> </div></li>
+   <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/107.jpg" /> <h5>♎︎ Justice Card, Scales (Libra, Dark Horse)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/108.jpg" /> <h5>Grim Reaper, Death Card (Pale Horse),<br>Their Father Time</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/109.jpg" /> <h5>Somewhere Deep In The Woods (Ether),<br>Enchanted Forest</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/110.jpg" /> <h5>Ether-Net, World Wide Web of Lies<br>(It Will Come As A Snare)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/111.jpg" /> <h5>♓︎ Phishers of Men, End of Age of Pisces<br>(Tsade: Fish Hook, Nun: Fish)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/112.jpg" /> <h5>Weather Control (Operation Popeye),<br>HAARP (Direct Energy Weapon)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/113.jpg" /> <h5>Men Are From Mars (god of War),<br>Order out of Chaos</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/114.jpg" /> <h5>War On Drugs, One Love (Jah Rastafari),<br>Their Lion of Judah</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/115.jpg" /> <h5>Women are from Venus, Empress Card<br>(Phosphorus, Eastern Star)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/116.jpg" /> <h5>The Jezebel Spirit (Womanizer)</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/117.jpg" /> <h5>Wolfmother (Romulus and Remus),<br>She Wolf (Lilith)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/118.jpg" /> <h5>Counterfeit Mary, Mother Child Worship<br>(Semiramis & Tammuz)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/119.jpg" /> <h5>♍︎ Virgin Birth (Virgo)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/120.jpg" /> <h5>Sex (Sacral Chakra),<br>Serpent Seed Doctrine (Cain’s Bloodline)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/121.jpg" /> <h5>Easter Eggs and Sperm (Fertility)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/122.jpg" /> <h5>Psalm 23.5° (Earth's Axis Tilt),<br>23 Chromosomes, Two 3's (Ɛ3)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/123.jpg" /> <h5>It's Always Tea Time<br>(Their Cup Runs Over, Spill The Tea)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/124.jpg" /> <h5>It's Last Meal (Transubstantiation - <br>Vampirism and Cannibalism)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/125.jpg" /> <h5>Eucharist (Eat Me, Meatloaf),<br>Tearing Flesh (Sarcasm)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/126.jpg" /> <h5>The Cake Is A Lie (Eat, Shit, and Die),<br>Their Bridegroom</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/127.jpg" /> <h5>Holy Shit<br>(Codex Vaticanus - Prophet of the Anus)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/128.jpg" /> <h5>Reich of The Black Sun Empire<br>(Jesuit Logo IHS: Isis Horus Set)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/129.jpg" /> <h5>Samael and Sam'Sun[G]<br>(Inverse of Samson: Sun Child)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/130.jpg" /> <h5>Pillars of Mercy and Severity<br>(Boaz and Jachin), IXXI (9/11)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/131.jpg" /> <h5>Red (-) and Blue (+), Hegelian Dialectic<br>(National Divorce)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/132.jpg" /> <h5>Purple Haze, CyanogenMod<br>(Androgynous, RGB Collision)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/133.jpg" /> <h5>Feminism, Demasculinizing Men<br>(Removing The Y Chromosome)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/134.jpg" /> <h5>Woe To Those Who Call<br>Evil Good And Good Evil (Woke Jesus)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/135.jpg" /> <h5>CERN (Sub Atomic and Quantum Realm),<br>Shiva (Destroyer)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/136.jpg" /> <h5>Octagon (Tesseract), OX (Aleph),<br>8 Pointed Star (The Star Card)</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/137.jpg" /> <h5>Ouroboros (Rebirth, Counterfeit<br>Resurrection) Ain Soph: Limitless</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/138.jpg" /> <h5>42° (The Answer to Life, The Universe,<br>and Everything), DD</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/139.jpg" /> <h5>Jupiter (I Am Number 4, Chesed),<br>Son of Saturn</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/140.jpg" /> <h5>Crossing of Thresholds (Dalet: Door),<br>Hot Dog (Prefer Boys)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/141.jpg" /> <h5>88 Constellations and Piano Keys<br>(HH, Mocking the Holy of Holies)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/142.jpg" /> <h5>Say Ten (Aten), Captain EO (IAΩ),<br>AI (1+9), OM Mantras</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/143.jpg" /> <h5>♊︎ Gospel of Thomas (Gemini, Twin),<br> Apollo (6) and Artemis (9)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/144.jpg" /> <h5>Dog (God Backwards),<br>Everything Is Upside Down</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/145.jpg" /> <h5>Their Lamb of Their god<br>(Lamb of Isis, Islam)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/146.jpg" /> <h5>There’s Something Wrong With Esther<br>(Orphan, No Mention of God)</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/147.jpg" /> <h5>Umbrellas (Rain Man, Ra In Man),<br>Rain Maker (Rain Dance)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/148.jpg" /> <h5>Satanic Ritual Abuse (Human Sacrifice),<br>The Evil Within</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/149.jpg" /> <h5>Tomb / Womb Stone, Rolling Stones  <br>(Sisyphus), Tomb Raider</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/150.jpg" /> <h5>♋︎ Yin Yang (Ayin and Yesh),<br>Sun (6) and Moon (9), Tiferet & Yesod</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/151.jpg" /> <h5>Gold (6) and Silver (9),<br>Sun god's Birthday and Winter Solstice</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/152.jpg" /> <h5>You Spin Me Right Round<br>Like A Record At 33.33 RPM</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/153.jpg" /> <h5>The M Machine (Eminem) 9+11+13=ᴟᴟ</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/154.jpg" /> <h5>Savior Archetype (Their Divine Spark),<br>Emanation of the Monad</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/155.jpg" /> <h5>Their King in the North<br>(Resh: Head, Samekh: Prop, To Support)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/156.jpg" /> <h5>How To Train Your Dragon (Their St. George)</h5> </div></li>
+   <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/157.jpg" /> <h5>Darkness (-) into Light (+)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/158.jpg" /> <h5>Black (-) and Red (+)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/159.jpg" /> <h5>Fresh Prince of Angels and Sine Waves<br>(On Air)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/160.jpg" /> <h5>Game of Thrones<br>(Mocking The Throne of God)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/161.jpg" /> <h5>Magic Sky Daddy (Uranus, Father of Saturn)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/162.jpg" /> <h5>Born of Osiris, The Green Man (Nimrod),<br>Obelisk (8==D)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/163.jpg" /> <h5>Orion (Nimrod, Mighty Hunter), <br>Sirius (Dog Star)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/164.jpg" /> <h5>Stag (Nimrod, Mighty Hunter),<br>Horned god (CERNunnos)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/165.jpg" /> <h5>♐︎ Sagittarius (Katniss),<br>Mighty Hunter (Nimrod and Artemis)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/166.jpg" /> <h5>Pig Demons (Wild Boar,<br>Tammuz Hunting Accident)</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/167.jpg" /> <h5>I'm Just A Bill, Kill Bill, Sacrifice of the Law<br>(Do What Thou Wilt)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/168.jpg" /> <h5>Mom Died (Lilith’s Death, Path of Lilith,<br>Left Hand Path, So Below)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/169.jpg" /> <h5>Weeping for Tammuz (Lent)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/170.jpg" /> <h5>Pussy Cat (Eye of the Tiger)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/171.jpg" /> <h5>Kali (Tongue, Fullness of Time),<br>Pey: Mouth, Shin: Teeth</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/172.jpg" /> <h5>Teen Troubles (High School Never Ends)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/173.jpg" /> <h5>Nature Documentaries (Animal Planet)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/174.jpg" /> <h5>Indigo Children (ADHD, Hyper), Starseeds</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/175.jpg" /> <h5>Children of the Korn (Mayan Creation Myth),<br>Farmer Cain</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/176.jpg" /> <h5>Scarecrow (It), Center Cross (Unfolded Cube)</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/177.jpg" /> <h5>Bird Reveal: Roosters and Crows<br>(Peter Denies Christ 3 Times)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/178.jpg" /> <h5>Lord of the Flies (Beelzebub)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/179.jpg" /> <h5>Jack Parsons (Friends with L Ron Hubbard<br>and Aleister Crowley)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/180.jpg" /> <h5>Moon Key, Planet of the Apes<br>(Qoph: Back of Head)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/181.jpg" /> <h5>Elephant In The Room,<br>Childhood Foundation (Yesod), Memory</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/182.jpg" /> <h5>John Dies At The End, Johnson<br>(Graced by Yah)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/183.jpg" /> <h5>Skull and Bones (Order 3:22)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/184.jpg" /> <h5>Nine Inch Nails, Vav Vav Vav (666)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/185.jpg" /> <h5>Hamsa Hand (Yod: Hand, Kaph: Palm)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/186.jpg" /> <h5>I Can Ride My Bike With No Handlebars</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/187.jpg" /> <h5>Saturnalia (Pope Francis’s Birthday)<br>Krampus, Shaun (Gift)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/188.jpg" /> <h5>Edd, Ned, and Teddy Bear (The Guardian)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/189.jpg" /> <h5>Dove (Their Holy Spirit)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/190.jpg" /> <h5>Penny (1¢), Nickelback (5¢),<br>Dime (10¢), Quarterback (25¢)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/191.jpg" /> <h5>Flynn's Arcade (Game Over, The End)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/192.jpg" /> <h5>How Did I Get Here?<br>(Split Mind, Schizophrenia)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/193.jpg" /> <h5>Bloodbath (Satanic Baptism, Bathtub),<br>Their Holy Water</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/194.jpg" /> <h5>Marine Spirits, Aquarian Race<br>(We Are The Drowned)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/195.jpg" /> <h5>Black Goo (Programmable Dark Matter,<br>Nano Technology, mRNA)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/196.jpg" /> <h5>♑︎ Baphomet (Androgynous: (.)(.) 8==D),<br>Capricorn, The Devil Card</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/197.jpg" /> <h5>Their Father (Papa Roach),<br>Locust (Nuclear Fallout)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/198.jpg" /> <h5>Black Veil Brides<br>(Sathariel, The Concealing Ones)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/199.jpg" /> <h5>Strong Independent Black Woman<br>Who Don't Need No Man</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/200.jpg" /> <h5>♏︎ Woodkid (Wooden Cane),<br>Scorpion Child (Scorpio)</h5> </div></li> 
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/201.jpg" /> <h5>Ready Player One<br>(Scientology Operating Thetan Levels)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/202.jpg" /> <h5>Air Jordan (The Jump Program)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/203.jpg" /> <h5>Haircut (Samson and Delilah),<br>Learning To Shave</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/204.jpg" /> <h5>Learning To Drive Again</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/205.jpg" /> <h5>Route 66 (Highway To Hell)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/bible/206.jpg" /> <h5>99 Names of Allah</h5> </div></li>
+   <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/207.jpg" /> <h5>Carbon Copy<br>(6 Protons, 6 Electrons, and 6 Neutrons)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/208.jpg" /> <h5>Their Glory, Anchor and Ankh<br>(Emperor Card)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/209.jpg" /> <h5>The Secret of the Fox<br>(666 In English Gematria)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/210.jpg" /> <h5>Messenger (Mail Time, Exploring Stamps),<br>Post Office (Post It)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/211.jpg" /> <h5>Owl (Minerva / Athena: Wisdom),<br>Bohemian Grove (Moloch)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/212.jpg" /> <h5>Return To Source (Sorcery),<br>The World Card (Completion)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/213.jpg" /> <h5>Entering Adulthood (12 ➜13 Years Old,<br>Their Bar Mitzvah)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/214.jpg" /> <h5>I Want To Die Because I'm A Potato<br>(The Trance of Sorrow)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/215.jpg" /> <h5>The Writing Is On The Wall (Cheth),<br>Kill Everybody</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/bible/216.jpg" /> <h5>Other Miscellaneous Satanic Things<br>(AMA, IAO131)</h5> </div></li>  
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/1.jpg" /> <h5>Jesus Vs. Religion<br>(Religion For Breakfast, Jesus Saves)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/2.jpg" /> <h5>(┛ಠ_ಠ)┛彡┻━┻</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/3.jpg" /> <h5>Their House (Couch, La Z Boy Chair, Cleaning<br>The Gutter, Trimming The Hedges)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/4.jpg" /> <h5>I Like To Move It (Moving Day)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/5.jpg" /> <h5>Mocking Jesus (Their Divine Comedy),<br>Jackass (Donkey), Satire</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/6.jpg" /> <h5>Be Sober, Be Vigilant,<br>Always Be On The Watch</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/7.jpg" /> <h5>Their Christ Consciousness<br>(Church of the Ascension)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/8.jpg" /> <h5>Creativity (Religious Psychosis)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/9.jpg" /> <h5>Education and Research (Skillshare, Skillet)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/10.jpg" /> <h5>The Sabbateans & Frankism<br>(Their Salvation Through Sin)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/11.jpg" /> <h5>The Hardest Language To Learn</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/12.jpg" /> <h5>Arts and Crafts<br>(Tattoos, Makeup, and Jewelry)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/13.jpg" /> <h5>Planet Fitness<br>(Let’s Get Physical, The Amazing Race)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/14.jpg" /> <h5>Ark of the Covenant<br>(Not In 2nd Temple, Made of Acacia)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/15.jpg" /> <h5>Protocols of the Elders of Zion,<br>The Talmud, The Zohar</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/16.jpg" /> <h5>Restoration of Israel<br>(You Shall Return Minus 6 Million)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/17.jpg" /> <h5>Albert Pike and the Three World Wars</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/18.jpg" /> <h5>One World Government (UN, Agenda 2030)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/19.jpg" /> <h5>One World Currency (World Economic Forum)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/20.jpg" /> <h5>Climate Change Propaganda,<br>Green Energy (Heart Chakra)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/21.jpg" /> <h5>While People Are Saying, “Peace and Safety,”<br>Destruction Will Come On Them Suddenly</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/22.jpg" /> <h5>Do Not Conform To The Pattern Of This World</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/23.jpg" /> <h5>People Will Be Lovers Of Themselves</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/24.jpg" /> <h5>Stonehenge (Summer Solstice)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/25.jpg" /> <h5>Georgia Guidestones<br>(The Devil Went Down To Georgia)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/26.jpg" /> <h5>Playing You Like A Fiddle<br>(Harp, Apollo’s Lyre)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/27.jpg" /> <h5>Master of Puppets<br>(There Are No Strings On Me)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/28.jpg" /> <h5>The Royal Family</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/29.jpg" /> <h5>I See London (Glastonbury Tor)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/30.jpg" /> <h5>I See France (Baguette)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/31.jpg" /> <h5>Our Italian Honeymoon (EuroTrip)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/32.jpg" /> <h5>I Can See Your Underpants<br>(Mormon Magic Underwear)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/33.jpg" /> <h5>Gnomes</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/34.jpg" /> <h5>DMT Machine Elves</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/35.jpg" /> <h5>Psilocybin Mushrooms</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/36.jpg" /> <h5>Soup (Hell’s Kitchen, Spirit Cooking)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/37.jpg" /> <h5>Tribal Dude and Homeless Dude (Voodoo)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/38.jpg" /> <h5>Buddhist Monk (Vow of Silence)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/39.jpg" /> <h5>How To Sauna (Spa)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/40.jpg" /> <h5>School of Wok (Stir Fry),<br>Chinese Food and Japanese Food</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/41.jpg" /> <h5>Crab Rave, Red Lobster<br>(Why Not Zoidberg?)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/42.jpg" /> <h5>Take The Fight Out Of Cancer</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/43.jpg" /> <h5>Fight Club (Eris),<br>You’re A Jerk (Rude Awakening)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/44.jpg" /> <h5>Roman Colosseum (Are You Not Entertained?)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/45.jpg" /> <h5>Filled With Fury (Escape The Fate),<br>Anger Management</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/46.jpg" /> <h5>The Cracks Begin To Show,<br>This Is Groundbreaking (Earthquakes)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/47.jpg" /> <h5>Empire of the Sun<br>(Bring Me The Horizon, The Chariot Card)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/48.jpg" /> <h5>Tribe of Dan (Denmark)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/49.jpg" /> <h5>The Marked Ones (Tav, Ash Wednesday)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/50.jpg" /> <h5>We Are All Made of Stars<br>(All We Are Is Dust In The Wind)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/51.jpg" /> <h5>Only Shooting Stars Break The Mold<br>(The Fall of Sophia)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/52.jpg" /> <h5>Gravity (This Is Heavy, 9.8m/s ²)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/53.jpg" /> <h5>Discovery (Great Scott), I Love Lamp<br>(Light Bulbs), Teth (Good)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/54.jpg" /> <h5>Path of Exile (My Abandonment Issues)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/55.jpg" /> <h5>A Prophet Is Honored Everywhere Except In His Own Hometown And Among His Own Family</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/56.jpg" /> <h5>Whyyyyyyyy?</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/57.jpg" /> <h5>Everyone Is Stupid Except Me<br>(Homer’s Iliad and Odyssey)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/58.jpg" /> <h5>Stop Bullying Me! (Humiliation Ritual)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/59.jpg" /> <h5>See You At The Flagpole</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/60.jpg" /> <h5>After School Activities<br>(Under The Bleachers, Detention)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/61.jpg" /> <h5>Their Clique (Stoop Kids, Porch Sitting),<br>Apartment Therapy</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/62.jpg" /> <h5>Back Alley (Backstage Passes,<br>Behind The Scenes), Motel</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/63.jpg" /> <h5>Groupies and Sluts (Mean Girls),<br>School Dance (Spiked Punch)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/64.jpg" /> <h5>Method Acting (Audition Tapes)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/65.jpg" /> <h5>Swing Set, Playground, and Sandbox<br>(Recess, Field Day)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/66.jpg" /> <h5>We’re Cruisin’ For A Bruisin’<br>(My Self Destructive Behaviors)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/67.jpg" /> <h5>Ultimate Survival (Naked and Afraid,<br>Desert Island)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/68.jpg" /> <h5>Skydiving, Rock Climbing,<br>Cliff Diving, and Bungee Jumping</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/69.jpg" /> <h5>Scuba Lessons and Snorkeling<br>(Under The Sea, I Like Turtles)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/70.jpg" /> <h5>Learning To Surf</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/71.jpg" /> <h5>Whitewater Rafting and Water Sports<br>(Water Works)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/72.jpg" /> <h5>How To Squirt (Squirt Gun, Super Soaker)<br>I’ll Show You My O Face</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/73.jpg" /> <h5>Cheerleader (Sex Moans),<br>Champagne (Cheers!)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/74.jpg" /> <h5>Dance Lessons (Future Cheerleader)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/75.jpg" /> <h5>Ski and Snowboard Lessons</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/76.jpg" /> <h5>Dirt Bike Racing (Extreme Sports)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/77.jpg" /> <h5>Wrestling and Boxing<br>(The Struggle Is Real), Martial Arts</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/78.jpg" /> <h5>Football, Soccer, Rugby, Ultimate Frisbee<br>(Contact Sports)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/79.jpg" /> <h5>BASEketball (Home Run, Slam Dunk)<br>and Bowling Ball (Strike It)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/80.jpg" /> <h5>Volleyball (Spike It),<br>Tennis and Badminton (Racquet)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/81.jpg" /> <h5>Equestrian Team (Leather Working)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/82.jpg" /> <h5>Sword Fighting and Fencing (Blacksmith)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/83.jpg" /> <h5>Laser Tag (Zap It), Airsoft and Paintball<br>(First Person Shooter)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/84.jpg" /> <h5>Roller Derby and Ice Skating (Hockey)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/85.jpg" /> <h5>Skateboarding and Longboarding</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/86.jpg" /> <h5>Under The Boardwalk and<br>Under The Bridge (Rooftops)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/87.jpg" /> <h5>The Drifters<br>(Hitchhiking and Backpacking), Runaway</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/88.jpg" /> <h5>Van Life (Park Place, Park Bench),<br>Camping</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/89.jpg" /> <h5>Mallrats, Thrift Shop, Best Buy<br>(Shopping Cart)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/90.jpg" /> <h5>Referee, Coach (Whistleblower),<br>SportsCenter (ESPN)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/91.jpg" /> <h5>Leaked Information (Water Heater,<br>Pressure Cooker, Pipes)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/92.jpg" /> <h5>Kitchen Sink<br>(Dish Washer and Window Washer)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/93.jpg" /> <h5>Automotive Technician, Junk Yard<br>(Under The Hood, Wrench It)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/94.jpg" /> <h5>Pipe Worker, Plumber (Pan’s Flute),<br>Vacuum Repair Service</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/95.jpg" /> <h5>Blowjob (Do Not Miss Your Chance To Blow)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/96.jpg" /> <h5>You Take My Breath Away (I Can’t Breathe)</h5> </div></li>
+<li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/97.jpg" /> <h5>Reunite With Your Breath<br>(I’m A Fan, Airbending), Yoga</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/98.jpg" /> <h5>Drum Circle</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/99.jpg" /> <h5>Guitar Center</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/100.jpg" /> <h5>Tuning Forks and Magnets<br>(How Do They Work?)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/101.jpg" /> <h5>Sound Waves, Ocean Waves, And Microwaves<br>(The Force)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/102.jpg" /> <h5>Blinded Minds Of The Unbelievers</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/103.jpg" /> <h5>Deja Vu?!</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/104.jpg" /> <h5>Player Select (Play Hard, Go Play)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/105.jpg" /> <h5>How To Remember Your Past Life<br>(You Must Be Born Again)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/106.jpg" /> <h5>Memory Eraser (The Spotless Mind)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/107.jpg" /> <h5>Living With Alzheimer’s Disease<br>(Look At This Photograph)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/108.jpg" /> <h5>Nursing Home (Abandoned Hospital)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/109.jpg" /> <h5>Hot and Sexy Nurse</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/110.jpg" /> <h5>Welcome To My Crib (Nursery Room)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/111.jpg" /> <h5>I Have Placed Before You An Open Door</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/112.jpg" /> <h5>The Church Of Philadelphia<br>(In West Philadelphia Born And Raised)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/113.jpg" /> <h5>I Know That You Have Little Strength<br>(Go On Without Me)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/114.jpg" /> <h5>His Palms Are Sweaty</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/115.jpg" /> <h5>Under The Bedsheets<br>(Sexual Awakening, Pillow Fight)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/116.jpg" /> <h5>Dirty Laundry (Laundromat)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/117.jpg" /> <h5>Sexy Car Wash</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/118.jpg" /> <h5>Shower Sex (Don’t Forget To Bring A Towel,<br>Bathroom Break)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/119.jpg" /> <h5>There’s Vomit On His Sweater Already<br>(Bulimia), PTSD</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/120.jpg" /> <h5>The Flying Spaghetti Monster<br>(Mom’s Spaghetti)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/121.jpg" /> <h5>You’re A Monster<br>(Where The Wild Things Are)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/122.jpg" /> <h5>Which Demon Is Living In Your Soul?<br>(We Are Legion)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/123.jpg" /> <h5>Viva La Resistance<br>(Antifa, We Are Anonymous, The Purge)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/124.jpg" /> <h5>Black Lives Matter (Race War, Immigration)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/125.jpg" /> <h5>Riot Police (A Grey State),<br>Police Academy (DEA), ICE Agents</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/126.jpg" /> <h5>Fascism (Nazi SS), Holocaust: Burnt Offering</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/127.jpg" /> <h5>Operation Paperclip (CIA, Mossad)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/128.jpg" /> <h5>It Looks Like You’re Writing A Letter<br>Would You Like Help With That?</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/129.jpg" /> <h5>Write This Down</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/130.jpg" /> <h5>Up, Up, Down, Down, Left, Right,<br>Left, Right, B, A, Start</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/131.jpg" /> <h5>Levitation (Elevation Worship)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/132.jpg" /> <h5>Orgasm (Nymphomania), Moderation<br>(Temperance Card)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/133.jpg" /> <h5>When Will The Bass Drop?</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/134.jpg" /> <h5>Have You Tried Turning It Off And On Again?</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/135.jpg" /> <h5>Turn Down For What? (John I Want A Divorce)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/136.jpg" /> <h5>Off With His Head!!!</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/137.jpg" /> <h5>The OK Hand Sign Is Not OK<br>(Right Eye Blinded)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/138.jpg" /> <h5>Capirote (White Power, KKK)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/139.jpg" /> <h5>The Knights Templar, Knights of Columbus,<br>Ordo Templi Orientis</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/140.jpg" /> <h5>The Pyramids of Egypt (Al-Khemia, Alchemy)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/141.jpg" /> <h5>The Builders Who Reject The True Cornerstone<br>(Freemasons)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/142.jpg" /> <h5>Dome of the Rock (Octagon),<br>The Apotheosis of Washington</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/143.jpg" /> <h5>The Basilica (Basilisk)<br>Their Serpent King Of The Hill</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/144.jpg" /> <h5>All Roads Lead To Rome<br>(Stone Pathway, Snake Skin)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/145.jpg" /> <h5>Whore of Babylon<br>(Everyone Knows It’s Wendy)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/146.jpg" /> <h5>Pole Dancing</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/147.jpg" /> <h5>Firefighter, Burning Man, Man On Fire<br>(Lit Mixtape, We Lit Fam)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/148.jpg" /> <h5>The Roof Is On Fire<br>(Volcano gods and Family Arguments)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/149.jpg" /> <h5>It’s Just The Northern Lights (Aurora Borealis)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/150.jpg" /> <h5>Good Burger (Fry Cook),<br>An Unforgettable Luncheon</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/151.jpg" /> <h5>Clerks (7/11), and Gas Station (Truck Stop)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/152.jpg" /> <h5>The Office (Work It, Work Hard)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/153.jpg" /> <h5>Janitor and Maid (Clean It), Groundskeeper</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/154.jpg" /> <h5>Flight Attendant, Steward, Butler<br>(Google Assistant, Alexa, Siri)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/155.jpg" /> <h5>Drill Sergeant, Captain, and Pilot<br>(Respect My Authoritah)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/156.jpg" /> <h5>Park Ranger, Archeologist,<br>and Museum Curator (Dinosaurs)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/157.jpg" /> <h5>Pizzagate (Prefer Girls) and Balenciaga<br>(Child Trafficking)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/158.jpg" /> <h5>KFC (Los Pollos Hermanos,<br>Winner Winner Chicken Dinner)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/159.jpg" /> <h5>Would You Like A Large Fry With That Shake?<br>(Super Size Me)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/160.jpg" /> <h5>The Harlem Shake (Seizure) and Planking<br>(Is He Dead?)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/161.jpg" /> <h5>The Cinnamon Challenge and<br>The Ice Bucket Challenge</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/162.jpg" /> <h5>Sugar and Salt (🜔 Human Body, Physical<br>Matter, Crystallization, And Condensation)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/163.jpg" /> <h5>Brown</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/164.jpg" /> <h5>Magenta</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/165.jpg" /> <h5>Foster’s Home For Imaginary Friends<br>(Learning To Draw)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/166.jpg" /> <h5>Correctional Facility (Boarding School,<br>Art and Clown College)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/167.jpg" /> <h5>The Montauk Project (Camp Hero),<br>Remote Viewing</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/168.jpg" /> <h5>Band Class (You’re A Rockstar)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/169.jpg" /> <h5>Go Kart Racing (The Rubber Band Effect,<br>Wheels, Burnout)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/170.jpg" /> <h5>Harder, Better, Faster, Stronger (ASAP),<br>Speedrun (AGDQ, SGDQ)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/171.jpg" /> <h5>I Do Coke</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/172.jpg" /> <h5>Yes! Oh My God! (Shots of Awe,<br>Don’t Forget To Be Awesome)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/173.jpg" /> <h5>The Chemical Brothers (Alchemical Change)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/174.jpg" /> <h5>The Hot Ones (Hot Topic), Chili Powder<br>(Spice, Everything Nice)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/175.jpg" /> <h5>The Cold, Hard, Bitter, And Ugly Truth</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/176.jpg" /> <h5>I Can’t Even (You Can’t Handle The Truth)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/177.jpg" /> <h5>Fairly Oddparents (Odd Fellows)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/178.jpg" /> <h5>Something You Wouldn’t Believe<br>(Even If You Were Told)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/179.jpg" /> <h5>It’s As If Something Strange Is Happening</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/180.jpg" /> <h5>Better Call Saul (Lawyer Up)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/181.jpg" /> <h5>Communism (Manchurian Candidates,<br>Gog and Magog)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/182.jpg" /> <h5>If You Had One Shot Or One Opportunity<br>(Russian Roulette)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/183.jpg" /> <h5>Smack That (The Slap Heard<br>Around The World), Godsmack</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/184.jpg" /> <h5>Youth Groups (Demolay, Job’s Daughters,<br>and Rainbow Girls)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/185.jpg" /> <h5>Malcolm In The Middle (Among Us,<br>Disciple of Columbia)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/186.jpg" /> <h5>Agent Cody Bank’s Vault (Den of Thieves,<br>ATM Machine, Money)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/187.jpg" /> <h5>Fake News (Operation Mockingbird),<br>Crisis Actors</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/188.jpg" /> <h5>Biohazard, Toxic Waste<br>(Shit, Piss, Cum, Spit, Snot)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/189.jpg" /> <h5>Dirty Jobs (Alice Bailey's 10 Point Plan<br>To Destroy Christianity)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/190.jpg" /> <h5>Coronavirus Pandemic (Vaccine Propaganda),<br>Event 201</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/191.jpg" /> <h5>Mobile Home (The Lab), Trailer Park Boys</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/192.jpg" /> <h5>Mother Fucker (Nimrod and Semiramis)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/193.jpg" /> <h5>District of Columbia (Washington DC)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/194.jpg" /> <h5>September 23 (266th Day),<br>2015 (Yom Kippur) 2017 (Revelation 12 Sign)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/195.jpg" /> <h5>Birth of Tammuz (266 Days From Conception)<br>Abortion Propaganda</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/196.jpg" /> <h5>266th Pope (First Jesuit Pope),<br>The Hierophant Card</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/197.jpg" /> <h5>The Black Pope (Jesuit Education)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/198.jpg" /> <h5>Throne of Satan (Pergamon Altar of Zeus)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/199.jpg" /> <h5>Buraq (Lightning, To Shine)<br>Obama (Someone To Lean On)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/200.jpg" /> <h5>Islamic Mahdi (Muhammad: Jesuit Trained)</h5> </div></li>
+    <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/201.jpg" /> <h5>Revealed To Muhammad In A Cave<br>For 23 Years</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/202.jpg" /> <h5>Cave of Wonders<br>(33 Men Trapped For 69 Days)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/203.jpg" /> <h5>Western (The West Wing,<br>I Thought You Said Weast)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/204.jpg" /> <h5>Monolith and Monotheism<br>(Living Under A Rock)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/205.jpg" /> <h5>Tank It (Soulja Boy)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/206.jpg" /> <h5>Christ of The Abyss</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/207.jpg" /> <h5>London Underground and<br>The Underground Railroad</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/208.jpg" /> <h5>Refrigerator (Cool It), Midnight Snack</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/209.jpg" /> <h5>I Whip My Hair Back And Forth,<br>Hipster (Ahead of His Time)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/210.jpg" /> <h5>Have You Come Here To Torture Us<br>Before The Appointed Time?</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/211.jpg" /> <h5>This Opportunity Comes Once In A Lifetime</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/212.jpg" /> <h5>Everything You Ever Wanted</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/213.jpg" /> <h5>Would You Capture It? (Peeping Tom,<br>Making A Porno)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/214.jpg" /> <h5>Slippery When Wet (Eating Pussy)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/215.jpg" /> <h5>Psycho Girlfriend (I Scream,<br>Don’t Stick Your Dick In Crazy)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/216.jpg" /> <h5>You Better Never Let It Go<br>(Holding On For Dear Life)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/217.jpg" /> <h5>First Comes Love (Love is the Law,<br>Love Under Will) The Lovers Card</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/218.jpg" /> <h5>Then Comes Marriage<br>(The Unbreakable Vow, Gender War)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/219.jpg" /> <h5>Then Comes The Baby In The Baby Carriage<br>(Grooming Kids)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/220.jpg" /> <h5>Disney World (Club 33), Candy Land<br>(We Got Fun And Games)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/221.jpg" /> <h5>I Want To Go Home Sweet Home<br>(Get Back To The Ship)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/222.jpg" /> <h5>You Can Not Earn Your Salvation<br>(Urn It, Potter)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/223.jpg" /> <h5>Honey (Golden Ticket)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/224.jpg" /> <h5>Chocolate and Cookies</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/225.jpg" /> <h5>Milky Way (Cows and Boobs)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/226.jpg" /> <h5>Lemonade Stand (Got Any Grapes?)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/227.jpg" /> <h5>Grapevines and Olive Branches<br>(Twigs and Leaves)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/228.jpg" /> <h5>Winepress of Their god’s Wrath<br>(No Forgiveness Without Blood)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/229.jpg" /> <h5>Smash That Like Button<br>(Ouch, Ouch, Ouch, Ouch, Ouch, Ouch)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/230.jpg" /> <h5>Walk It Off (I’m Walkin’ Here, Walk With Me)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/231.jpg" /> <h5>We All Live In A Yellow Submarine</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/232.jpg" /> <h5>Cheese It, Queso (Dip It),<br>Nachos (Super Bowl)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/233.jpg" /> <h5>Toaster, Oven, and Grill<br>(Toast It, Cook It, Bake It, Grill It)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/234.jpg" /> <h5>Subway Sandwich</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/235.jpg" /> <h5>Subway Of The Future</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/236.jpg" /> <h5>City Of The Future<br>(Smart Cities, 15 Minute Cities)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/237.jpg" /> <h5>The Nervous System (Internet of Things, 5G)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/238.jpg" /> <h5>The Sixth Sense (Twist Endings)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/239.jpg" /> <h5>How To Foreplay (Tongue Twister)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/240.jpg" /> <h5>Learning To Golf (Tubal Cain, 007)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/241.jpg" /> <h5>Learning To Swim (Walking On Water)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/242.jpg" /> <h5>Drowning Pool</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/243.jpg" /> <h5>Raise The Bar</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/244.jpg" /> <h5>Level Up (Learning From Your Mistakes,<br>Down’s Syndrome)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/245.jpg" /> <h5>Hot Air Balloon</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/246.jpg" /> <h5>Wheel Of Fortune (Wheel Of Mythicality,<br>Wheel Of Dharma)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/247.jpg" /> <h5>Dating Game</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/248.jpg" /> <h5>How Shy Are You? (Cat Got Your Tongue?)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/249.jpg" /> <h5>Give Me One More Shot<br>(Uno Mas, Multiple Orgasms)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/250.jpg" /> <h5>Dude Perfect (Double Penetration),<br>Crowded Stadium</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/251.jpg" /> <h5>It Took Me By Surprise<br>(Flight In Winter And Sabbath, Flight 93)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/252.jpg" /> <h5>The Power Of Prayer<br>(Prayer Beads And Anal Beads)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/253.jpg" /> <h5>What Is My Purpose?</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/254.jpg" /> <h5>You Pass Butter, Sulfur 🜍 (The Soul, Dryness,<br>Heat, Evaporation, Expansion, and Dissolution)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/255.jpg" /> <h5>I Am Bread (Yeah Toast!)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/256.jpg" /> <h5>It’s Your Life</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/257.jpg" /> <h5>What’s Left? (To The Left, To The Left)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/258.jpg" /> <h5>Go The Fuck To Sleep<br>(You Ask Too Many Questions, I Love You)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/259.jpg" /> <h5>Cigarettes After Sex<br>(Fuck Around And Find Out)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/260.jpg" /> <h5>Talk Show (Podcast), Spill The Beans<br>(Spill Your Guts, Real Talk)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/261.jpg" /> <h5>Snitches Get Stitches<br>(First-Aid Kit, Caught Red Handed)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/262.jpg" /> <h5>It’s In The Bag (The Proof Is<br>In The Pudding, Still Counts)</h5> </div></li>
+  <li><div class="card" style=""><img class="playlist-img2" src="/images/school/jesus/263.jpg" /> <h5>Period. (End Transmission)</h5> </div></li>
+  <li><div class="card" style="padding: 0 0 22px 0;"><img class="playlist-img2" src="/images/school/jesus/264.jpg" /> <h5>For The Dreamers (True Believers,<br>The Music Makers)</h5> </div></li>
+  </ul>
+
+</section>      
+</section-2>
+</div>
+
+<!-- Add any additional Javascript code (<script></script>) here. -->
+          
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script> 
+<script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>  
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
