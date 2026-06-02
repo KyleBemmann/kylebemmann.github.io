@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <!-- Change your site title: (It is shown in the tab) -->
+    <title>Kyle Bemmann's Life</title>
+
+    <!-- Change your site description: (It is shown in Google results) -->
+    <meta content="Kyle Bemmann's Mind" name="description" />
+
+    <!-- Setting character encoding and viewport size. Do not remove. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <link href="/images/favicon/painting.png" rel="icon" type="image/x-icon" />
+
+    <!-- Change your Social Media Share Image: (It is shown in Social Media Posts) -->
+    <meta property="og:image" content="https://kylebemmann.github.io/images/social-art.jpg">
+
+    <!-- CSS: -->
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/css/full-width.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
+    <link href="/css/nav.css" rel="stylesheet" />
+    <link href="/css/grid1.css" rel="stylesheet" />
+    <link href="/css/carousel.css" rel="stylesheet" />
+        
+    <!-- JavaScript: -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+<style>
+    
+/* Background Colors: */
+    
+ :root {
+  --background-color:  #2D594A;
+ }
+ 
+body {
+  background: var(--background-color);
+  max-width: 100%;
+}
+
+/* FIX PADDING ON CAROUSEL: */ 
+
+ .row {
+  margin-left: auto;
+  margin-right: auto;
+  width: 99%;
+}
+
+#content-scroll {
+  padding-top: 15px; 
+  margin-bottom: 10px; 
+  max-width:  970px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MOBILE RESPONSE: */ 
+
+@media only screen and (max-width: 800px) {
+  
+#content-scroll { 
+  max-width: 780px;
+}
+
+ .gallery {
+  margin-left: -10px; 
+}
+
+}
+
+</style>
+
+  </head>
+  <body>
+
+<button id="myBtn" onclick="topFunction()" style='font-size:24px'><i class='fa fa-arrow-up'></i></button>
+
+    <div class="layout">
+
+<!-- =============================================== -->
+<!-- NAVIGATION -->
+<!-- =============================================== -->
+
+<nav>
+<section class="navigation">
+  <div class="nav-container">
+    <div class="brand">
+      <a href="#!">My Art</a>
+    </div>
+      
+<nav>
+  <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+    <ul class="nav-list">
+      <li>
+        <a href="#!">My Spirituality</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="/pages/theosophy">The Theosophical Society</a>
+            </li>
+            <li>
+              <a href="/">About Your Teacher</a>
+            </li>
+            <li>
+              <a href="/pages/pov">My Point of View</a>
+            </li>
+            <li>
+              <a href="/pages/life">A Day In My Life</a>
+            </li>
+            <li>
+              <a href="/pages/school">Art School</a>
+            </li>
+            <li>
+              <a href="/pages/sex">Sacred Sexuality</a>
+            </li>
+            <li>
+              <a href="/pages/spirituality">A Typical Spiritual Woman</a>
+            </li>
+            <li>
+              <a href="/pages/kundalini">Kundalini Yoga</a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <a href="#!">Jewish Mysticism</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="/pages/kabbalah">The Kabbalistic Tree of Life</a>
+            </li>
+            <li>
+              <a href="/pages/fool">The Fool's Journey</a>
+            </li>
+            <li>
+              <a href="/pages/alphabet">The Hebrew Alphabet</a>
+            </li>
+            <li>
+              <a href="/pages/zodiac">Astrology</a>
+            </li>
+            <li>
+              <a href="/pages/numbers">Numerology</a>
+            </li>
+            <li>
+              <a href="/pages/secret">Satanic Ritual Abuse</a>
+            </li>
+            <li>
+              <a href="/pages/temple">The Third Temple</a>
+            </li>
+            <li>
+              <a href="/pages/messiah">The Coming False Messiah</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#!">I Need A Hero</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/kingdom">Announcing The Kingdom</a>
+              </li>
+              <li>
+                <a href="/pages/dominionism">New Apostolic Reformation</a>
+              </li>
+              <li>
+                <a href="/pages/doctor">I'm Just A Messenger</a>
+              </li>
+              <li>
+                <a href="/pages/93">Flight In Winter and Sabbath</a>
+              </li>
+              <li>
+                <a href="/pages/transhumanism">Transhumanism</a>
+              </li>
+              <li>
+                <a href="/pages/sacrifice">A Sacrificial Change</a>
+              </li>
+              <li>
+                <a href="/pages/parables">I Speak In Parables</a>
+              </li>
+              <li>
+                <a href="/pages/revelation">All Will Be Revealed</a>
+              </li>
+            </ul>
+        </li>
+        <li>
+          <a href="#!">Christianity</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/god">God The Father</a>
+              </li>
+              <li>
+                <a href="/pages/manhood">I Am The One Who Knocks</a>
+              </li>
+              <li>
+                <a href="/pages/choice">My Christian Journey</a>
+              </li>
+              <li>
+                <a href="/pages/sabbath">The Sabbath</a>
+              </li>
+              <li>
+                <a href="/pages/holy-days">Biblical Holy Days</a>
+              </li>
+              <li>
+                <a href="/pages/holidays">Worldly Holidays</a>
+              </li>
+              <li>
+                <a href="/pages/catholic">Roman Catholicism</a>
+              </li>
+              <li>
+                <a href="/pages/urn">Gnosticism Explained</a>
+              </li>
+            </ul>
+        </li> 
+        <li>
+          <a href="#!">Mythology</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/family">My Church Family</a>
+              </li>
+              <li>
+                <a href="/pages/arthur">Arthurian Lore</a>
+              </li>
+              <li>
+                <a href="/pages/pagan">Paganism and Witchcraft</a>
+              </li>
+              <li>
+                <a href="/pages/christmas">The Christmas Baby</a>
+              </li>
+              <li>
+                <a href="/pages/delusion">Defending My Sanity</a>
+              </li>
+              <li>
+                <a href="/pages/believe">The Ascended Masters</a>
+              </li>
+              <li>
+                <a href="/pages/cinema">A Bedtime Story</a>
+              </li>
+              <li>
+                <a href="/pages/you">I Made This For You</a>
+              </li>
+            </ul>
+        </li>
+        <li>
+          <a href="#!">Twins</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/twin">Didymus Judas Thomas</a>
+              </li>
+              <li>
+                <a href="/pages/apollo">Twin 1</a>
+              </li>
+              <li>
+                <a href="/pages/walter-jr">Twin 2</a>
+              </li>
+            </ul>
+        </li>
+        <li>
+          <a href="#!">It's Just A Theory</a>
+            <ul class="nav-dropdown">
+              <li>
+                <a href="/pages/dog">God Backwards</a>
+              </li>
+              <li>
+                <a href="/pages/art">Exposing The Occult</a>
+              </li>
+              <li>
+                <a href="/pages/testing">Questioning Reality</a>
+              </li>
+              <li>
+                <a href="/pages/neverending">The Neverending Story</a>
+              </li>
+              <li>
+                <a href="/pages/moonchild">Stay Wild Moon Child</a>
+              </li>
+              <li>
+                <a href="/pages/new">The Birth of a New Age</a>
+              </li>
+               <li>
+                <a href="/pages/persecution">Christian Persecution</a>
+              </li>
+              <li>
+                <a href="/pages/eventually">Eventually Jesus Will Return</a>
+              </li>
+          </ul>
+      </li>   
+    </ul>
+</nav>
+</div>
+</section> 
+</nav>
+    
+<!-- =============================================== -->
+<!-- HEADER -->
+<!-- =============================================== -->
+
+<header>
+    <img class="header-image" alt="" src="/images/life/header.png"/> 
+    <section id="header-title">
+      <div class="header-title">A Day In My Life</div>
+    </section>
+</header>
+	      
+<!-- =============================================== -->
+<!-- MAIN CONTENT -->
+<!-- =============================================== -->
+  
+<section-1 id="content" style="margin-top: 20px;"> <!-- Do NOT remove the ID here -->
+<section id="content-scroll" style="">  
+
+  <h2>My Art</h2>
+  
+<!-- DESKTOP -->
+
+    <div id="div1">  
+      <div class="carousel">
+        <div class="card"><img class="playlist-img" src="/images/life/day-in-life.jpg" /> <h4>A Day In My Life</h4> </div>
+          <div class="card"><img class="playlist-img" src="/images/life/cinematography.jpg" />  <h4>Cinematography</h4> </div>
+          <div class="card"><img class="playlist-img" src="/images/life/photography.jpg" /> <h4>Photography</h4>  </div>
+          <div class="card"><img class="playlist-img" src="/images/life/music.jpg" />  <h4>Music Production</h4> </div>
+          <div class="card"><img class="playlist-img" src="/images/life/gaming.jpg" />  <h4>Gaming</h4> </div>
+          <div class="card"><img class="playlist-img" src="/images/life/creative.jpg" /> <h4>Other Creative Outlets</h4>  </div>
+</div>
+</div>
+
+<!-- MOBILE -->
+
+    <div id="div2">
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 45px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/day-in-life.jpg" /> <h4>A Day In My Life</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/cinematography.jpg" /> <h4>Cinematography</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/photography.jpg" /> <h4>Photography</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/music.jpg" /> <h4>Music Production</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/gaming.jpg" /> <h4>Gaming</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/creative.jpg" /> <h4>Other Creative Outlets</h4> </div>
+</div> 
+</section> 
+</section-1>  
+        
+<section-2 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <h2>My Work</h2>
+
+<!-- DESKTOP -->
+
+  <div id="div1">     
+    <div class="row">
+      <div class="column2">
+        <img class="profile-img" src="/images/life/thomas.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Breakfast</a>
+      </div>   
+      <div class="column2">
+        <img class="profile-img" src="/images/life/work.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Work</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/lunch.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Lunch Break</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/family.jpg" style="width:100%;"><a class="profile-link" style="color: black;">My Family</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/dinner.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Dinner</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/sleep.jpg" style="width:100%;"> <a class="profile-link" style="color: black;">Sleep</a>
+</div>
+</div>
+</div>
+ 
+ <!-- MOBILE -->
+ 
+  <div id="div2">    
+    <div class="row">
+      <div class="column">
+        <img class="profile-img" src="/images/life/thomas.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Breakfast</a>
+      </div>   
+      <div class="column">
+        <img class="profile-img" src="/images/life/work.jpg" style="width:100%; "> <a class="profile-link" style="color: black;">Work</a>
+      </div>
+      <div class="column">
+        <img class="profile-img" src="/images/life/lunch.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Lunch Break</a>
+</div>
+</div>
+  
+      <div class="row">   
+        <div class="column">
+          <img class="profile-img" src="/images/life/family.jpg" style="width:100%; "> <a class="profile-link" style="color: black;">My Family</a>
+        </div>
+          <div class="column">
+            <img class="profile-img" src="/images/life/dinner.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Dinner</a>
+          </div>
+          <div class="column">
+            <img class="profile-img" src="/images/life/sleep.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Sleep</a>
+</div>
+</div>
+</div>
+</section>
+</section-2> 
+
+<section-3 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <h2>The Gospel of Thomas</h2>
+
+    <ul class="gallery">
+      <li><div class="card-gallery" style="" ><img class="playlist-img2" src="/images/life/gnostic.jpg" /> <h4>Gnosticism</h4> </div></li>
+      <li><div class="card-gallery"><img class="playlist-img2" src="/images/life/invert.jpg" /> <h4>Invert</h4> </div></li>
+      <li><div class="card-gallery"><img class="playlist-img2" src="/images/life/backwards.jpg" /> <h4>The Holy Bible</h4> </div></li>
+    </ul>
+ 
+</section>
+</section-3> 
+
+<section-4 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <h2>My Life</h2>
+
+<!-- DESKTOP -->
+
+  <div id="div1">     
+    <div class="row">
+      <div class="column2">
+        <img class="profile-img" src="/images/life/faith.jpg" style="width:100%;"><a class="profile-link" style="color: black;">My Faith</a>
+      </div>   
+      <div class="column2">
+        <img class="profile-img" src="/images/life/no-doubt.jpg" style="width:100%;"> <a class="profile-link" style="color: black;">No Doubt</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/proof.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Proof</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/friend.jpg" style="width:100%;"><a class="profile-link" style="color: black;">My Friend</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/trans.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Transition</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/lover.jpg" style="width:100%;"><a class="profile-link" style="color: black;">My Lover</a>
+</div>
+</div>
+</div>
+
+<!-- MOBILE --> 
+
+  <div id="div2">    
+    <div class="row">
+      <div class="column">
+        <img class="profile-img" src="/images/life/faith.jpg" style="width:100%;"><a class="profile-link" style="color: black;">My Faith</a>
+      </div>   
+      <div class="column">
+        <img class="profile-img" src="/images/life/no-doubt.jpg" style="width:100%;"><a class="profile-link" style="color: black;">No Doubt</a>
+      </div>
+      <div class="column">
+        <img class="profile-img" src="/images/life/proof.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Proof</a>
+</div>
+</div>
+  
+  <div class="row">   
+    <div class="column">
+      <img class="profile-img" src="/images/life/friend.jpg" style="width:100%; "><a class="profile-link" style="color: black;">My Friend</a>
+    </div>
+    <div class="column">
+      <img class="profile-img" src="/images/life/trans.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Transition</a>
+    </div>
+    <div class="column">
+      <img class="profile-img" src="/images/life/lover.jpg" style="width:100%;"><a class="profile-link" style="color: black;">My Lover</a>
+</div>
+</div>
+</div>
+</section>
+</section-4>
+
+<section-5 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content-scroll" style="">  
+   
+  <h2>I'm Not Insane</h2>
+
+<!-- DESKTOP -->
+
+  <div id="div1">  
+    <div class="carousel3">
+      <div class="card"><img class="playlist-img" src="/images/life/hospital.jpg" /> <h4>My Visit To A<br>Mental Health Hospital</h4> </div>
+      <div class="card"><img class="playlist-img" src="/images/life/all-wrong.jpg" />  <h4>You All Are Wrong About<br>Christmas and Easter</h4> </div>
+      <div class="card"><img class="playlist-img" src="/images/life/burden.jpg" /> <h4 style="padding: 5 5 0 0;">For With Much Wisdom<br>Comes Much Sorrow</h4>  </div>
+       <div class="card"><img class="playlist-img" src="/images/life/draw.jpg" />  <h4>My Personal Relationship With<br>Jesus Christ</h4> </div>
+      <div class="card"><img class="playlist-img" src="/images/life/art.jpg" />  <h4>This Ain't Chemistry, This Is Art<br>(Cooking Is Art)</h4> </div>
+      <div class="card"><img class="playlist-img" src="/images/life/high-school-college.jpg" /> <h4>The High School To College<br>Transition</h4>  </div>
+</div> 
+</div>
+
+<!-- MOBILE --> 
+  
+  <div id="div2">
+    <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 45px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/hospital.jpg" /> <h4>My Visit To A<br>Mental Health Hospital</h4> </div>
+    <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/all-wrong.jpg" /> <h4>You All Are Wrong About<br>Christmas and Easter</h4> </div>
+    <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/burden.jpg" /> <h4>For With Much Wisdom<br>Comes Much Sorrow</h4> </div>
+    <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/draw.jpg" /> <h4>My Personal Relationship With<br>Jesus Christ</h4> </div>
+    <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/art.jpg" /> <h4>This Ain't Chemistry, This Is Art<br>(Cooking Is Art)</h4> </div>
+    <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/high-school-college.jpg" /> <h4>The High School To College<br>Transition</h4> </div>
+</div>   
+   
+</section>
+</section-5> 
+
+<section-6 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+   <h2>That's Not Proof</h2>
+
+<!-- DESKTOP -->
+
+  <div id="div1">     
+    <div class="row">
+      <div class="column2">
+        <img class="profile-img" src="/images/life/lost.jpg" style="width:100%;"><a class="profile-link" style="color: black;">I Lost Faith</a>
+      </div>   
+      <div class="column2">
+        <img class="profile-img" src="/images/life/doubt.jpg" style="width:100%; "><a class="profile-link" style="color: black;">I Have Doubts</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/not-proof.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Not Proof</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/lover.jpg" style="width:100%; "><a class="profile-link" style="color: black;">My Lover</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/trans.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Transition</a>
+      </div>
+      <div class="column2">
+        <img class="profile-img" src="/images/life/enemy.jpg" style="width:100%;"><a class="profile-link" style="color: black;">My Enemy</a>
+</div>
+</div>
+</div>
+
+<!-- MMOBILE -->
+
+  <div id="div2">    
+    <div class="row">
+      <div class="column">
+        <img class="profile-img" src="/images/life/lost.jpg" style="width:100%;"> <a class="profile-link" style="color: black;">I Lost Faith</a>
+      </div>   
+      <div class="column">
+        <img class="profile-img" src="/images/life/doubt.jpg" style="width:100%; "><a class="profile-link" style="color: black;">I Have Doubts</a>
+      </div>
+      <div class="column">
+        <img class="profile-img" src="/images/life/not-proof.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Not Proof</a>
+</div>
+</div>
+  
+    <div class="row">   
+      <div class="column">
+        <img class="profile-img" src="/images/life/lover.jpg" style="width:100%; "><a class="profile-link" style="color: black;">My Lover</a>
+      </div>
+      <div class="column">
+        <img class="profile-img" src="/images/life/trans.jpg" style="width:100%;"><a class="profile-link" style="color: black;">Transition</a>
+      </div>
+      <div class="column">
+        <img class="profile-img" src="/images/life/enemy.jpg" style="width:100%;"><a class="profile-link" style="color: black;">My Enemy</a>
+</div>
+</div>
+</div>
+</section>
+</section-6> 
+        
+<section-7 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <img class="inline-image" src="/images/life/betrayed.jpg" style="" />
+   
+</section>
+</section-7> 
+        
+<section-8 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content-scroll" style="">  
+     
+  <h2>Art School</h2>
+ 
+<!-- DESKTOP -->
+ 
+    <div id="div1">  
+      <div class="carousel4">
+        <div class="card"><img class="playlist-img" src="/images/life/art-school.jpg" /> <h4>Art School</h4> </div>
+        <div class="card"><img class="playlist-img" src="/images/life/bartending.jpg" />  <h4>Bartending</h4> </div>
+        <div class="card"><img class="playlist-img" src="/images/life/bedsheets.jpg" /> <h4>Bedsheets</h4>  </div>
+        <div class="card"><img class="playlist-img" src="/images/life/shower.jpg" />  <h4>Shower</h4> </div>
+        <div class="card"><img class="playlist-img" src="/images/life/had-sex.jpg" />  <h4>I Just Had Sex</h4> </div>
+        <div class="card"><img class="playlist-img" src="/images/life/gatsby.jpg" /> <h4>Great Gatsby</h4>  </div>
+</div>
+</div>  
+    
+<!-- MOBILE -->    
+    
+    <div id="div2">
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 45px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/art-school.jpg" /> <h4>Art School</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/bartending.jpg" /> <h4>Bartending</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/bedsheets.jpg" /> <h4>Bedsheets</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/shower.jpg" /> <h4>Shower</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/had-sex.jpg" /> <h4>I Just Had Sex</h4> </div>
+      <div class="card" style="margin-left: auto; margin-right: auto; margin-top: 10px; width: 90%;"><img class="playlist-img" style="width: 100%; height: auto;" src="/images/life/gatsby.jpg" /> <h4>Great Gatsby</h4> </div>
+</div>  
+</section>
+</section-8>
+
+<section-9 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <img class="inline-image" src="/images/life/girlfriend.png" />
+   
+</section>
+</section-9> 
+        
+<section-10 id="content" style="margin-top: 10px; margin-bottom: 0;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <h4>There's Something Wrong With Esther<br>(No Mention of God)</h4>
+    <img class="circle-img" style="margin-bottom: 0px;" src="/images/life/orphan.jpg" />
+      
+</section>
+</section-10> 
+        
+<section-11 id="content" style="margin-top: 10px; margin-bottom: 0;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <h4>Annie Are You OK?</h4>
+    <img class="circle-img" style="margin-bottom: 0px;" src="/images/life/annie.jpg" />
+      
+</section>
+</section-11> 
+        
+<section-12 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <img class="inline-image" src="/images/life/birth-parents.png" />
+
+</section>
+</section-12> 
+        
+<section-13 id="content" style="margin-top: 10px; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <h2>Nikki's Dad</h2>
+ 
+    <div class="row">
+      <div class="column">
+        <img class="profile-img" src="/images/life/walter.jpg" alt="" style="width:100%;"><a class="profile-link" style="color: black;">Walter White</a>
+      </div>   
+      <div class="column">
+        <img class="profile-img" src="/images/life/eminem.jpg" alt="" style="width:100%; "><a class="profile-link" style="color: black; text-align: center; margin-left: auto; margin-right: auto; display: block;">Marshall Mathers</a>
+      </div>
+      <div class="column">
+        <img class="profile-img" src="/images/life/gavin.jpg" alt="" style="width:100%;"><a class="profile-link" style="color: black; text-align: center; margin-left: auto; margin-right: auto; display: block;">Gavin Rossdale</a>
+</div>
+</div>
+</section>
+</section-13> 
+        
+<section-14 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content" style="">  
+   
+  <h2>Nikki's Mom</h2>
+
+    <div class="row">
+      <div class="column">
+        <img class="profile-img" src="/images/life/skyler.jpg" alt="" style="width:100%;"> <a class="profile-link" style="color: black;">Skyler White</a>
+      </div>   
+      <div class="column">
+        <img class="profile-img" src="/images/life/kim.jpg" alt="" style="width:100%; "><a class="profile-link" style="color: black;">Kim Scott</a>
+      </div>
+      <div class="column">
+        <img class="profile-img" src="/images/life/gwen.jpg" alt="" style="width:100%;"><a class="profile-link" style="color: black;">Gwen Stefani</a>
+</div>
+</div>
+</section>
+</section-14> 
+        
+<section-15 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content-scroll" style="">  
+   
+  <img class="inline-image" src="/images/life/laundry.png" />
+   
+</section>
+</section-15> 
+
+<section-16 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+<section id="content-scroll" style="">  
+   
+  <h2>That's All I Know</h2>
+    
+    <ul class="gallery">
+      <li><div class="card-gallery" style="" ><img class="playlist-img2" src="/images/life/woke-up.jpg" /> <h4>I Woke Up</h4> </div></li>
+      <li><div class="card-gallery"><img class="playlist-img2" src="/images/life/found.jpg" /> <h4>I Found Her</h4> </div></li>
+      <li><div class="card-gallery"><img class="playlist-img2" src="/images/life/all-i-know.jpeg" /> <h4>That's All I Know</h4> </div></li>
+    </ul>
+ 
+</section>
+</section-16> 
+</div>
+
+<!-- Add any additional Javascript code (<script></script>) here. -->
+    
+<script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script>
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery
+</script>
+<script>
+// Get the button:
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>  
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
