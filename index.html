@@ -55,19 +55,33 @@ button:hover, .button-twin:hover {
   display: flex; /* Enables CSS flexbox */
   justify-content: center; /* Centers horizontally */
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   color: white;
   display: flex;
   align-items: center;
 }
 
-.container2 {
+
+
+.container3 {
   display: grid;
   justify-content: center; /* Centers horizontally */
   border-radius: 20px;
   margin-bottom: 10px;
-  grid-template-columns: repeat(1, 0fr); /* 3 columns per row */
+  grid-template-columns: repeat(6, 0fr); /* 3 columns per row */
+  grid-template-rows: repeat(2, auto);    /* 2 rows */
+  gap: 0px;                           /* Space between icons */
+  justify-items: center;
+}
+
+.container4 {
+  display: grid;
+  justify-content: center; /* Centers horizontally */
+  border-radius: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  grid-template-columns: repeat(3, 0fr); /* 3 columns per row */
   grid-template-rows: repeat(2, auto);    /* 2 rows */
   gap: 0px;                           /* Space between icons */
   justify-items: center;
@@ -98,7 +112,11 @@ p {
   line-height: 1.5em; 
  }  
  
+/* SIDEBAR: */ 
 
+aside {
+  max-height: 330px;
+}
   
 </style>
 
@@ -339,42 +357,32 @@ p {
 <aside class="left-sidebar" style="margin-top: 10px;">
   <div class="sidebar-title" style="text-align: center;">About Me</div>
     <img class="pfp-image" src="/images/index/pfp.jpg">
-
-<!-- BUTTONS -->
-
-  <div class="container"> 
-    <a href="/pages/life"><button>A Day In My Life</button> </a> 
-  </div>
-
-  <div class="container"> 
-    <a href="/pages/dog"> <button>My Dog</button> </a> 
-  </div>
-
-  <div class="container"> 
-    <a href="/pages/pov"> <button>My Point of View</button> </a> 
-  </div>
-
-  <div class="container"> 
-    <a href="/pages/testing"> <button>It's A Conspiracy!</button> </a> 
-  </div>
-
-  <div class="container">
-    <a href="/pages/apollo" class="button button-twin">Twin</a>
-    <a href="/pages/walter-jr" class="button button-twin">Twin</a>
-  </div>
-     
-  <div class="container"> 
-    <a href="/pages/delusion">  <button>I'm Not Insane</button> </a> 
-  </div>
+  <div class="container4">
+  <a href="https://www.youtube.com/@KyleBemmann">
+    <button class="personbtn"><i class='fa fa-youtube-play'></i></button>
+  </a>
   
-  <div class="container">
-    <a href="/pages/believe">  <button>I Believe</button> </a>
-  </div>
+  <a href="http://KyleBemmann.tumblr.com/">
+    <button class="personbtn"><i class='fa fa-tumblr'></i></button>
+  </a>
   
-  <div class="container">
-    <a href="/pages/god"><button>I'm A God</button></a>
-  </div>
+  <a href="http://reddit.com/u/KyleBemmann">
+    <button class="personbtn"><i class='fa fa-reddit-alien'></i></button>
+  </a>
+  
+  <a href="https://bsky.app/profile/kylebemmann.bsky.social">
+ <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bluesky" viewBox="0 0 16 16">
+  <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/></button>
+  </a>
 
+  <a href="http://twitter.com/KyleBemmann">
+    <button class="personbtn"><i class='fa fa-twitter'></i></button>
+  </a>
+
+  <a href="https://spacehey.com/kylebemmann">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.999 395.999" xml:space="preserve"><circle style="fill:#fff" cx="56.14" cy="175.697" r="51.014"/><path style="fill:#fff" d="M55.449 240.044C24.567 240.416 0 266.188 0 297.072v14.363a6.02 6.02 0 0 0 6.021 6.021H106.26a6.02 6.02 0 0 0 6.021-6.021V296.18c0-31.234-25.51-56.513-56.832-56.136"/><circle style="fill:#fff" cx="185.34" cy="164.047" r="55.207"/><path style="fill:#fff" d="M184.592 233.681c-33.42.402-60.006 28.292-60.006 61.715v16.039a6.02 6.02 0 0 0 6.021 6.021h109.467a6.02 6.02 0 0 0 6.021-6.021v-17.004c-.001-33.803-27.607-61.158-61.503-60.75m141.83-28.69c34.917 0 63.223-28.308 63.223-63.229 0-34.913-28.307-63.221-63.223-63.221-34.919 0-63.223 28.308-63.223 63.221 0 34.921 28.305 63.229 63.223 63.229m-.001 16.518c-38.427 0-69.578 31.151-69.578 69.578v20.349a6.02 6.02 0 0 0 6.021 6.021h127.114a6.02 6.02 0 0 0 6.021-6.021v-20.348c.001-38.428-31.151-69.579-69.578-69.579"/></svg></button>
+  </a>
+</div>
 </aside>
 
 <!-- =============================================== -->
@@ -385,40 +393,28 @@ p {
   <div class="sidebar-title" style="text-align: center; width: 120%; margin-left: -15px;">My Religious Delusion</div>
     <img class="pfp-image" src="/images/index/pfp2.jpg">
 
-<!-- BUTTONS -->     
+  <div class="container4">
+    <a href="https://www.youtube.com/@SimplyMeKyleB">
+      <button class="personbtn"><i class='fa fa-youtube-play'></i></button>
+    </a>
+    <a href="http://simplymekyleb.tumblr.com/">
+      <button class="personbtn"><i class='fa fa-tumblr'></i></button>
+    </a> 
+    <a href="http://reddit.com/u/SimplyMeKyleB">
+      <button class="personbtn"><i class='fa fa-reddit-alien'></i></button>
+    </a> 
+    <a href="https://bsky.app/profile/simplymekyleb.bsky.social">
+      <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bluesky" viewBox="0 0 16 16"><path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/></svg></button>
+    </a>
+
+    <a href="http://twitter.com/simplymekyleb">
+      <button class="personbtn"><i class='fa fa-twitter'></i></button>
+    </a>
+    <a href="https://spacehey.com/simplymekyleb">
+      <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.999 395.999" xml:space="preserve"><circle style="fill:#fff" cx="56.14" cy="175.697" r="51.014"/><path style="fill:#fff" d="M55.449 240.044C24.567 240.416 0 266.188 0 297.072v14.363a6.02 6.02 0 0 0 6.021 6.021H106.26a6.02 6.02 0 0 0 6.021-6.021V296.18c0-31.234-25.51-56.513-56.832-56.136"/><circle style="fill:#fff" cx="185.34" cy="164.047" r="55.207"/><path style="fill:#fff" d="M184.592 233.681c-33.42.402-60.006 28.292-60.006 61.715v16.039a6.02 6.02 0 0 0 6.021 6.021h109.467a6.02 6.02 0 0 0 6.021-6.021v-17.004c-.001-33.803-27.607-61.158-61.503-60.75m141.83-28.69c34.917 0 63.223-28.308 63.223-63.229 0-34.913-28.307-63.221-63.223-63.221-34.919 0-63.223 28.308-63.223 63.221 0 34.921 28.305 63.229 63.223 63.229m-.001 16.518c-38.427 0-69.578 31.151-69.578 69.578v20.349a6.02 6.02 0 0 0 6.021 6.021h127.114a6.02 6.02 0 0 0 6.021-6.021v-20.348c.001-38.428-31.151-69.579-69.578-69.579"/></svg></button>
+    </a>
+</div>
  
-  <div class="container">
-    <a href="/pages/god"><button>God The Father</button></a>
-  </div> 
-
-  <div class="container">
-    <a href="/pages/parables"><button>Jesus' Parables</button></a>
-  </div>
-
-  <div class="container">
-    <a href="/pages/sabbath"><button>The Sabbath</button></a>
-  </div>        
-            
-  <div class="container">
-    <a href="/pages/holy-days"><button>Biblical Holy Days</button></a>
-  </div>  
-
-  <div class="container">
-    <a href="/pages/holidays"><button>Worldly Holidays</button></a>
-  </div> 
-
-  <div class="container">
-    <a href="/pages/catholic"><button>Babylon's Religion</button></a>
-  </div> 
-    
-  <div class="container">
-    <a href="/pages/christmas"><button>Christmas</button></a>
-  </div>
-
-  <div class="container">
-    <a href="/pages/sex"><button>Easter</button></a>
-  </div>
-
 </aside>
           
 <!-- =============================================== -->
@@ -428,16 +424,65 @@ p {
  <main id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
 <section id="content" style="">  
   
+   
+    
+   <div class="container3">
+  
+  <a href="https://share-this-lonely-view.tumblr.com/">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-home">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
+</svg></button>
+  </a>  
+  
+    <a href="https://x.com/i/status/199666384014282752">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-file-description">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005zm3 14h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m0 -4h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2" />
+	<path d="M19 7h-4l-.001 -4.001z" />
+</svg></button>
+  </a>  
+    
+      <a href="https://www.facebook.com/share/1DNmQDx3pj/">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-user">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+	<path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" />
+</svg></button>
+  </a> 
+  
+    <a href="https://www.facebook.com/annie.cox.586923">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-user">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+	<path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" />
+</svg></button>
+  </a> 
+  
+    <a href="https://www.thedailyreporter.com/story/news/crime/2012/05/22/clevenger-sentenced-to-10-days/64075086007/">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-exclamation-circle">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-5 11.66a1 1 0 0 0 -1 1v.01a1 1 0 0 0 2 0v-.01a1 1 0 0 0 -1 -1m0 -7a1 1 0 0 0 -1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0 -1 -1" />
+</svg></button>
+  </a> 
+  
+    <a href="https://pin.it/4euFhoCQ1">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" />
+</svg></button>
+  </a> 
+    
+</div>  
+  
+  
   <div class="card" style="" >
   <img class="playlist-img2" src="/images/index/my-parents.jpg" />
      <h1>I Was Born</h1> 
         
          <div class="container2">
          <a href="https://www.gotquestions.org/virgin-birth.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-baby-carriage">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M14.5 2a6.5 6.5 0 0 1 6.49 6.858a1.04 1.04 0 0 1 -.04 .456a6.51 6.51 0 0 1 -3.757 5.103l.532 1.595q .135 -.012 .275 -.012a3 3 0 1 1 -3 3l.005 -.176a3 3 0 0 1 .894 -1.966l-.634 -1.903q -.377 .045 -.765 .045h-2.675q -.547 0 -1.076 -.083l-.648 1.941a3 3 0 1 1 -5.101 2.142l.004 -.176a3 3 0 0 1 3.27 -2.812l.56 -1.682a7 7 0 0 1 -3.652 -4.117l-1.402 -4.213h-1.78a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 1 -1h2.5a1 1 0 0 1 .949 .684l1.104 3.316h6.447v-5a1 1 0 0 1 1 -1zm-6.5 16a1 1 0 1 0 0 2a1 1 0 0 0 0 -2m10 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2" />
-</svg></button>
+ 
   </a>
   
   </div>
@@ -451,9 +496,7 @@ p {
    <h1>My Mom Abused Me</h1>  
    <div class="container2">
       <a href="https://www.gotquestions.org/child-abuse.html">
-        <button class="personbtn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-microphone"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M19 9a1 1 0 0 1 1 1a8 8 0 0 1 -6.999 7.938l-.001 2.062h3a1 1 0 0 1 0 2h-8a1 1 0 0 1 0 -2h3v-2.062a8 8 0 0 1 -7 -7.938a1 1 0 1 1 2 0a6 6 0 0 0 12 0a1 1 0 0 1 1 -1m-7 -8a4 4 0 0 1 4 4v5a4 4 0 1 1 -8 0v-5a4 4 0 0 1 4 -4" /></svg>
-        </button>
+   
       </a> 
     </div>
      <p style="padding-left: 20px; padding-right: 10px;">My mom is a Psychopath, Narcissist, and a Sociopath. She lied to my dad about who she was when they were dating and had every intention of fucking his life up once they got married. As her son, I've dealt with emotional neglect and I watched the power struggle my dad had in trying to control her temper tantrums while growing up. She lied to her family about my mental health as I was experiencing a spiritual awakening, and as a result I've had to deal with abuse from other family members as well. I am not who she says I am. It's the world that is crazy, not me.</p>
@@ -465,10 +508,7 @@ p {
    <h1>Meeting My Girlfriend</h1>
  <div class="container2">
     <a href="https://www.gotquestions.org/Christian-girlfriend.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" />
-</svg></button>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">While in Highschool I had a crush on a girl named Annie. I was sitting next to her in a class on mythology and got to see her every day. It was the first class of the day and I'm a sleepy boi so I slept in class. Whatever. I overheard from some friends that she was sexually promiscuous so I was nervous approaching her. I also heard that her dad was abusive, so that scared me even more. Anyway, I moved to college, met an orphan, and never talked to her again.</p>
@@ -483,10 +523,7 @@ p {
 <div class="container2">
   
   <a href="https://www.gotquestions.org/dwell-house-Lord-forever.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-home">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
-</svg></button>
+
   </a> 
  </div>
   <p style="padding-left: 20px; padding-right: 10px;">This is a picture of the house I grew up in, not the house I bought, as I am forever alone because I know all this information and nobody believes it is truthful. It was a nightmare because of all the narcissistic abuse my mom put me through. I moved away from her 10 years ago and haven't spoken to her since. The last thing I remember of her is that she was violently opposed to engagement in meaningful conversations about my personal beliefs.</p>
@@ -499,10 +536,7 @@ p {
        <div class="container2">
   
   <a href="https://www.gotquestions.org/God-Jesus-same-person.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-baby-carriage">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M14.5 2a6.5 6.5 0 0 1 6.49 6.858a1.04 1.04 0 0 1 -.04 .456a6.51 6.51 0 0 1 -3.757 5.103l.532 1.595q .135 -.012 .275 -.012a3 3 0 1 1 -3 3l.005 -.176a3 3 0 0 1 .894 -1.966l-.634 -1.903q -.377 .045 -.765 .045h-2.675q -.547 0 -1.076 -.083l-.648 1.941a3 3 0 1 1 -5.101 2.142l.004 -.176a3 3 0 0 1 3.27 -2.812l.56 -1.682a7 7 0 0 1 -3.652 -4.117l-1.402 -4.213h-1.78a1 1 0 0 1 -.993 -.883l-.007 -.117a1 1 0 0 1 1 -1h2.5a1 1 0 0 1 .949 .684l1.104 3.316h6.447v-5a1 1 0 0 1 1 -1zm-6.5 16a1 1 0 1 0 0 2a1 1 0 0 0 0 -2m10 0a1 1 0 1 0 0 2a1 1 0 0 0 0 -2" />
-</svg></button>
+
   </a> 
  </div>
    <p style="padding-left: 20px; padding-right: 10px;">Because of my dad's Biblical Fundamentalism and my occult research, I feel as if it is impossible to develop intimate relationships. I am traumatized and forever a preteen stuck in an adult body. I legitimately feel as if my dad watched Jane die and there's nothing I can do about fixing my life situation. In addition to that, because of my mom's defiant attitude, I learned from a very young age not to listen to my dad, so I never learned critical life skills needed in adult life.</p>
@@ -514,10 +548,7 @@ p {
    <h1>We're Having Twins!</h1>
  <div class="container2">
     <a href="https://www.gotquestions.org/Thomas-called-the-Twin.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" />
-</svg></button>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">This is me and my sister, Kayla. I haven't talked to her since I left my mom, and my mom manipulated our family to include lots of sibling rivalry as Kayla is the "Golden" child while I am the Scapegoat. Anyway, my sister had a friend, Nikki, who's parents got divorced. I found her Twitter account a while ago and she's an artist which I think is cool. One of her tweets involves paperwork from her dad, and I'm not assuming her dad is abusive or anything, but I connect that to whatever happened between Annie and I. Also, there was another girl named Annie who had the same last name as Annie and I'm rather confused about it all. She's married now and changed her last name.</p>
@@ -529,10 +560,7 @@ p {
    <h1>Let Both Grow Together</h1>
  <div class="container2">
     <a href="https://www.gotquestions.org/parable-wheat-tares.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-cross">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M10 2l-.117 .007a1 1 0 0 0 -.883 .993v4h-4a1 1 0 0 0 -1 1v4l.007 .117a1 1 0 0 0 .993 .883h4v8a1 1 0 0 0 1 1h4l.117 -.007a1 1 0 0 0 .883 -.993v-8h4a1 1 0 0 0 1 -1v-4l-.007 -.117a1 1 0 0 0 -.993 -.883h-4v-4a1 1 0 0 0 -1 -1h-4z" />
-</svg></button>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">So this actually happened. It's my life story, not some made up shit that I pulled out of my ass, but for whatever reason my mom still thinks my dad and I are delusional. I grew up with these people and I've been isolated from everyone because of how people react to Jesus. My mom believes in Jesus but her reaction to me finding Jesus was so repulsive. Everyone's reaction to actual truth and not fairy tale Santa Claus is so absurd that I honestly think there's something fundamentally wrong with human beings.</p>
@@ -545,10 +573,7 @@ p {
    <h1>I Just Want To Be Loved</h1>
  <div class="container2">
     <a href="https://www.gotquestions.org/does-God-love-me.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" />
-</svg></button>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">The way I talk to women is messed up because I desire emotional support for something that deeply troubles me. Nobody says anything to me and I desperately need therapy but I can't explain this to a therapist and expect them to understand. I'm stuck wondering why this happened to me without an explanation. I feel as if my reality is shattered, and due to the personal aspect of everything, I feel as if I'm the only one who knows just how deep this goes.</p>
@@ -560,40 +585,32 @@ p {
    <h1>We're Getting Married!</h1>
  <div class="container2">
     <a href="https://www.gotquestions.org/marriage-supper-Lamb.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" />
-</svg></button>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">I'll likely never get married and I'm comfortably numb with how boring and peaceful my life is, I don't need physical intimacy. Although, I do get jealous at times that basically everyone else in my family isn't completely cut off from the rest of the world. Aslo, like my lack of real world skills prevents me from even desiring a relationship, because I don't need the added responsibility.</p>
    
   </div>
-
-	 <div class="card" style="" >
+  
+    
+     <div class="card" style="" >
   <img class="playlist-img2" src="/images/index/michigan.jpg" /> 
    <h1>I Traveled The World</h1>
  <div class="container2">
     <a href="https://www.gotquestions.org/find-local-church.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-plane-tilt">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M21.107 2.893a3.047 3.047 0 0 1 .012 4.302l-2.479 2.564l2.309 6.925a1 1 0 0 1 -.235 1.016l-2.5 2.55a1 1 0 0 1 -1.596 -.229l-2.864 -5.36l-1.754 1.753v2.586a1 1 0 0 1 -.293 .707l-2 2a1 1 0 0 1 -1.656 -.39l-1.341 -4.027l-4.025 -1.342a1 1 0 0 1 -.391 -1.656l2 -2a1 1 0 0 1 .706 -.292h2.586l1.757 -1.757l-5.317 -2.863a1 1 0 0 1 -.233 -1.587l2.5 -2.5a1 1 0 0 1 1.023 -.242l6.925 2.309l2.552 -2.467a3.05 3.05 0 0 1 4.314 0" />
-</svg></button>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">Surprisingly, this all happened in Michigan. The orphan I knew had her parents die in a motorcycle accident on Marshall Road, and Marshall Mathers is famously from Detroit, Michigan. Apparently Satan exists, I never would've believed it if I didn't literally see it. It's really fucked up that this isn't public knowledge. The concept of Hell is really fucked up.</p>
    
-	 </div>
+  </div>
   
       <div class="card" style="" >
   <img class="playlist-img2" src="/images/index/school.jpg" /> 
    <h1>I Went To School</h1>
  <div class="container2">
     <a href="https://www.gotquestions.org/Christian-gnosticism.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-school">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M19 13.431v2.569c0 2.398 -3.205 4 -7 4s-7 -1.602 -7 -4v-2.569l5.886 2.354a3 3 0 0 0 2.011 .078l.217 -.078zm2 -2.955l-8.629 3.452a1 1 0 0 1 -.742 0l-10 -4c-.839 -.335 -.839 -1.521 0 -1.856l10 -4a1 1 0 0 1 .245 -.064l.126 -.008l.126 .008a1 1 0 0 1 .245 .064l10.032 4.013l.108 .055l.099 .068l.088 .076l.075 .082l.035 .044l.073 .115l.052 .115l.034 .102l.025 .135l.006 .058l.002 6.065a1 1 0 0 1 -2 0z" />
-</svg></button>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">Nobody knows what they're doing, it's everyone's first time through life, or at least that's what they want you to think. How traumatizing would it be if there was another group mingled in with humanity that are lying to us about the fundamentals of reality and life itself? The Wheat and the Tares, the Sheep and the Goats.</p>
@@ -605,10 +622,7 @@ p {
    <h1>I Started A New Job</h1>
  <div class="container2">
     <a href="https://www.gotquestions.org/salvation-by-works.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-briefcase-2">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M14 2a3 3 0 0 1 3 3v1h2a3 3 0 0 1 3 3v9a3 3 0 0 1 -3 3h-14a3 3 0 0 1 -3 -3v-9a3 3 0 0 1 3 -3h2v-1a3 3 0 0 1 3 -3zm0 2h-4a1 1 0 0 0 -1 1v1h6v-1a1 1 0 0 0 -1 -1" />
-</svg></button>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">I haven't worked in over 10 years because I get income from Social Security for a disability I don't have. Basically everyone on the planet incorrectly assumes I'm mentally ill so I get free money from the state, which is nice. My dad's devotion to actually following the Bible blesses us with this opportunity to just do nothing, and I like it.</p>
@@ -620,10 +634,7 @@ p {
    <h1>I Finally Got To Retire</h1>
  <div class="container2">
     <a href="https://www.gotquestions.org/thousand-year-reign-Christ.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-sun-high">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M12 19a1 1 0 0 1 1 1v2a1 1 0 0 1 -2 0v-2a1 1 0 0 1 1 -1m-4.95 -2.05a1 1 0 0 1 0 1.414l-1.414 1.414a1 1 0 1 1 -1.414 -1.414l1.414 -1.414a1 1 0 0 1 1.414 0m11.314 0l1.414 1.414a1 1 0 0 1 -1.414 1.414l-1.414 -1.414a1 1 0 0 1 1.414 -1.414m-5.049 -9.836a5 5 0 1 1 -2.532 9.674a5 5 0 0 1 2.532 -9.674m-9.315 3.886a1 1 0 0 1 0 2h-2a1 1 0 0 1 0 -2zm18 0a1 1 0 0 1 0 2h-2a1 1 0 0 1 0 -2zm-16.364 -6.778l1.414 1.414a1 1 0 0 1 -1.414 1.414l-1.414 -1.414a1 1 0 0 1 1.414 -1.414m14.142 0a1 1 0 0 1 0 1.414l-1.414 1.414a1 1 0 0 1 -1.414 -1.414l1.414 -1.414a1 1 0 0 1 1.414 0m-7.778 -3.222a1 1 0 0 1 1 1v2a1 1 0 0 1 -2 0v-2a1 1 0 0 1 1 -1" />
-</svg></button>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">Due to being on Social Security, I basically got to retire while I was in my mid 20's. I don't do anything with my life besides loaf around, occasionally I have fun with my dad on the weekends. I have no friends, so I don't know what else to do. I'm too depressed to watch TV so I shitpost on the internet.</p>
@@ -634,16 +645,64 @@ p {
   <img class="playlist-img2" src="/images/index/rip.jpg" /> 
    <h1>I Died</h1>
  <div class="container2">
-    <a href="https://www.gotquestions.org/death-resurrection-Christ.html">
-    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-ghost-3">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M12 3a8 8 0 0 1 8 8v6.954l.009 .103a2.78 2.78 0 0 1 -1.468 2.618l-.163 .08c-1.111 .502 -2.42 .22 -3.266 -.74a.65 .65 0 0 0 -1.024 0a2.65 2.65 0 0 1 -4.176 0a.65 .65 0 0 0 -.512 -.249c-.2 0 -.389 .092 -.55 .296a2.78 2.78 0 0 1 -4.859 -2.005l.01 -.104l.007 -.077l-.008 .074v-6.95l.004 -.25a8 8 0 0 1 7.747 -7.746zm-1.99 6h-.01a1 1 0 1 0 0 2h.01a1 1 0 0 0 0 -2m4 0h-.01a1 1 0 0 0 0 2h.01a1 1 0 0 0 0 -2" />
-</svg></button>
+    <a>
+
   </a> 
   </div>
  <p style="padding-left: 20px; padding-right: 10px;">What's this life for anyway? We work until we die, and if we're lucky enough to retire, we're too old to be spontaneous and adventurous. I took the left hand path in my early 20's and now I'm a vegetable, waiting to die, because the world is stuck in a delusion.</p>
    
   </div>
+  <div id="div4">
+  <div class="container3">
+  <a href="https://www.youtube.com/@KyleBemmann">
+    <button class="personbtn"><i class='fa fa-youtube-play'></i></button>
+  </a>
+  
+  <a href="http://KyleBemmann.tumblr.com/">
+    <button class="personbtn"><i class='fa fa-tumblr'></i></button>
+  </a>
+  
+  <a href="http://reddit.com/u/KyleBemmann">
+    <button class="personbtn"><i class='fa fa-reddit-alien'></i></button>
+  </a>
+  
+  <a href="https://bsky.app/profile/kylebemmann.bsky.social">
+ <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bluesky" viewBox="0 0 16 16">
+  <path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/></button>
+  </a>
+
+  <a href="http://twitter.com/KyleBemmann">
+    <button class="personbtn"><i class='fa fa-twitter'></i></button>
+  </a>
+
+  <a href="https://spacehey.com/kylebemmann">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.999 395.999" xml:space="preserve"><circle style="fill:#fff" cx="56.14" cy="175.697" r="51.014"/><path style="fill:#fff" d="M55.449 240.044C24.567 240.416 0 266.188 0 297.072v14.363a6.02 6.02 0 0 0 6.021 6.021H106.26a6.02 6.02 0 0 0 6.021-6.021V296.18c0-31.234-25.51-56.513-56.832-56.136"/><circle style="fill:#fff" cx="185.34" cy="164.047" r="55.207"/><path style="fill:#fff" d="M184.592 233.681c-33.42.402-60.006 28.292-60.006 61.715v16.039a6.02 6.02 0 0 0 6.021 6.021h109.467a6.02 6.02 0 0 0 6.021-6.021v-17.004c-.001-33.803-27.607-61.158-61.503-60.75m141.83-28.69c34.917 0 63.223-28.308 63.223-63.229 0-34.913-28.307-63.221-63.223-63.221-34.919 0-63.223 28.308-63.223 63.221 0 34.921 28.305 63.229 63.223 63.229m-.001 16.518c-38.427 0-69.578 31.151-69.578 69.578v20.349a6.02 6.02 0 0 0 6.021 6.021h127.114a6.02 6.02 0 0 0 6.021-6.021v-20.348c.001-38.428-31.151-69.579-69.578-69.579"/></svg></button>
+  </a>
+</div>
+
+
+  <div class="container3" style="margin-top: -10px;">
+    <a href="https://www.youtube.com/@SimplyMeKyleB">
+      <button class="personbtn"><i class='fa fa-youtube-play'></i></button>
+    </a>
+    <a href="http://simplymekyleb.tumblr.com/">
+      <button class="personbtn"><i class='fa fa-tumblr'></i></button>
+    </a> 
+    <a href="http://reddit.com/u/SimplyMeKyleB">
+      <button class="personbtn"><i class='fa fa-reddit-alien'></i></button>
+    </a> 
+    <a href="https://bsky.app/profile/simplymekyleb.bsky.social">
+      <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bluesky" viewBox="0 0 16 16"><path d="M3.468 1.948C5.303 3.325 7.276 6.118 8 7.616c.725-1.498 2.698-4.29 4.532-5.668C13.855.955 16 .186 16 2.632c0 .489-.28 4.105-.444 4.692-.572 2.04-2.653 2.561-4.504 2.246 3.236.551 4.06 2.375 2.281 4.2-3.376 3.464-4.852-.87-5.23-1.98-.07-.204-.103-.3-.103-.218 0-.081-.033.014-.102.218-.379 1.11-1.855 5.444-5.231 1.98-1.778-1.825-.955-3.65 2.28-4.2-1.85.315-3.932-.205-4.503-2.246C.28 6.737 0 3.12 0 2.632 0 .186 2.145.955 3.468 1.948"/></svg></button>
+    </a>
+
+    <a href="http://twitter.com/simplymekyleb">
+      <button class="personbtn"><i class='fa fa-twitter'></i></button>
+    </a>
+    <a href="https://spacehey.com/simplymekyleb">
+      <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 395.999 395.999" xml:space="preserve"><circle style="fill:#fff" cx="56.14" cy="175.697" r="51.014"/><path style="fill:#fff" d="M55.449 240.044C24.567 240.416 0 266.188 0 297.072v14.363a6.02 6.02 0 0 0 6.021 6.021H106.26a6.02 6.02 0 0 0 6.021-6.021V296.18c0-31.234-25.51-56.513-56.832-56.136"/><circle style="fill:#fff" cx="185.34" cy="164.047" r="55.207"/><path style="fill:#fff" d="M184.592 233.681c-33.42.402-60.006 28.292-60.006 61.715v16.039a6.02 6.02 0 0 0 6.021 6.021h109.467a6.02 6.02 0 0 0 6.021-6.021v-17.004c-.001-33.803-27.607-61.158-61.503-60.75m141.83-28.69c34.917 0 63.223-28.308 63.223-63.229 0-34.913-28.307-63.221-63.223-63.221-34.919 0-63.223 28.308-63.223 63.221 0 34.921 28.305 63.229 63.223 63.229m-.001 16.518c-38.427 0-69.578 31.151-69.578 69.578v20.349a6.02 6.02 0 0 0 6.021 6.021h127.114a6.02 6.02 0 0 0 6.021-6.021v-20.348c.001-38.428-31.151-69.579-69.578-69.579"/></svg></button>
+    </a>
+</div>
+</div>
 </section>  
 </main>
 </div>
