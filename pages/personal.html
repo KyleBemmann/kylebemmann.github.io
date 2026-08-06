@@ -75,6 +75,16 @@ button:hover, .personbtn:hover {
   justify-items: center;
 }
 
+.container3 {
+  display: grid;
+  justify-content: center; /* Centers horizontally */
+  border-radius: 20px;
+  margin-bottom: 10px;
+  grid-template-columns: repeat(3, 0fr); /* 3 columns per row */
+  grid-template-rows: repeat(2, auto);    /* 2 rows */
+  gap: 0px;                           /* Space between icons */
+  justify-items: center;
+}
 /* CARD: */
 
 .card {
@@ -93,7 +103,7 @@ button:hover, .personbtn:hover {
 /* SIDEBAR: */ 
 
 aside {
-  max-height: 500px;
+  max-height: 330px;
 }
 
 </style>
@@ -336,30 +346,60 @@ aside {
     <img class="pfp-image" src="/images/personal/pfp.jpg">
   
 <!-- BUTTONS -->   
-
-  <div class="container">
-    <a href="https://share-this-lonely-view.tumblr.com/"> <button>Me</button> </a>
-  </div>
+<div class="container3">
   
-  <div class="container">
-    <a href="https://x.com/i/status/199666384014282752"> <button>Nikki</button> </a>
-  </div>
-
-  <div class="container">
-    <a href="https://www.facebook.com/share/1DNmQDx3pj/">  <button>Annie 1</button> </a>
-  </div>
+  <a href="https://share-this-lonely-view.tumblr.com/">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-home">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M12.707 2.293l9 9c.63 .63 .184 1.707 -.707 1.707h-1v6a3 3 0 0 1 -3 3h-1v-7a3 3 0 0 0 -2.824 -2.995l-.176 -.005h-2a3 3 0 0 0 -3 3v7h-1a3 3 0 0 1 -3 -3v-6h-1c-.89 0 -1.337 -1.077 -.707 -1.707l9 -9a1 1 0 0 1 1.414 0m.293 11.707a1 1 0 0 1 1 1v7h-4v-7a1 1 0 0 1 .883 -.993l.117 -.007z" />
+</svg></button>
+  </a>  
     
-  <div class="container">
-    <a href="https://www.facebook.com/annie.cox.586923"> <button>Annie 2</button> </a>
-  </div>  
+
+
+    <a href="https://www.facebook.com/share/1DNmQDx3pj/">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-user">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+	<path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" />
+</svg></button>
+  </a> 
   
-   <div class="container">
-    <a href="https://www.thedailyreporter.com/story/news/crime/2012/05/22/clevenger-sentenced-to-10-days/64075086007/">  <button>Kalee</button> </a>
-  </div>
+    
+    <a href="https://www.thedailyreporter.com/story/news/crime/2012/05/22/clevenger-sentenced-to-10-days/64075086007/">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-exclamation-circle">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M17 3.34a10 10 0 1 1 -15 8.66l.005 -.324a10 10 0 0 1 14.995 -8.336m-5 11.66a1 1 0 0 0 -1 1v.01a1 1 0 0 0 2 0v-.01a1 1 0 0 0 -1 -1m0 -7a1 1 0 0 0 -1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0 -1 -1" />
+</svg></button>
+  </a> 
   
-  <div class="container">
-    <a href="https://pin.it/4euFhoCQ1">  <button>Hailie</button> </a>
-  </div>
+      <a href="https://x.com/i/status/199666384014282752">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-file-description">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M12 2l.117 .007a1 1 0 0 1 .876 .876l.007 .117v4l.005 .15a2 2 0 0 0 1.838 1.844l.157 .006h4l.117 .007a1 1 0 0 1 .876 .876l.007 .117v9a3 3 0 0 1 -2.824 2.995l-.176 .005h-10a3 3 0 0 1 -2.995 -2.824l-.005 -.176v-14a3 3 0 0 1 2.824 -2.995l.176 -.005zm3 14h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2m0 -4h-6a1 1 0 0 0 0 2h6a1 1 0 0 0 0 -2" />
+	<path d="M19 7h-4l-.001 -4.001z" />
+</svg></button>
+  </a> 
+  
+    <a href="https://www.facebook.com/annie.cox.586923">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-user">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M12 2a5 5 0 1 1 -5 5l.005 -.217a5 5 0 0 1 4.995 -4.783z" />
+	<path d="M14 14a5 5 0 0 1 5 5v1a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-1a5 5 0 0 1 5 -5h4z" />
+</svg></button>
+  </a> 
+    
+
+
+  
+    <a href="https://pin.it/4euFhoCQ1">
+    <button class="personbtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" class="icon icon-tabler icons-tabler-filled icon-tabler-heart">
+	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
+	<path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" />
+</svg></button>
+  </a> 
+    
+</div> 
       
 </aside>
 
@@ -437,9 +477,9 @@ aside {
   <img class="post-img" src="/images/personal/7.jpg" style="" />
   <img class="post-img" src="/images/personal/8.jpg" style="" />
   <img class="post-img" src="/images/personal/9.jpg" style="" />
-  <img class="post-img" src="/images/personal/10.jpg" style="" /> 
-  <img class="post-img" src="/images/personal/11.jpg" style="" />    
-	
+  <img class="post-img" src="/images/personal/10.jpg" style="" />
+  <img class="post-img" src="/images/personal/11.jpg" style="" /> 
+      
 </section> 
 </main>
 </div> 
