@@ -194,14 +194,16 @@ margin-top: 10px; padding-top: 5px; padding-bottom: 0;
 }
 
 aside {
-   background: #e5e7eb; /* RGB color 
+   background: #e5e7eb; /* RGB color */
 }
 
-hr {
+ hr {
   height: 2px; /* Set the desired thickness */
-  background-color: #e6e6e6; /* Set the desired color */
+  background-color: #aaaaaa; /* Set the desired color */
   border: none; /* Remove the default border */
-}
+  width: 90%;
+  margin: 0 auto;
+ }
 
 h1 {
   text-align: center; 
