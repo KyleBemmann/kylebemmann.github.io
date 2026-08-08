@@ -3,7 +3,7 @@
   <head>
 
     <!-- Change your site title: (It is shown in the tab) -->
-    <title>Gnosticism</title>
+    <title>Gnosis</title>
 
     <!-- Change your site description: (It is shown in Google results) -->
     <meta content="Kyle Bemmann's Mind" name="description" />
@@ -21,33 +21,61 @@
     <!-- CSS: -->
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/css/full-width.css" rel="stylesheet" />
+    <link href="/css/sidebar1.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/css/nav.css" rel="stylesheet" />
     <link href="/css/gnosis.css" rel="stylesheet" />
-                 
+  
     <!-- JavaScript: -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
 <style>
     
-/* Background Colors: */
-    
+/* Background Colors: */ 
+
  :root {
-  --background-color:   #3F2409;
+  --background-color: #666E4D;
  }
  
 body {
   background: var(--background-color);
 }
 
+/* BUTTONS: */
+
+button {
+  background-color: #556E4D;
+}
+
+button:hover {
+  background-color: #6E664D;
+} 
+
+/* CARD: */
+
+.card {
+  scroll-ansp-align: start;
+  flex: 0 0 20em; 
+  background-color: #ffffff;
+  padding: 0 0 39px 0;
+  margin-bottom: 10px;
+  border-radius: .5em;
+  text-align: center;
+  align-content: center;
+  border-radius: 20px;
+  border: none;
+}
+
+
+
+
 </style>
 
   </head>
-  <body>
+<body>
 
-<button id="myBtn" onclick="topFunction()" style='font-size:24px'><i class='fa fa-arrow-up'></i></button>
+  <button id="myBtn" onclick="topFunction()" style='font-size:24px'><i class='fa fa-arrow-up'></i></button>
 
     <div class="layout">
     
@@ -262,35 +290,91 @@ body {
 </section> 
 </nav>
 
+
 <!-- =============================================== -->
 <!-- HEADER -->
 <!-- =============================================== -->
-
-<header>
+      
+ <header>
   <img class="header-image" alt="" src="/images/urn/header.png"/> 
     <section id="header-title">
       <div class="header-title">You Can Not Earn Your Salvation</div>
     </section>
 </header>
-
+	      
 <!-- =============================================== -->
-<!-- HMAIN CONTENT -->
+<!-- LEFT SIDEBAR -->
 <!-- =============================================== -->
-	        
-<section-1 id="content" style="margin-top: 20px;"> <!-- Do NOT remove the ID here -->
-<section id="content" style="">  
-   
-  <p>In Gnosticism, the Monad is the supreme, singular, and transcendent source of all reality. It is an ineffable, perfect being that stands above all else and from which a series of divine beings, or aeons, emanate. These aeons collectively form a divine fullness called the Pleroma, and the material world is often considered a flawed creation by a lesser deity, the Demiurge, distinct from the Monad. </p>
-  
-</section> 
-</section-1>  
- 
-<section-2 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
-<section id="content" style="">  
 
-  <h1 style="">Sophia</h1>
-    <img class="circle-img" src="/images/urn/sophia.jpg" style="margin-bottom: 10px;" />
-     
+<aside class="left-sidebar" style="margin-top: 10px;">
+	<div class="sidebar-title">Gnosticism</div>
+    <img class="pfp-image" src="/images/urn/pfp.jpg">
+    
+<!-- BUTTONS -->
+
+  <div class="container">
+    <a href="/pages/urn"><button>Gnosticism</button></a>
+  </div>
+
+  <div class="container">
+    <a href="/pages/fool"><button>Fool's Journey</button></a>
+  </div>        
+        
+      
+  <div class="container">
+    <a href="/pages/doctor"><button>Secret Knowledge</button></a>
+  </div>  
+
+  <div class="container">
+    <a href="/pages/kundalini"><button>Kundalini Yoga</button></a>
+  </div>
+
+  <div class="container">
+    <a href="/pages/kabbalah"><button>Kabbalah</button></a>
+  </div> 
+
+  <div class="container">
+    <a href="/pages/alphabet"><button>Hebrew Alphabet</button></a>
+  </div>       
+             
+  <div class="container">
+    <a href="/pages/zodiac"> <button>Astrology</button></a>
+  </div> 
+
+  <div class="container">
+    <a href="/pages/numbers"><button>Numerology</button></a>
+  </div> 
+            
+</aside>
+    
+<!-- =============================================== -->
+<!-- MOBILE SIDEBAR -->
+<!-- =============================================== -->
+
+<aside class="mobile-sidebar" style="margin-top: 10px;">
+	<div class="sidebar-title">Gnosticism</div>
+    <img class="pfp-image" src="/images/urn/pfp.jpg"/> 
+</aside>  
+       
+<!-- =============================================== -->
+<!-- MAIN CONTENT -->
+<!-- =============================================== -->
+        
+<main id="content" style="margin-top: 10px; width: 100%;"> <!-- Do NOT remove the ID here -->
+  <section id="content" style="">  
+
+ <div class="card" style="" >
+  <img class="playlist-img2" src="/images/urn/monad.jpg" />
+     <h1>The Monad</h1> 
+      <div style="">
+   <p>In Gnosticism, the Monad is the supreme, singular, and transcendent source of all reality. It is an ineffable, perfect being that stands above all else and from which a series of divine beings, or aeons, emanate. These aeons collectively form a divine fullness called the Pleroma, and the material world is often considered a flawed creation by a lesser deity, the Demiurge, distinct from the Monad. </p>   
+</div>
+</div>
+
+ <div class="card" style="" >
+  <img class="playlist-img2" src="/images/urn/sophia.jpg" />
+     <h1>Sophia</h1> 
+      <div style="">
       <p>In Gnosticism, Sophia (Greek for "wisdom") is the personification of divine wisdom, representing the divine feminine, and a central figure in many myths. Her story often involves a fall from a spiritual realm (the Pleroma) due to an ill-fated desire to create independently, which results in the flawed material world and the creation of the Demiurge. Sophia becomes trapped in this material world, but her story is one of both her fall and her eventual redemption through the search for gnosis (saving knowledge).</p>
     
         <h3>Key aspects of Sophia in Gnosticism</h3>
@@ -313,27 +397,23 @@ body {
             <li> 
               <b>The bridge to the divine:</b> Sophia is seen as a mediator between the spiritual and material realms, embodying the anima mundi or "soul of the world". 
             </li>
-          </ul>
+          </ul> 
+</div>
+</div>
 
-</section> 
-</section-2>
- 
-<section-3 id="content" style="margin-top: 10px;">
-<section id="content" style=""> 
+ <div class="card" style="" >
+  <img class="playlist-img2" src="/images/urn/universe.jpg" />
+     <h1>The Material Universe</h1> 
+      <div style="">
+     <p>According to the Gnostics, this world, the material cosmos, is the result of a primordial error on the part of a supra-cosmic, supremely divine being, usually called Sophia (Wisdom) or simply the Logos.</p>   
+</div>
+</div>
 
-  <h1 style="">The Material Universe</h1>
-    <img class="circle-img" src="/images/urn/universe.jpg" style="margin-bottom: 10px;" />
-      <p>According to the Gnostics, this world, the material cosmos, is the result of a primordial error on the part of a supra-cosmic, supremely divine being, usually called Sophia (Wisdom) or simply the Logos.</p>
-    
-</section> 
-</section-3>
- 
-<section-4 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
-<section id="content" style="">  
-
-  <h1 style="">The Demiurge</h1>
-     <img class="circle-img" src="/images/urn/demiurge.png" style="margin-bottom: 10px;" />
-        <p>A demiurge is a divine craftsman or artisan who creates the physical universe, a concept originating in Greek philosophy (Plato) and later adopted by Gnosticism with a darker twist. Gnosticism portrays the Demiurge (often called Yaldabaoth) as a lesser, ignorant, or even malevolent being who creates the flawed material world as a prison for divine sparks, distinct from a higher, true God.</p>
+ <div class="card" style="" >
+  <img class="playlist-img2" src="/images/urn/demiurge.jpg" />
+     <h1>The Demiurge</h1> 
+      <div style="">
+     <p>A demiurge is a divine craftsman or artisan who creates the physical universe, a concept originating in Greek philosophy (Plato) and later adopted by Gnosticism with a darker twist. Gnosticism portrays the Demiurge (often called Yaldabaoth) as a lesser, ignorant, or even malevolent being who creates the flawed material world as a prison for divine sparks, distinct from a higher, true God.</p>
      
           <h3>In Gnosticism</h3>
             <ul>
@@ -349,17 +429,15 @@ body {
               <li> 
                 <b>Identity:</b> Sometimes identified with the God of the Old Testament (Yahweh). 
               </li>
-            </ul>
+            </ul> 
+</div>
+</div>
 
-</section> 
-</section-4>
- 
-<section-5 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
-<section id="content" style="">  
-
-  <h1 style="">Prison Planet</h1>
-    <img class="circle-img" src="/images/urn/prison.jpg" style="margin-bottom: 10px;" />
-      <p>The Prison Planet theory is a spiritual and non-falsifiable conspiracy hypothesis that suggests human souls are trapped on Earth, which functions as a form of metaphysical penitentiary or "soul trap".</p>
+ <div class="card" style="" >
+  <img class="playlist-img2" src="/images/urn/prison.jpg" />
+     <h1>Prison Planet</h1> 
+      <div style="">
+       <p>The Prison Planet theory is a spiritual and non-falsifiable conspiracy hypothesis that suggests human souls are trapped on Earth, which functions as a form of metaphysical penitentiary or "soul trap".</p>
   
         <h3>Core Concepts</h3>
           <p>The theory, which has roots in ancient Gnostic thought and modern New Age beliefs, posits the following key ideas:</p>
@@ -379,20 +457,17 @@ body {
             <li>
               <b>A Planetary Quarantine:</b> Some variations of the theory suggest Earth was a normal planet that was "captured" and quarantined with an energetic grid or matrix to block access to the "Source" (a higher divine realm). 
             </li>
-            </ul>
+            </ul>   
+</div>
+</div>
 
-</section> 
-</section-5>
- 
-<section-6 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
-<section id="content" style="">  
-
-  <h1 style="">The Gnostic Christ</h1>
-    <img class="circle-img" src="/images/urn/gnostic-christ.jpg" style="margin-bottom: 10px;" />
-      <p>A Gnostic Christ is a divine revealer figure in Gnostic traditions, seen not primarily as a physical savior for sins but as a spiritual messenger bringing secret knowledge (gnosis) for salvation, often appearing as a teacher whose true divine nature only seemed human (docetism) or temporarily inhabited Jesus, helping people escape the flawed material world created by lesser deities to return to the true God. Gnostics emphasized hidden teachings found in texts like the Gospel of Thomas, focusing on inner knowing rather than orthodox rituals.</p>
-             
-        <h3>Key Aspects of the Gnostic Christ</h3>
-          <ul>
+ <div class="card" style="" >
+  <img class="playlist-img2" src="/images/urn/gnostic-christ.jpg" />
+     <h1>The Gnostic Christ</h1> 
+      <div style="">
+        <p>A Gnostic Christ is a divine revealer figure in Gnostic traditions, seen not primarily as a physical savior for sins but as a spiritual messenger bringing secret knowledge (gnosis) for salvation, often appearing as a teacher whose true divine nature only seemed human (docetism) or temporarily inhabited Jesus, helping people escape the flawed material world created by lesser deities to return to the true God. Gnostics emphasized hidden teachings found in texts like the Gospel of Thomas, focusing on inner knowing rather than orthodox rituals.</p>
+            <h3>Key Aspects of the Gnostic Christ</h3>
+            <ul>
             <li>
               <b>The Revealer:</b> Jesus is the divine being (an Aeon) sent from the true God to reveal the path to liberation. 
             </li>
@@ -421,17 +496,15 @@ body {
             <li> 
               <b>Orthodox:</b> Christ is the Son of God whose physical death and resurrection atone for sins, offering salvation through faith. 
             </li>
-          </ul> 
-     
-</section> 
-</section-6>
- 
-<section-7 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
-<section id="content" style="">  
+          </ul>
+</div>
+</div>
 
-  <h1 style="">The Divine Spark</h1>
-    <img class="circle-img" src="/images/urn/spark.jpg" style="margin-bottom: 10px;" />
-      <p>In Gnosticism, the divine spark is a fragment of the true, supreme God trapped within the material world and the human body, creating a spiritual longing for its divine source, Pleroma; salvation (gnosis) involves recognizing this inner light (pneuma) and achieving knowledge to escape the false creator's realm and return home. It's the core of humanity, distinct from the lesser creator (Demiurge), and its awakening through secret knowledge leads to liberation from earthly bondage.</p>
+ <div class="card" style="" >
+  <img class="playlist-img2" src="/images/urn/spark.jpg" />
+     <h1>The Divine Spark</h1> 
+      <div style="">
+         <p>In Gnosticism, the divine spark is a fragment of the true, supreme God trapped within the material world and the human body, creating a spiritual longing for its divine source, Pleroma; salvation (gnosis) involves recognizing this inner light (pneuma) and achieving knowledge to escape the false creator's realm and return home. It's the core of humanity, distinct from the lesser creator (Demiurge), and its awakening through secret knowledge leads to liberation from earthly bondage.</p>
              
         <h3>Key aspects of the divine spark in Gnosticism:</h3>
           <ul>
@@ -463,17 +536,15 @@ body {
             <li>           
               Gnosticism posits a deeper, intrinsic divinity within humans, requiring specific gnosis for release, whereas biblical Christianity emphasizes redemption through Christ's work for all.
             </li>
-          </ul>    
-           
-</section> 
-</section-7>
-        
-<section-8 id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
-<section id="content" style="">  
+          </ul>     
+</div>
+</div>
 
-  <h1 style="">Salvation Through Knowledge</h1>
-    <img class="circle-img" src="/images/urn/liberation.jpg" style="margin-bottom: 10px;" />
-      <p>In Gnosticism, salvation through knowledge (Gnosis) means achieving liberation from the flawed material world by realizing one's divine spark trapped within, understanding the true, transcendent God, and recognizing the evil creator-god (Demiurge) who made our flawed reality; this secret, intuitive insight liberates the spirit to return to the divine realm, contrasting sharply with mainstream Christian salvation by faith.</p>
+ <div class="card" style="" >
+  <img class="playlist-img2" src="/images/urn/gnosis.jpg" />
+     <h1>Salvation Through Knowledge</h1> 
+      <div style="">
+         <p>In Gnosticism, salvation through knowledge (Gnosis) means achieving liberation from the flawed material world by realizing one's divine spark trapped within, understanding the true, transcendent God, and recognizing the evil creator-god (Demiurge) who made our flawed reality; this secret, intuitive insight liberates the spirit to return to the divine realm, contrasting sharply with mainstream Christian salvation by faith.</p>
              
         <h3>Core Gnostic Beliefs on Salvation</h3>
           <ul>
@@ -489,9 +560,8 @@ body {
             <li> 
               <b>Spiritual Elitism:</b> This knowledge is reserved for the "spirituals" (Pneumatikoi), an elite group who can attain it, unlike the masses. 
             </li>
-          </ul>       
-            
-        <h3>How Gnosis Works</h3>
+          </ul>
+                  <h3>How Gnosis Works</h3>
           <ol>
             <li>
               <b>Recognition:</b> Realizing the self is divine and imprisoned.
@@ -515,15 +585,18 @@ body {
             <li> 
               <b>Role of Christ:</b> Gnosticism: A revealer of hidden knowledge (a guide); Christianity: The atoning savior whose physical incarnation, death, and resurrection are central. 
             </li>
-          </ul>       
-
+          </ul> 
+</div>
+</div>
 </section> 
-</section-8>
+</main> 
 </div>
 
 <!-- Add any additional Javascript code (<script></script>) here. -->
-   
+  
+  
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
 <script>
 (function($) { // Begin jQuery
   $(function() { // DOM ready
@@ -548,7 +621,8 @@ body {
     });
   }); // end DOM ready
 })(jQuery); // end jQuery
-</script>
+</script>  
+  
 <script>
 // Get the button:
 let mybutton = document.getElementById("myBtn");
@@ -570,7 +644,6 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 </script>  
-    
 </body>
 </html>
 
