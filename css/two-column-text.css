@@ -35,3 +35,18 @@ p {
 }
   
 }
+
+
+/* CSS Code for devices < 800px */
+@media (max-width: 600px) {
+.right-align {
+  font-size: 3.4em;
+  float: right;
+  
+  padding-right: 20px;
+}
+  p {
+  width: 210%;
+}
+
+}
