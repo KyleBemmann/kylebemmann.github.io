@@ -24,6 +24,7 @@
     <link href="/css/sidebar1.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/css/nav.css" rel="stylesheet" />
+    <link href="/css/animation.css" rel="stylesheet" />
   
     <!-- JavaScript: -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -56,30 +57,38 @@ button:hover {
 #content li  {
  font-size: 1.4em; 
  margin-left: 20px;
+ line-height: 1.2em;
+ text-align: left;
 }
 
 h1 {
- padding-top: 0; 
+ padding-top: 10px; 
  text-align: left;
- font-size: 2em;
+ font-size: 1.8em;
  padding-left: 20px;
+}
+
+h2 {
+ padding-top: 10px; 
+ text-align: left;
+ font-size: 1.8em;
+ margin-bottom: 20px;
 }
 
 .two-columns {
   align-items: start;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
 .card {
   scroll-ansp-align: start;
   flex: 0 0 20em; 
   background-color: #ffffff;
-  padding: 0 0 39px 0;
+  padding: 0 0 10px 0;
   margin-bottom: 10px;
   border-radius: .5em;
-  text-align: center;
-  align-content: center;
   border-radius: 20px;
   border: none;
 }
@@ -209,7 +218,7 @@ h1 {
                 <a href="/pages/god">God The Father</a>
               </li>
               <li>
-                <a href="/pages/manhood">I Am The One Who Knocks</a>
+                <a href="/pages/manhood">Ask Seek and Knock</a>
               </li>
               <li>
                 <a href="/pages/choice">My Christian Journey</a>
@@ -376,10 +385,11 @@ h1 {
 <main id="content" style="margin-top: 10px; width: 100%;"> <!-- Do NOT remove the ID here -->
   <section id="content" style="">  
 
-<div class="card" style="" ><img class="playlist-img2" src="/images/93/winter.png" /> <h4>Yesod (9, Moon, Silver)</h4> </div>  
+<div class="card" style="animation: none;" ><img class="playlist-img2" src="/images/93/winter.png" /> <h4>Yesod (9, Moon, Silver)</h4> </div>  
  <div class="card" style="" ><img class="playlist-img2" src="/images/93/sabbath.jpg" /> <h4>Binah (3, Saturn, Lead)</h4> </div>
         
-<div id="div1">   
+<div id="div1"> 
+<div class="card" style="" >
   <div class="two-columns">
 	  <div>
 	    <h1>Thelema = Θελημα (93)</h1>
@@ -404,9 +414,10 @@ h1 {
 </div>
 </div>
 </div>
-
+</div>
 <div id="div2">
-  <h1>Thelema = Θελημα (93)</h1>
+<div class="card" style="" >
+  <h2>Thelema = Θελημα (93)</h2>
 	      <ul>
           <li>Θ (Theta) = 9</li>
           <li>ε (Epsilon) = 5</li>
@@ -415,7 +426,7 @@ h1 {
           <li>μ (Mu) = 40</li>
           <li>α (Alpha) 1</li>
         </ul>
-  <h1>Agapé = Αγαπη (93)</h1>
+  <h2>Agapé = Αγαπη (93)</h2>
 	      <ul>
           <li>A (Alpha) 1</li>
           <li>γ (Gamma) 3</li>
@@ -424,7 +435,10 @@ h1 {
           <li>η (Eta) 8</li>
         </ul>
 </div>
-  <img class="post-img" src="/images/93/1.png" />        
+</div>
+<div class="card" style="  animation-range: entry 0% cover 10%;" >
+  <img class="post-img" src="/images/93/1.png" />
+</div>
 </section> 
 </main> 
 </div>
