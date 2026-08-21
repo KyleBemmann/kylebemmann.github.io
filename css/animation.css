@@ -11,7 +11,7 @@
 @keyframes fade-in {
 
 from {
-  opacity: .8;
+  opacity: .3;
   translate: 0 1rem;
   scale: .8;
 }
