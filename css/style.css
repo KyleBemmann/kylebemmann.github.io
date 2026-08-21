@@ -424,6 +424,7 @@ button:hover {
   height: auto;
   margin: auto;
   border-radius: 20px 20px 20px 20px;
+  filter: drop-shadow(0px -1px 15px #aaaaaa);
 }
 
 .image-chakra {
