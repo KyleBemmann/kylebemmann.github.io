@@ -31,13 +31,6 @@
 /* BASICS */
 /* -------------------------------------------------------- */
 
-@view-transition {
-  navigation: auto;
-}
-
-::view-transition-group(root) {
-  animation-duration: .7s;
-}
 
 
 * {
