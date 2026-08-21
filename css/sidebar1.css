@@ -62,6 +62,13 @@ p {
   padding: 10px 10px 0 10px;
 }
 
+.card {
+width: 99%;
+margin-right: auto;
+margin-left: auto;
+justify-content: center;
+}
+
 /* -------------------------------------------------------- */
 /* LAYOUT */
 /* -------------------------------------------------------- */
@@ -209,7 +216,15 @@ body {
   }
 }
 
+/* CSS Code for devices < 800px */
+@media (min-width: 802px) {
 
+
+  .card {
+width: 96.8%;
+
+}
+}
 
 
 
