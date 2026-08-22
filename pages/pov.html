@@ -66,6 +66,10 @@ body {
   margin-right: auto;
 }
 
+.carousel2 {
+ padding-bottom: 15px; 
+}
+
 
 @media only screen and (min-width: 1000px) {
 
@@ -89,6 +93,11 @@ display: none;
   }
 }
 
+@media only screen and (max-width: 600px) {
+ .carousel2::scroll-button(right), .carousel2::scroll-button(left), .carousel2::scroll-button(right):disabled, .carousel2::scroll-button(left):disabled { 
+  display: none;
+}
+}
 </style>
 
   </head>
@@ -504,9 +513,9 @@ display: none;
   
 <section-11 id="content" style="padding-top: 0; padding-bottom: 0;"> <!-- Do NOT remove the ID here -->
 <section id="content-scroll" style="padding-top: 0; padding-bottom: 0;">  
-
+<div style="  margin-bottom: 20px;">
   <div class="load1" style="" > 
-  <div class="carousel2" style="padding-top: 0; padding-bottom: 0;">
+  <div class="carousel2" style="padding-top: 0;">
     <div class="card-square"><img class="post-scroll" src="/images/pov/square-0.jpg" /> </div>
     <div class="card-square"><img class="post-scroll" src="/images/pov/square-1.jpg" />   </div>
     <div class="card-square"><img class="post-scroll" src="/images/pov/square-2.png" />  </div>
@@ -517,7 +526,7 @@ display: none;
     <div class="card-square"><img class="post-scroll" src="/images/pov/jesus.jpg" />  </div>
   </div>
    </div>   
-   
+</div>   
 </section> 
 </section-11> 
 </div>
