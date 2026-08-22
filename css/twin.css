@@ -13,7 +13,7 @@
   display: grid;
   grid-template-columns: repeat(3, 0fr); /* 3 columns per row */
   grid-template-rows: repeat(2, auto);    /* 2 rows */
-  gap: 0px;                           /* Space between icons */
+  gap: 2px;                           /* Space between icons */
   justify-items: center;
 }
   
