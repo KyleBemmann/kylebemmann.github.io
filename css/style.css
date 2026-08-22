@@ -32,7 +32,7 @@
 /* -------------------------------------------------------- */
 
  .pfp-image, .post-img, .card, .card-gallery, .card-square, .profile-img, .circle-img  {
- filter: drop-shadow(0px 5px 6px #777777); 
+ filter: drop-shadow(0px 5px 6px #999999); 
  
 }
 
