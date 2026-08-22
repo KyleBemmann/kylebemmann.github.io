@@ -31,6 +31,18 @@
 /* BASICS */
 /* -------------------------------------------------------- */
 
+ .pfp-image, .post-img, .card, .card-gallery, .card-square, .profile-img, .circle-img  {
+ filter: drop-shadow(0px 5px 6px #777777); 
+ 
+}
+
+.button, button {
+   filter: drop-shadow(0px 2px 2px #555555); 
+}
+
+.navigation, #myBtn  {
+   filter: drop-shadow(5px 5px 10px #000000); 
+}
 
 * {
   box-sizing: border-box;
@@ -154,8 +166,8 @@ margin-top: 10px; padding-top: 5px; padding-bottom: 0;
   align-content: center;
   border-radius: 20px;
   border: none;
-  filter: drop-shadow(0px -1px 15px #aaaaaa);
 }
+
 
 /* -------------------------------------------------------- */
 /* My Stuff */
@@ -284,7 +296,6 @@ button {
   width: 160px;
 }
 
-
 .button {
   background-color: dodgerblue;
   border: none;
@@ -348,7 +359,7 @@ button:hover {
 }
 
 #myBtn:hover {
-  background-color: #008B8B; /* Add a dark-grey background on hover */
+  background-color: #6F0000; /* Add a dark-grey background on hover */
 }
  
 /* Images*/
@@ -369,6 +380,7 @@ button:hover {
   width: 200px;
   display: block;
   Border-radius: 50%;
+  margin-bottom: 10px;
 }
   
 .post-img {
@@ -377,14 +389,12 @@ button:hover {
   width: 97%;
   border-radius: 20px;
   margin-bottom: 10px;
-  filter: drop-shadow(0px -1px 15px #aaaaaa);
 }
   
 .post-scroll {
   height: 100%;
   width: 100%;
   border-radius: 20px 20px 20px 20px;
-  filter: drop-shadow(0px -1px 15px #aaaaaa);
 }
  
 .playlist-img {
@@ -401,6 +411,7 @@ button:hover {
 
 .profile-img {
   border-radius: 50%;
+  margin-bottom: 10px;
 }
   
 .image-holy {
@@ -419,7 +430,7 @@ button:hover {
   height: auto;
   margin: auto;
   border-radius: 20px 20px 20px 20px;
-  filter: drop-shadow(0px -1px 15px #aaaaaa);
+
 }
 
 .image-chakra {
