@@ -12,6 +12,7 @@
   animation-duration: 1.3s;
 }
 
+/* SCROLL */
 
 .card, .card-gallery, .circle-img, .post-img, .inline-image, .profile-img, .carousel, .carousel2, .carousel3, .carousel4 {
   
@@ -37,6 +38,7 @@ to {
   
 }
 
+/* DEFAULT LOAD ANIMATION */
 
 .load1 {
 animation-name: animation1;
@@ -57,6 +59,7 @@ animation-name: animation1;
 }
 }
 
+/* LONG BOI */
 
 .load2 {
 animation-name: animation2;
@@ -75,6 +78,8 @@ animation-name: animation2;
 }
 }
 
+/* TIMER */
+
 .load3 {
 animation-name: animation3;
   animation-duration: 2s;
@@ -92,10 +97,11 @@ animation-name: animation3;
 }
 }
 
+/* PROFILE PICTURE */
 
 .load4 {
 animation-name: animation4;
-  animation-duration: 1s;
+  animation-duration: 1.2s;
 }
 
 @keyframes animation4 {
@@ -109,21 +115,21 @@ animation-name: animation4;
 }
 }
 
+/* BUTTONS */
 
 .load5 {
-animation: expandHeight 2s ease-out forwards;
-overflow: hidden;
+animation: animation5 1.4s ease-out forwards;
 }
 
 
-@keyframes expandHeight {
+@keyframes animation5 {
   from {
-    height: 0;
-    opacity: 1;
+    opacity: .6;
+    scale: .8;
   }
   to {
-    height: auto;
     opacity: 1;
+    scale: 1;
   }
 }
 
