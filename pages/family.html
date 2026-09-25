@@ -314,7 +314,15 @@ h1 {
 <!-- =============================================== -->
 
 <header>
-  <img class="header-image" alt="" src="/images/family/header.png"/> 
+   <div class="header-image">
+  <picture>
+    <!-- Desktop screens (802px wide and up) -->
+    <source media="(min-width: 802px)" style="border-radius: 20px 20px 0 0;" srcset="/images/family/header.jpg">
+    
+    <!-- Mobile screens (Default fallback for anything smaller than 768px) -->
+    <img src="/images/family/header.png"   alt="Website Header" style="width: 100%; height: auto; border-radius: 20px 20px 0 0;">
+  </picture>
+ </div> 
     <section id="header-title">
       <div class="header-title">The One True Church</div>
     </section>
