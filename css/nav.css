@@ -50,12 +50,12 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   display: block;
-  padding: 0 9px;
+  padding: 0 7px;
   line-height: 50px;
   background: #262626;
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.85em;
+  font-size: 0.8125em;
 }
 
 nav ul li a:hover,
@@ -71,7 +71,7 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 nav ul li ul li {
-  min-width: 172px;
+  min-width: 160px;
 }
 
 nav ul li ul li a {
@@ -131,7 +131,7 @@ nav ul li {
 }
   
 nav ul li a {
-  padding: 15px;
+  padding: 11px;
   line-height: 17px;
 }
   
@@ -205,10 +205,14 @@ article {
   padding: 10px;
 }
 
+
+
+@media screen and (min-width: 820px) {
+ nav ul li a,
+nav ul li a:visited {
+  padding: 0 11px;
 }
-
-
-
+}
 
 
 

@@ -202,20 +202,7 @@ main {
 
 }
 
-@media (min-width: 800px) {
- body {
-   margin-top: -5px;
-}
- 
-}
 
-@media (max-width: 798px) {
-
-header {
-margin-top: -20px;
-}
-
-}
 
 
 

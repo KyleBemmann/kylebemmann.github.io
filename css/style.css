@@ -486,28 +486,17 @@ button:hover {
 
 /* Mobile */
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 798px) {
   
 
 h2 {
   font-size: 1.8em;
   }  
-
-.header-image {
-  margin-top: 0px;
-}
-    
-#header-title {
-  margin-top: -10px;
-}
   
-}
-
-/* CSS Code for devices < 798px */
-@media (max-width: 798px) {
-header { 
-  margin-top: -20px;
-}
+  
+header {
+  margin-top: -20px;  
+  }
 
 }
 
