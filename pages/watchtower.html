@@ -3,7 +3,7 @@
   <head>
 
     <!-- Change your site title: (It is shown in the tab) -->
-    <title>Christmas</title>
+    <title>Collapse of the Watchtower</title>
 
     <!-- Change your site description: (It is shown in Google results) -->
     <meta content="Kyle Bemmann's Mind" name="description" />
@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- FavIcon (small image in tab), change to any image you want: -->
-    <link href="/images/favicon/gift.png" rel="icon" type="image/x-icon" />
+    <link href="/images/favicon/read.png" rel="icon" type="image/x-icon" />
 
     <!-- Change your Social Media Share Image: (It is shown in Social Media Posts) -->
     <meta property="og:image" content="https://kylebemmann.github.io/images/social-art.jpg">
@@ -21,21 +21,21 @@
     <!-- CSS: -->
     <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="/css/sidebar2.css" rel="stylesheet" />
+    <link href="/css/sidebar1.css" rel="stylesheet" />
     <link href="/css/style.css" rel="stylesheet" />
     <link href="/css/nav.css" rel="stylesheet" />
     <link href="/css/animation.css" rel="stylesheet" />
-  
+    
     <!-- JavaScript: -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
 <style>
-    
- /* Background Colors: */ 
  
+ /* Background Colors: */  
+  
  :root {
-  --background-color:  #165B33;
+  --background-color:  #373F36;
  }
  
 body {
@@ -45,54 +45,17 @@ body {
 /* BUTTONS: */
 
 button {
-  background-color: #165B55;
+  background-color: #363F39;
 }
 
 button:hover {
-  background-color: #1C5B16;
-}
+  background-color: #39363F;
+} 
 
 /* SIDEBAR: */ 
 
 aside {
-  max-height: 360px;
-}
-
-/* -------------------------------------------------------- */
-/* MOBILE RESPONSIVE */
-/* -------------------------------------------------------- */
-
-/* CSS Code for devices < 800px */
-@media (max-width: 800px) {
-
-
-.layout {
-    width: 100%;
-    grid-template: "nav" auto "header" auto "leftSidebar" auto  "main" auto "rightSidebar" auto "footer" auto / 1fr;
-}
-
-
-.left-sidebar, .right-sidebar { 
-    display: block;
-}
-
-button {
- display: none; 
-}
-
-aside {
-position: relative;
-top: 0;
-max-height: 220px;
-margin-bottom: 0;
-}
-
-
-.sidebar-title {
-font-size: 1.8em;  
-padding-top: 5px;
-}
-
+  max-height: 440px;
 }
 
 </style>
@@ -103,7 +66,7 @@ padding-top: 5px;
 <button id="myBtn" onclick="topFunction()" style='font-size:24px'><i class='fa fa-arrow-up'></i></button>
 
     <div class="layout">
- 
+
 <!-- =============================================== -->
 <!-- NAVIGATION -->
 <!-- =============================================== -->
@@ -360,95 +323,81 @@ padding-top: 5px;
 <!-- HEADER -->
 <!-- =============================================== -->
 
- <header>
+<header>
   <div class="header-image">
   <picture>
     <!-- Desktop screens (802px wide and up) -->
-    <source media="(min-width: 802px)" style="border-radius: 20px 20px 0 0;" srcset="/images/christmas/header.jpg">
+    <source media="(min-width: 802px)" style="border-radius: 20px 20px 0 0;" srcset="/images/watchtower/header.jpg">
     
     <!-- Mobile screens (Default fallback for anything smaller than 768px) -->
-    <img src="/images/christmas/header.png"   alt="Website Header" style="width: 100%; height: auto; border-radius: 20px 20px 0 0;">
+    <img src="/images/watchtower/header.png"   alt="Website Header" style="width: 100%; height: auto; border-radius: 20px 20px 0 0;">
   </picture>
- </div> 
+ </div>
     <section id="header-title">
-      <div class="header-title">Christmas</div>
+      <div class="header-title">Collapse of the Watchtower</div>
     </section>
-</header>	   
+</header>   
     
 <!-- =============================================== -->
 <!-- LEFT SIDEBAR -->
 <!-- =============================================== -->
 
 <aside class="left-sidebar" style="margin-top: 10px;">
-  <div class="sidebar-title" style="text-align: center;">Hailie Jade</div>
+  <div class="sidebar-title">The Watchtower</div>
       <div class="load4" style="" >  
-      <img class="pfp-image" src="/images/christmas/pfp.jpg">
-   </div>
- 
-<!-- BUTTONS -->   
-
-<div class="load5" style="" >
-  <div class="container">
-    <a href="/pages/christmas">  <button>Christmas</button> </a>
-  </div>
-
-  <div class="container">
-    <a href="/pages/believe">  <button>I Believe</button> </a>
-  </div>
-    
-  <div class="container">
-    <a href="/pages/god"> <button>I'm A God</button> </a>
-  </div>  
-
-</div>      
-</aside>
-
-<!-- =============================================== -->
-<!-- RIGHT SIDEBAR -->
-<!-- =============================================== -->
-
-<aside class="right-sidebar" style="margin-top: 10px;">
-  <div class="sidebar-title" style="text-align: center;">Holly White</div>
-      <div class="load4" style="" >  
-      <img class="pfp-image" src="/images/christmas/pfp2.jpg">
+      <img class="pfp-image" src="/images/watchtower/pfp.jpg">
  </div>
- <!-- BUTTONS -->   
-
-<div class="load5" style="" >
+ 
+<!-- BUTTONS -->        
+        
   <div class="container">
-    <a href="/pages/family">  <button>My Church Family</button> </a>
-  </div>
-
+    <a href="/pages/stone">  <button>The Philosopher's Stone</button> </a>
+  </div> 
+        
+ <div class="load5" style="" >
+<div class="container">
+    <a href="/pages/elixir">  <button>The Elixir of Life</button> </a>
+  </div> 
+  
   <div class="container">
-    <a href="/pages/manhood">  <button>Ask Seek Knock</button> </a>
-  </div>
+    <a href="/pages/sword">  <button>The Sword In The Stone</button> </a>
+  </div> 
+  
+  <div class="container">
+    <a href="/pages/watchtower">  <button>The Watchtower</button> </a>
+  </div> 
+
+</div> 
+          
+</aside>
     
-  <div class="container">
-    <a href="/pages/persecution"> <button>I Was Taken</button> </a>
-  </div>  
+<!-- =============================================== -->
+<!-- MOBILE SIDEBAR -->
+<!-- =============================================== -->
 
-</div>   
-  </aside>
-
+<aside class="mobile-sidebar" style="margin-top: 10px;">
+	<div class="sidebar-title">The Watchtower</div>
+     <div class="load4" style="" >  
+       <img class="pfp-image" src="/images/watchtower/pfp.jpg">
+ </div>
+ </aside>     
        
 <!-- =============================================== -->
 <!-- MAIN CONTENT -->
 <!-- =============================================== -->
         
 <main id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
-<section id="content" style="">  
+  <section id="content" style="">  
 <div class="load1" style="" > 
-  <img class="post-img" src="/images/christmas/1.jpg" style="animation: none;" />
-  <img class="post-img" src="/images/christmas/2.jpg" style="" />
-
- 
- </div>     
-</section> 
+    <img class="post-img" src="/images/watchtower/1.jpg" style="animation: none;" />
+ </div>
+  
+  </section> 
 </main>
-</div> 
-    
+</div>
+ 
 <!-- Add any additional Javascript code (<script></script>) here. -->
-    
+         
 <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script>
 (function($) { // Begin jQuery
@@ -495,7 +444,7 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-</script>    
+</script>  
 </body>
 </html>
 
