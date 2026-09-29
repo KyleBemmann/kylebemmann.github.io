@@ -104,7 +104,10 @@ nav ul li ul li a {
 
 @media only screen and (max-width: 798px) {
   
-
+  .rectangle {
+  display: none;  
+  }
+  
  .navigation {
   display: block;
   width: calc(103% + 8px);
