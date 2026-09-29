@@ -113,7 +113,7 @@ aside {
   padding: var(--padding);
   color: var(--sidebar-text-color);
   position: sticky;
-  top: 75px;
+  top: 70px;
   height: 580px;
 }
 
