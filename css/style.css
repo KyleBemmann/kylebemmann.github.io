@@ -570,13 +570,6 @@ h2 {
    display: none;  
   }
   
-  .rectangle2 {
-  display: block;
-  position: absolute;
-  top: 70px;
-  width: 100vw;
-  height: 25px;
-} 
 
  nav ul li a:hover,
 nav ul li a:visited:hover {
