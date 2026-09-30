@@ -98,6 +98,7 @@
   color: black;
   height: 45px;
   width: 45px;
+  margin-top: 5px;
   border-radius: 50%;
   padding-bottom: .1em;
   cursor: pointer; 
@@ -152,6 +153,7 @@
   color: black;
   height: 45px;
   width: 45px;
+  margin-top: 5px;
   border-radius: 50%;
   padding-bottom: .1em;
   cursor: pointer; 
@@ -205,6 +207,7 @@
   color: black;
   height: 45px;
   width: 45px;
+  margin-top: 5px;
   border-radius: 50%;
   padding-bottom: .1em;
   cursor: pointer; 
@@ -257,6 +260,7 @@
   color: black;
   height: 45px;
   width: 45px;
+  margin-top: 5px;
   border-radius: 50%;
   padding-bottom: .1em;
   cursor: pointer; 

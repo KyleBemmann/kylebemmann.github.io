@@ -38,7 +38,7 @@ to {
   
 }
 
-/* DEFAULT LOAD ANIMATION */
+/* DEFAULT LOAD ANIMATION
 
 .load1 {
 animation-name: animation1;
@@ -59,7 +59,7 @@ animation-name: animation1;
 }
 }
 
-/* LONG BOI */
+/* LONG BOI
 
 .load2 {
 animation-name: animation2;
@@ -78,7 +78,7 @@ animation-name: animation2;
 }
 }
 
-/* TIMER */
+/* TIMER
 
 .load3 {
 animation-name: animation3;
@@ -97,7 +97,7 @@ animation-name: animation3;
 }
 }
 
-/* PROFILE PICTURE */
+/* PROFILE PICTURE
 
 .load4 {
 animation-name: animation4;
@@ -115,7 +115,7 @@ animation-name: animation4;
 }
 }
 
-/* BUTTONS */
+/* BUTTONS
 
 .load5 {
 animation: animation5 1.4s ease-out forwards;

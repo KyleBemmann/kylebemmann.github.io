@@ -36,6 +36,21 @@
   box-sizing: border-box;
 }
 
+  .tab-c {
+z-index: 9000;
+position: sticky;
+width: 20px;
+height: 10px;
+left:  400px;
+top: -50px;
+margin-top: -30px;
+margin-left: 190px;
+padding-top: 30px;
+
+corner-shape: scoop; 
+border-radius: 0 0 20px 0;
+}
+
 body {
   display: flex;
   align-items: flex-start;
@@ -113,7 +128,7 @@ aside {
   padding: var(--padding);
   color: var(--sidebar-text-color);
   position: sticky;
-  top: 70px;
+  top: 75px;
   height: 580px;
 }
 
@@ -171,6 +186,11 @@ main {
 body {
     font-size: 14px;
   }
+  
+  .tab-c {
+   display: none; 
+  }
+
 
 .layout {
     width: 100%;

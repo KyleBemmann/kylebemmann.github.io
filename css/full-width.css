@@ -36,6 +36,11 @@
   box-sizing: border-box;
 }
 
+  .tab-c {
+   display: none; 
+  }
+  
+
 
 body {
   display: flex;
