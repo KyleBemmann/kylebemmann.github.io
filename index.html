@@ -33,8 +33,11 @@
 <style>
 
 
-
-  
+@media only screen and (max-width: 798px) {  
+  .tab-l, .tab-r, .tab-left, .tab-right, .rectangle {
+   display: none;  
+  }
+}  
 
     
 /* Background Colors: */
@@ -48,14 +51,20 @@
    --brand-bright: hsl(from var(--background-color) h s calc(l + 75));
  }
  
-   
-  aside,  #header-title, #content {
+ 
+
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-left-2, .tab-right-2 {
+  background-color:  var(--background-color); 
+  
+}
+
+  
+aside,  #header-title, #content {
     background:  var(--brand-bright);  
  }
 
  
-
- #myBtn {
+#myBtn {
     background: var(--brand-lighter); 
  }
  
@@ -74,25 +83,7 @@ nav ul li a:visited:hover, .nav-mobile {
  }
  
 
- 
-body {
-  background: var(--background-color);
-}
 
-
-
-
-
-
-#content{
-  z-index: -1;
-}
-
-
-
-.rectangle, .tab-l, .tab-r, .tab-c, .tab-d, .tab-e, .rectangle2 {
-  background-color: var(--background-color); /* Change to your preferred color */
-}
 
 
 /* BUTTONS: */ 
@@ -104,6 +95,11 @@ button {
 button:hover {
   background-color:  var(--brand-muted);
 } 
+
+
+#content{
+  z-index: -1;
+}
 
 .personbtn {
   display: flex; /* Enables CSS flexbox */
@@ -227,8 +223,7 @@ aside {
 
 <nav>
   <div class="rectangle"></div>
-  <div class="rectangle2"></div>
-    <div class="tab-l"></div>
+  <div class="tab-l"></div>
     <div class="tab-r"></div>
 <section class="navigation">
   <div class="nav-container">
@@ -482,7 +477,14 @@ aside {
 <!-- =============================================== -->
 
 
- <header>
+
+ <header> 
+    
+ <div class="tab-l-r">
+    <div class="tab-left"></div>
+    <div class="tab-right"></div>
+  </div> 
+        
   <div class="header-image">
   <picture>
     <!-- Desktop screens (802px wide and up) -->
@@ -582,6 +584,13 @@ aside {
 <!-- =============================================== -->
 
  <main id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
+
+    
+ <div class="tab-l-r-2">
+    <div class="tab-left-2"></div>
+    <div class="tab-right-2"></div>
+  </div> 
+  
 <section id="content" style="">  
 
 <div class="load2" style="" >  
