@@ -613,13 +613,6 @@ h2 {
 
 @media only screen and (max-width: 798px) {
 
-main #content {
- width: 86vw; 
- display: block;
- margin-left: auto;
- margin-right: auto; 
-}
-
    header {
  width: 100%; 
  display: block;
