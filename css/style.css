@@ -80,17 +80,7 @@ corner-shape: scoop;
 border-radius: 0 0 0 20px;
 }
 
-@media (min-width: 802px) {
 
-.tab-l {
- padding-left: 150px; 
-}
-
-.tab-r {
-  padding-right: 150px;
-}
-
-}
 
 
 * {
