@@ -36,32 +36,74 @@
     
  :root {
   --background-color: #09493d;
+  --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) l);
+  --brand-darker: hsl(from var(--background-color) h s calc(l - 10));
+  --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
+  --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
+   --brand-bright: hsl(from var(--background-color) h s calc(l + 75));
+ } 
+   
+  aside,  #header-title, #content {
+    background:  var(--brand-bright);  
+ }
+
+ 
+ 
+  
+  #myBtn {
+    background: var(--brand-lighter); 
  }
  
- .rectangle {
-  background-color: var(--background-color); /* Change to your preferred color */
+#myBtn:hover {
+   background-color:  var(--brand-muted); 
+}
+
+
+ 
+ nav ul li a:hover,
+nav ul li a:visited:hover, .nav-mobile  {
+  background: var(--brand-darker);
 }
  
+
+.rectangle, .tab-l, .tab-r, .tab-c, .tab-d, .tab-e, .rectangle2 {
+  background-color:  var(--background-color); /* Change to your preferred color */
+}
+
+.navigation, nav ul li a, nav ul li a:visited {
+  background: var(--brand-vibrant); 
+ }
+
+
+#content{
+  z-index: -1;
+}
 body {
   background: var(--background-color);
-  margin-top: -20px;
 }
 
 header {
   margin-top: 5px;
 }
 
+@media only screen and (max-width: 798px) {
 
+header {
+margin-top: -40px;  
+}
+
+
+}
 
 /* BUTTONS */
 
 button {
 width: 200px;
-	background-color: #09491D;
+	background-color:  var(--brand-vibrant);
 }
 
 button:hover {
-background-color: #093549;  
+background-color: var(--brand-muted); 
 }
 
 /* -------------------------------------------------------- */
@@ -138,10 +180,7 @@ main p, main ul, main li {
 
 @media only screen and (max-width: 798px) {
   
-.navigation {
-   margin-top: -80px;
- }
-  
+
 main h3 {
 font-size: 1.6em
 }
@@ -163,6 +202,9 @@ font-size: 1.6em
 
 <nav> 
 <div class="rectangle"></div>
+  <div class="rectangle2"></div>
+    <div class="tab-l"></div>
+    <div class="tab-r"></div>
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
@@ -475,7 +517,7 @@ font-size: 1.6em
 <!-- =============================================== -->
 
 <aside class="right-sidebar" style="margin-top: 10px;">
-	  
+
   <div class="sidebar-section">
       <div class="load4" style="" >  
       <img class="pfp-image" src="/images/art/science.jpg" style="margin-top: -10px;">

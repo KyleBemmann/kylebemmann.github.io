@@ -38,10 +38,46 @@
     
  :root {
   --background-color:  #2D594A;
+  --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) l);
+  --brand-darker: hsl(from var(--background-color) h s calc(l - 10));
+  --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
+  --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
+   --brand-bright: hsl(from var(--background-color) h s calc(l + 75));
+ }
+   
+   
+  aside,  #header-title, #content {
+    background:  var(--brand-bright);  
+ }
+
+ 
+ 
+  #myBtn {
+    background: var(--brand-lighter); 
  }
  
- .rectangle {
-  background-color: var(--background-color); /* Change to your preferred color */
+#myBtn:hover {
+   background-color:  var(--brand-muted); 
+}
+
+
+ 
+ nav ul li a:hover,
+nav ul li a:visited:hover, .nav-mobile  {
+  background: var(--brand-darker);
+}
+
+.rectangle, .tab-l, .tab-r, .tab-c, .tab-d, .tab-e, .rectangle2 {
+  background-color:  var(--background-color); /* Change to your preferred color */
+}
+
+.navigation, nav ul li a, nav ul li a:visited {
+  background: var(--brand-vibrant); 
+ }
+
+
+#content{
+  z-index: 1;
 }
  
 body {
@@ -100,6 +136,9 @@ body {
 
 <nav>
 <div class="rectangle"></div>
+  <div class="rectangle2"></div>
+    <div class="tab-l"></div>
+    <div class="tab-r"></div>
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
@@ -552,7 +591,7 @@ body {
 
   <div class="load1" style="" > 
   <div id="div1">  
-    <div class="carousel3">
+    <div class="carousel2">
       <div class="card"><img class="playlist-img" src="/images/life/hospital.jpg" /> <h4>My Visit To A<br>Mental Health Hospital</h4> </div>
       <div class="card"><img class="playlist-img" src="/images/life/all-wrong.jpg" />  <h4>You All Are Wrong About<br>Christmas and Easter</h4> </div>
       <div class="card"><img class="playlist-img" src="/images/life/burden.jpg" /> <h4 style="padding: 5 5 0 0;">For With Much Wisdom<br>Comes Much Sorrow</h4>  </div>
@@ -662,7 +701,7 @@ body {
  
   <div class="load1" style="" > 
     <div id="div1">  
-      <div class="carousel4">
+      <div class="carousel3">
         <div class="card"><img class="playlist-img" src="/images/life/art-school.jpg" /> <h4>Art School</h4> </div>
         <div class="card"><img class="playlist-img" src="/images/life/bartending.jpg" />  <h4>Bartending</h4> </div>
         <div class="card"><img class="playlist-img" src="/images/life/bedsheets.jpg" /> <h4>Bedsheets</h4>  </div>

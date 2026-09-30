@@ -36,24 +36,65 @@
  
  :root {
   --background-color:  #372E59;
+  --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) l);
+  --brand-darker: hsl(from var(--background-color) h s calc(l - 10));
+  --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
+  --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
+   --brand-bright: hsl(from var(--background-color) h s calc(l + 75));
+ } 
+   
+  aside,  #header-title, #content {
+    background:  var(--brand-bright);  
+ }
+
+#content{
+  z-index: -1;
+} 
+ 
+  
+  #myBtn {
+    background: var(--brand-lighter); 
  }
  
- .rectangle {
-  background-color: var(--background-color); /* Change to your preferred color */
+#myBtn:hover {
+   background-color:  var(--brand-muted); 
 }
+
+
+ 
+  nav ul li a:hover,
+nav ul li a:visited:hover, .nav-mobile  {
+  background: var(--brand-darker);
+}
+
+.rectangle, .tab-l, .tab-r, .tab-c, .tab-d, .tab-e, .rectangle2 {
+  background-color:   var(--background-color); /* Change to your preferred color */
+}
+
+.navigation, nav ul li a, nav ul li a:visited {
+  background: var(--brand-vibrant); 
+ }
+ 
+
+
+
+
  
 body {
   background: var(--background-color);
 }
 
+
+
+
 /* BUTTONS: */ 
 
   button {
-  background-color: #4D2E59;
+  background-color:  var(--brand-vibrant);
 }
 
 button:hover {
-  background-color: #2E3A59;
+  background-color: var(--brand-muted);
 } 
 
 /* SIDEBAR: */ 
@@ -68,15 +109,17 @@ aside {
   <body>
 
 <button id="myBtn" onclick="topFunction()" style='font-size:24px'><i class='fa fa-arrow-up'></i></button>
-
     <div class="layout">
-
+   
 <!-- =============================================== -->
 <!-- NAVIGATION -->
 <!-- =============================================== -->
 
 <nav>
   <div class="rectangle"></div>
+  <div class="rectangle2"></div>
+    <div class="tab-l"></div>
+    <div class="tab-r"></div>
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
@@ -339,7 +382,7 @@ aside {
   </picture>
  </div>
     <section id="header-title">
-      <div class="header-title">There Is No Religion Higher Than Truth</div>
+      <div class="header-title">There Is No Religion Higher Than Truth</div> 
     </section>
 </header>	   
     
@@ -348,6 +391,7 @@ aside {
 <!-- =============================================== -->
 
 <aside class="left-sidebar" style="margin-top: 10px;">
+ <div class="tab-c"></div>
   <div class="sidebar-title">Theosophy</div>
     <div class="load4" style="" >
     <img class="pfp-image" src="/images/theosophy/pfp.png">
@@ -366,7 +410,6 @@ aside {
   <div class="container"> 
     <a href="/pages/theosophy"> <button>Theosophy</button> </a> 
   </div>
- 
 </div>     
 </aside>
     
@@ -383,8 +426,7 @@ aside {
       
 <!-- =============================================== -->
 <!-- MAIN CONTENT -->
-<!-- =============================================== -->
-       
+<!-- =============================================== -->       
 <main id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
 <section id="content" style="">
  <div class="load1" style="" >

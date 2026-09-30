@@ -38,10 +38,46 @@
     
  :root {
   --background-color:  #253C4E;
+  --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) l);
+  --brand-darker: hsl(from var(--background-color) h s calc(l - 10));
+  --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
+  --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
+   --brand-bright: hsl(from var(--background-color) h s calc(l + 75));
+ } 
+   
+  aside,  #header-title, #content {
+    background:  var(--brand-bright);  
+ }
+
+ 
+ 
+  
+  #myBtn {
+    background: var(--brand-lighter); 
  }
  
- .rectangle {
-  background-color: var(--background-color); /* Change to your preferred color */
+#myBtn:hover {
+   background-color:  var(--brand-muted); 
+}
+
+
+ 
+ nav ul li a:hover,
+nav ul li a:visited:hover, .nav-mobile  {
+  background: var(--brand-darker);
+}
+
+.rectangle, .tab-l, .tab-r, .tab-c, .tab-d, .tab-e, .rectangle2 {
+  background-color:  var(--background-color); /* Change to your preferred color */
+}
+
+.navigation, nav ul li a, nav ul li a:visited {
+  background: var(--brand-vibrant); 
+ }
+
+
+#content{
+  z-index: 1;
 }
  
 body {
@@ -117,6 +153,9 @@ display: none;
 
 <nav>
 <div class="rectangle"></div>
+  <div class="rectangle2"></div>
+    <div class="tab-l"></div>
+    <div class="tab-r"></div>
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
@@ -569,7 +608,7 @@ display: none;
 <section id="content-scroll" style="padding-top: 0; padding-bottom: 0;">  
 <div style="  margin-bottom: 20px;">
   <div class="load1" style="" > 
-  <div class="carousel2" style="padding-top: 0;">
+  <div class="carousel4" style="padding-top: 0;">
     <div class="card-square"><img class="post-scroll" src="/images/pov/square-0.jpg" /> </div>
     <div class="card-square"><img class="post-scroll" src="/images/pov/square-1.jpg" />   </div>
     <div class="card-square"><img class="post-scroll" src="/images/pov/square-2.png" />  </div>
