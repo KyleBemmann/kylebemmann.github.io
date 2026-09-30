@@ -545,6 +545,13 @@ main #content {
  margin-right: auto; 
 }
 
+   header {
+ width: calc(92vw - 5px); 
+ display: block;
+ margin-left: auto;
+ margin-right: auto; 
+}
+
 .card, .post-img {
  width: 86vw; 
  display: block;
