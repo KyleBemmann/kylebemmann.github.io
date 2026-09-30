@@ -32,9 +32,11 @@
 /* -------------------------------------------------------- */
 
  .post-img, .card, .card-gallery, .card-square, .pfp-image, .profile-img, .circle-img {
- filter: drop-shadow(0px 4px 6px #aaa); 
+ filter: drop-shadow(0px 4px 6px #888); 
  
 }
+
+
 
 .navigation, #myBtn  {
    filter: drop-shadow(5px 5px 5px #000000); 
@@ -56,9 +58,6 @@ header {
 
 }
 
-.rectangle2 {
-display: none;
-}
 
   .tab-l {
 width: 20px;
@@ -81,6 +80,76 @@ border-radius: 0 0 0 20px;
 }
 
 
+
+.tab-left {
+  z-index: 100;
+ display: block;
+ width: 20px;
+ height: 20px;
+ margin-top: 10px;
+corner-shape: scoop; 
+border-radius: 0 0 20px 0;
+}
+
+.tab-right {
+  z-index: 100;
+ display: block;
+ width: 20px;
+ height: 20px;
+ margin-top: -20px;
+ margin-left: auto;
+ corner-shape: scoop; 
+border-radius: 0 0 0 20px;
+} 
+
+.tab-l-r {
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  z-index: 100;
+  position: fixed;
+}
+
+.tab-l-r-2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 30px;
+  width: 107.5%;
+  max-width: 680px;
+  margin-top: -30px;
+  margin-left: -20px;  
+  display: block;
+  z-index: 2000;
+  position: sticky;
+  top: 65px;
+}
+
+.tab-left-2 {
+  background: #000;
+  z-index: 100;
+ display: block;
+ width: 20px;
+ height: 30px;
+corner-shape: scoop; 
+border-radius: 0 0 20px 0
+
+}
+
+.tab-right-2 {
+  background: #000;
+  z-index: 100;
+ display: block;
+ width: 20px;
+ height: 30px;
+margin-top: -30px;
+ margin-left: auto;
+ corner-shape: scoop; 
+border-radius: 0 0 0 20px;
+} 
 
 
 * {
@@ -514,6 +583,17 @@ button:hover {
   display: block;
 }
 
+
+h2 {
+  font-size: 1.8em;
+  } 
+  
+  
+.tab-l-r-2 {
+  display: none;
+  
+}
+
 }
 /* Hide element if the viewport width is 600px or less */
 @media screen and (max-width: 600px) {
@@ -523,6 +603,11 @@ button:hover {
   #div2 {
     display: block;
 }
+
+
+
+}
+
 
 /* Mobile */
 
@@ -551,26 +636,19 @@ main #content {
 }
 
 
-h2 {
-  font-size: 1.8em;
-  }  
+.tab-l-r-2 {
+  display: none;
   
+}
+ 
 
-   .tab-l, .tab-r, .rectangle {
-   display: none;  
-  }
-  
 
  nav ul li a:hover,
 nav ul li a:visited:hover {
   background: #2581DC;
 }
-  
-header {
-  margin-top: -40px;  
-  }
-  
 
+  
 
 }
 

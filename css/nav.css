@@ -105,10 +105,10 @@ nav ul li ul li a {
 
 @media only screen and (max-width: 798px) {
 
-.rectangle, .rectangle2, .tab-l, .tab-r, .tab-c, .tab-d, .tab-e {
-display: none;  
-}
 
+body {
+ margin-top: -60px; 
+}
 
  .navigation {
    position: fixed;
@@ -226,6 +226,8 @@ nav ul li a:visited {
   padding: 0 11px;
 }
 }
+
+
 
 
 
