@@ -34,6 +34,13 @@
     
 /* Background Colors: */ 
 
+@media only screen and (max-width: 798px) {  
+  .tab-l, .tab-r, .tab-left, .tab-right, .rectangle {
+   display: none;  
+  }
+}  
+
+
  :root {
   --background-color: #085430;
   --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) l);
@@ -43,45 +50,44 @@
    --brand-bright: hsl(from var(--background-color) h s calc(l + 75));
  } 
    
-  aside,  #header-title, #content {
+ 
+
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r {
+  background-color:  var(--background-color); 
+  
+}
+  
+aside,  #header-title, #content {
     background:  var(--brand-bright);  
  }
 
  
- 
-  
-  #myBtn {
+#myBtn {
     background: var(--brand-lighter); 
  }
  
 #myBtn:hover {
    background-color:  var(--brand-muted); 
 }
-
-
  
  nav ul li a:hover,
-nav ul li a:visited:hover, .nav-mobile  {
+nav ul li a:visited:hover, .nav-mobile {
   background: var(--brand-darker);
 }
-
-.rectangle, .tab-l, .tab-r, .tab-c, .tab-d, .tab-e, .rectangle2 {
-  background-color:  var(--background-color); /* Change to your preferred color */
-}
-
+ 
+ 
 .navigation, nav ul li a, nav ul li a:visited {
   background: var(--brand-vibrant); 
  }
  
 
 
+
 #content{
   z-index: -1;
 }
  
-body {
-  background: var(--background-color);
-}
+
 
 /* BUTTONS: */
 
@@ -369,7 +375,11 @@ aside {
 <!-- HEADER -->
 <!-- =============================================== -->
       
- <header>
+ <header>    
+ <div class="tab-l-r">
+    <div class="tab-left"></div>
+    <div class="tab-right"></div>
+  </div>
    <div class="header-image">
   <picture>
     <!-- Desktop screens (802px wide and up) -->
