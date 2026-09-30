@@ -613,7 +613,7 @@ h2 {
 
 @media only screen and (max-width: 798px) {
 
-   header {
+   header, main {
  width: 100%; 
  display: block;
  margin-left: auto;
