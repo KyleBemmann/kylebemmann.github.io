@@ -639,15 +639,15 @@ h2 {
   } 
   
   
-.tab-l-r-2 {
+.tab-l-r-2,    .tab-left  {
   display: none;
   
 }
 
-
   .tab-right-bottom {
     margin-left: 760px;
   }
+
 
 
 }
@@ -699,7 +699,7 @@ nav ul li a:visited:hover {
   background: #2581DC;
 }
 
-  
+
 
 }
 
