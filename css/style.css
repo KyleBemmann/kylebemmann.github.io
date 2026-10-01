@@ -32,7 +32,7 @@
 /* -------------------------------------------------------- */
 
  .post-img, .card, .card-gallery, .card-square, .pfp-image, .profile-img, .circle-img {
- filter: drop-shadow(0px 4px 6px #888); 
+ filter: drop-shadow(0px 4px 6px #444); 
  
 }
 
@@ -555,7 +555,7 @@ button:hover {
 .post-img {
   margin: auto;
   display: block;
-  width: 100%;
+  width: 96.8%;
   border-radius: 20px;
   margin-bottom: 10px;
 }
