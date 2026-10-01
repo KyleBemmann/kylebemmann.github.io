@@ -33,7 +33,7 @@
 <style>
 
 @media only screen and (max-width: 798px) {  
-  .tab-l, .tab-r, .tab-left, .tab-right, .rectangle {
+  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
    display: none;  
   }
 }  
@@ -42,7 +42,7 @@
 /* Background Colors: */
 
  :root {
-  --background-color: #4c0013;
+  --background-color: #4D0008;
   --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) l);
   --brand-darker: hsl(from var(--background-color) h s calc(l - 10));
   --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
@@ -50,9 +50,8 @@
    --brand-bright: hsl(from var(--background-color) h s calc(l + 75));
  } 
    
- 
 
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r {
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
   background-color:  var(--background-color); 
   
 }
@@ -101,11 +100,6 @@ button:hover, .button-mom:hover, .button-dad:hover {
 } 
 
 
-/* SIDEBAR: */ 
-
-aside {
-  max-height: 360px;
-}
 
 </style>
 
@@ -381,6 +375,12 @@ aside {
     <div class="tab-left"></div>
     <div class="tab-right"></div>
   </div>
+  
+    <div class="tab-l-r-bottom">
+    <div class="tab-left-bottom"></div>
+    <div class="tab-right-bottom"></div>
+  </div>
+  
    <div class="header-image">
   <picture>
     <!-- Desktop screens (802px wide and up) -->
@@ -441,7 +441,9 @@ aside {
 <!-- =============================================== -->
          
 <main id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
-<section id="content" style="">  
+  
+  <div class="tab-c-bottom"></div>
+  <section id="content" style="">  
  <div class="load1" style="" >
   <img class="post-img" src="/images/sex/1.jpg" style="animation: none;" />
   <img class="post-img" src="/images/sex/2.jpg" />

@@ -32,14 +32,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   
 <style>
- 
+
 @media only screen and (max-width: 798px) {  
-  .tab-l, .tab-r, .tab-left, .tab-right, .rectangle {
+  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
    display: none;  
   }
 } 
 
-	@media only screen and (max-width: 800px) {  
+@media only screen and (max-width: 800px) {  
   .tab-left {
    display: none;  
   }
@@ -66,7 +66,7 @@
    
  
 
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r {
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
   background-color:  var(--background-color); 
   
 }
@@ -407,6 +407,12 @@ button:hover {
     <div class="tab-left"></div>
     <div class="tab-right"></div>
   </div>
+  
+    <div class="tab-l-r-bottom">
+    <div class="tab-left-bottom"></div>
+    <div class="tab-right-bottom"></div>
+  </div>
+  
   <div class="header-image">
   <picture>
     <!-- Desktop screens (802px wide and up) -->

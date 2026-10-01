@@ -33,17 +33,17 @@
   
 <style>
 
+
 @media only screen and (max-width: 798px) {  
-  .tab-l, .tab-r, .tab-left, .tab-right, .rectangle {
+  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
    display: none;  
   }
-}  
-
+} 
 
 /* Background Colors: */
   
  :root {
-  --background-color:  #413F44;
+  --background-color:  #363636;
   --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) l);
   --brand-darker: hsl(from var(--background-color) h s calc(l - 10));
   --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
@@ -53,7 +53,7 @@
    
  
 
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r {
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom {
   background-color:  var(--background-color); 
   
 }
@@ -381,6 +381,12 @@ padding-left: 5px;
     <div class="tab-left"></div>
     <div class="tab-right"></div>
   </div>
+  
+    <div class="tab-l-r-bottom">
+    <div class="tab-left-bottom"></div>
+    <div class="tab-right-bottom"></div>
+  </div>
+  
   <div class="header-image">
   <picture>
     <!-- Desktop screens (802px wide and up) -->
@@ -457,7 +463,9 @@ padding-left: 5px;
 <!-- =============================================== -->
            
 <main id="content" style="margin-top: 10px; padding-left: 20px;"> <!-- Do NOT remove the ID here -->
-  <section id="content" style="padding-top: 10px;">  
+  
+  <div class="tab-c-bottom"></div>
+   <section id="content" style="padding-top: 10px;">  
 <div class="load2" style="" >         
 <div class="card" style="animation: none;" >
     <div class="two-columns">

@@ -34,7 +34,7 @@
 
 
 @media only screen and (max-width: 798px) {  
-  .tab-l, .tab-r, .tab-left, .tab-right, .rectangle {
+  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
    display: none;  
   }
 } 
@@ -51,7 +51,7 @@
  } 
    
 
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r {
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
   background-color:  var(--background-color); 
   
 }
@@ -417,6 +417,12 @@ h2 {
     <div class="tab-left"></div>
     <div class="tab-right"></div>
   </div>
+  
+    <div class="tab-l-r-bottom">
+    <div class="tab-left-bottom"></div>
+    <div class="tab-right-bottom"></div>
+  </div>
+  
   <div class="header-image">
   <picture>
     <!-- Desktop screens (802px wide and up) -->
@@ -487,6 +493,8 @@ h2 {
 <!-- =============================================== -->
         
 <main id="content" style="margin-top: 10px; width: 100%;"> <!-- Do NOT remove the ID here -->
+
+  <div class="tab-c-bottom"></div>
   <section id="content" style="">  
 <div class="load1" style="" > 
 <div class="card" style="animation: none;" ><img class="playlist-img2" src="/images/93/winter.png" /> <h4>Yesod (9, Moon, Silver)</h4> </div>  

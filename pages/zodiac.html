@@ -33,8 +33,9 @@
   
 <style>
 
+
 @media only screen and (max-width: 798px) {  
-  .tab-l, .tab-r, .tab-left, .tab-right, .rectangle {
+  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
    display: none;  
   }
 }  
@@ -53,7 +54,7 @@
    
  
 
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r {
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
   background-color:  var(--background-color); 
   
 }
@@ -382,6 +383,12 @@ padding-left: 5px;
     <div class="tab-left"></div>
     <div class="tab-right"></div>
   </div>
+  
+    <div class="tab-l-r-bottom">
+    <div class="tab-left-bottom"></div>
+    <div class="tab-right-bottom"></div>
+  </div>
+  
     <div class="header-image">
   <picture>
     <!-- Desktop screens (802px wide and up) -->
@@ -458,7 +465,9 @@ padding-left: 5px;
 <!-- MAIN CONTENT -->
 <!-- =============================================== -->
 
-<main id="content" style="margin-top: 10px; padding-left: 20px;"> <!-- Do NOT remove the ID here -->
+<main id="content" style="margin-top: 10px; padding-left: 20px;"> <!-- Do NOT remove the ID here -->  
+  <div class="tab-c-bottom"></div>
+  
 <section id="content">
  <div class="load2" style="" >
        <div class="card" style="animation: none;" >        

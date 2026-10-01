@@ -33,10 +33,12 @@
 <style>
 
 @media only screen and (max-width: 798px) {  
-  .tab-l, .tab-r, .tab-left, .tab-right, .rectangle {
+  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,   .tab-c-bottom {
    display: none;  
   }
-}  
+
+
+} 
 
  
 /* Background Colors: */
@@ -55,7 +57,8 @@
  }
 
  
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-left-2, .tab-right-2 {
+
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-left-2, .tab-right-2, .tab-l-r-bottom-2, .tab-right-bottom-2,  .tab-left-bottom-2, .tab-c-bottom,  .tab-right-bottom-2-wide, .tab-left-bottom-2-wide  {
   background-color:  var(--background-color); 
   
 }
@@ -202,6 +205,13 @@ font-size: 1.6em
   <div class="rectangle2"></div>
     <div class="tab-l"></div>
     <div class="tab-r"></div>
+     <div class="tab-l-r-bottom-2">
+    <div class="tab-left-bottom-2"></div>
+    <div class="tab-right-bottom-2"></div>
+    
+    <div class="tab-left-bottom-2-wide"></div>
+    <div class="tab-right-bottom-2-wide"></div>
+  </div>
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
@@ -459,6 +469,12 @@ font-size: 1.6em
     <div class="tab-left"></div>
     <div class="tab-right"></div>
   </div>
+  
+    <div class="tab-l-r-bottom">
+    <div class="tab-left-bottom"></div>
+    <div class="tab-right-bottom"></div>
+  </div>
+  
    <div class="header-image">
   <picture>
     <!-- Desktop screens (802px wide and up) -->
