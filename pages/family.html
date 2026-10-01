@@ -33,28 +33,19 @@
   
 <style>
 
+header {
+margin-top: 40px;  
+}
 
-@media only screen and (max-width: 798px) {  
-  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
-   display: none;  
-  }
-} 
-  
-  @media only screen and (max-width: 800px) {  
-  .tab-left {
-   display: none;  
-  }
-} 
+.tab-left {
+  margin-top: 10px;
+}
+
 
   section-2 {
   width: 100%;  
   }
-}  
 
-
-.tab-left {
- margin-top: 20px; 
-}
 
 /* Background Colors: */  
     
@@ -68,7 +59,7 @@
  } 
    
 
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom,     .tab-c-top{
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom,     .tab-c-top {
   background-color:  var(--background-color); 
   
 }
@@ -133,7 +124,17 @@ h1 {
  padding-right: 20px;
 }
 
-
+@media only screen and (max-width: 798px) {  
+  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
+   display: none;  
+  }
+} 
+  
+  @media only screen and (max-width: 800px) {  
+  .tab-left {
+   display: none;  
+  }
+} 
 
 </style>
 
@@ -408,9 +409,9 @@ h1 {
  <div class="tab-l-r">
     <div class="tab-left"></div>
     <div class="tab-right"></div>
-  </div>
+  </div>   
   
-    <div class="tab-l-r-bottom">
+  <div class="tab-l-r-bottom">
     <div class="tab-left-bottom"></div>
     <div class="tab-right-bottom"></div>
   </div>
