@@ -33,17 +33,21 @@
 <style>
 
 
+
 @media only screen and (max-width: 798px) {  
-  .tab-l, .tab-r, .tab-left, .tab-right, .rectangle {
+  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,   .tab-c-bottom {
    display: none;  
   }
-}  
 
-    
+
+} 
+
+
+
 /* Background Colors: */
 
 :root {
-  --background-color: #294345;
+  --background-color: #003747;
   --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) l);
   --brand-darker: hsl(from var(--background-color) h s calc(l - 10));
   --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
@@ -51,9 +55,9 @@
    --brand-bright: hsl(from var(--background-color) h s calc(l + 75));
  }
  
- 
 
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-left-2, .tab-right-2 {
+
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-left-2, .tab-right-2, .tab-c-bottom, .tab-right-bottom-2,  .tab-left-bottom-2, .tab-l-r-bottom-2 {
   background-color:  var(--background-color); 
   
 }
@@ -191,13 +195,7 @@ p {
    h4 {
   font-size: 2.2em;  
   }
- 
-/* SIDEBAR: */ 
 
-aside {
-  max-height: 330px;
-}
-  
   .custom-line {
   width: 70%;            /* Set a fixed or percentage width */
   height: 2px;             /* Defines the thickness of the line */
@@ -225,6 +223,13 @@ aside {
   <div class="rectangle"></div>
   <div class="tab-l"></div>
     <div class="tab-r"></div>
+     <div class="tab-l-r-bottom-2">
+    <div class="tab-left-bottom-2"></div>
+    <div class="tab-right-bottom-2"></div>
+    
+    <div class="tab-left-bottom-2-wide"></div>
+    <div class="tab-right-bottom-2-wide"></div>
+  </div>
 <section class="navigation">
   <div class="nav-container">
     <div class="brand">
@@ -483,7 +488,13 @@ aside {
  <div class="tab-l-r">
     <div class="tab-left"></div>
     <div class="tab-right"></div>
-  </div> 
+  </div>
+  
+    <div class="tab-l-r-bottom">
+    <div class="tab-left-bottom"></div>
+    <div class="tab-right-bottom"></div>
+  </div>
+  
         
   <div class="header-image">
   <picture>
@@ -505,6 +516,7 @@ aside {
 
 <aside class="left-sidebar" style="margin-top: 10px;">
 
+  <div class="tab-c-bottom"></div>
   <div class="sidebar-title" style="text-align: center;">Summer Is Near</div>
       <div class="load4" style="" >  
       <img class="pfp-image" src="/images/index/pfp.jpg">
@@ -585,11 +597,8 @@ aside {
 
  <main id="content" style="margin-top: 10px;"> <!-- Do NOT remove the ID here -->
 
-    
- <div class="tab-l-r-2">
-    <div class="tab-left-2"></div>
-    <div class="tab-right-2"></div>
-  </div> 
+
+
   
 <section id="content" style="">  
 
