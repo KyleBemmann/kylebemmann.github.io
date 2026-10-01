@@ -645,6 +645,10 @@ h2 {
 }
 
 
+  .tab-right-bottom {
+    margin-left: 760px;
+  }
+
 
 }
 /* Hide element if the viewport width is 600px or less */
