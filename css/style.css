@@ -35,7 +35,57 @@
  filter: drop-shadow(0px 4px 6px #888); 
  
 }
+/*
 
+
+.tab-c-bottom {
+
+z-index: 999999;
+position: fixed;
+width: 50px;
+height: 50px;
+margin-left: -40px;
+bottom: -10px;
+corner-shape: scoop; 
+border-radius: 20px 20px 0 0;
+
+}
+
+/
+*/
+
+.tab-left-bottom {
+  z-index: 10;
+ display: block;
+ width: 30px;
+ height: 30px;
+ margin-left: -10px;
+ margin-top: -20px;
+corner-shape: scoop; 
+border-radius: 0 20px 0 0;
+}
+
+.tab-right-bottom {
+  z-index: 10;
+ display: block;
+ width: 30px;
+ height: 30px;
+margin-top: -30px;
+margin-right: -10px;
+ margin-left: auto;
+corner-shape: scoop; 
+border-radius: 20px 0 0 0;
+} 
+
+.tab-l-r-bottom {
+  height: 20px;
+  width: 100%;
+  max-width: 1000px;
+  display: block;
+  z-index: 10;
+  position: fixed;
+  bottom: 0;
+}
 
 
 .navigation, #myBtn  {
@@ -63,7 +113,7 @@ header {
 width: 20px;
 height: 104px;
 position: fixed;
-left:  10px;
+left: 10;
 top: -10px;
 corner-shape: scoop; 
 border-radius: 0 0 20px 0;
@@ -452,9 +502,9 @@ button:hover {
 #myBtn {
   display: none; /* Hidden by default */
   position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
+  bottom: 30px; /* Place the button at the bottom of the page */
   right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
+  z-index: 9999; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
   background-color: #8B0000; /* Set a background color */
@@ -594,6 +644,8 @@ h2 {
   
 }
 
+
+
 }
 /* Hide element if the viewport width is 600px or less */
 @media screen and (max-width: 600px) {
@@ -609,9 +661,11 @@ h2 {
 }
 
 
+
 /* Mobile */
 
 @media only screen and (max-width: 798px) {
+
 
    header, main {
  width: 100%; 

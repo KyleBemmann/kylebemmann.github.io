@@ -82,6 +82,11 @@ p {
   grid-template: "nav" auto "header" auto "main" auto "section-1" auto "section-2" auto "section-3" auto "section-4" auto "section-5" auto "section-6" auto "section-7" auto "section-8" auto "section-9" auto "section-10" auto "section-11" auto "section-12" auto "section-13" auto "section-14" auto "section-15" auto "section-16" auto "footer"  auto 
 }
 
+main {
+
+  margin-bottom: 0px;  
+}
+
 
 /* -------------------------------------------------------- */
 /* NAVIGATION BAR */

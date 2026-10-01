@@ -36,12 +36,49 @@
   box-sizing: border-box;
 }
 
-.tab-c {
+.tab-c, .tab-c-bottom {
  display: none; 
 }
 
 
 
+.tab-l-r-bottom-2 {
+  height: 20px;
+  width: 100vw;
+  left: 0;
+  display: block;
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+}
+
+/*
+
+ .tab-left-bottom-2 {
+z-index: 9000;
+position: fixed;
+width: 20px;
+height: 50px;
+margin-left:  0;
+bottom: -10px;
+corner-shape: scoop; 
+border-radius: 0 20px 0 0;
+
+}
+
+.tab-right-bottom-2 {
+  z-index: 1000;
+  position: fixed;
+ width: 20px;
+ height: 50px;
+ margin-top: -30px;
+ margin-left: 0;
+ bottom: -10px;
+corner-shape: scoop; 
+border-radius: 20px 0 0 0;
+} 
+
+*/ 
 
 body {
   display: flex;
@@ -100,6 +137,7 @@ header {
 /* -------------------------------------------------------- */
 
 aside {
+  z-index: 10;
   grid-area: aside;
   border: var(--border);
   border-radius: var(--round-borders);
@@ -109,7 +147,7 @@ aside {
   color: var(--sidebar-text-color);
   position: sticky;
   top: 75px;
-  height: 580px;
+  height: 86vh;
 }
 
 .left-sidebar {
@@ -170,11 +208,24 @@ main {
   border: var(--border);
   border-radius: var(--round-borders);
   align-items: start;
+  margin-bottom: 0px;
 }
 
 /* -------------------------------------------------------- */
 /* MOBILE RESPONSIVE */
 /* -------------------------------------------------------- */
+
+/* CSS Code for devices < 798px */
+@media (max-width: 798px) {
+  
+
+
+.tab-l-r-bottom-2 {
+   
+   display: none;
+}
+
+}
 
 /* CSS Code for devices < 800px */
 @media (max-width: 800px) {
@@ -182,6 +233,19 @@ main {
   font-size: 14px;
 }
 
+  .tab-right-bottom {
+ margin-right: 20px; 
+}
+
+
+.tab-left-bottom-2 {
+  margin-left: 760px;
+}
+
+.tab-l-r-bottom-2 {
+max-width: 780px;
+margin-top: 20px;
+}
 
 .layout {
     width: 100%;

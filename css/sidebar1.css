@@ -36,6 +36,8 @@
   box-sizing: border-box;
 }
 
+
+
   .tab-c {
 z-index: 9000;
 position: sticky;
@@ -50,6 +52,9 @@ padding-top: 30px;
 corner-shape: scoop; 
 border-radius: 0 0 20px 0;
 }
+
+
+
 
 body {
   display: flex;
@@ -120,6 +125,7 @@ header {
 /* -------------------------------------------------------- */
 
 aside {
+  z-index: 0;
   grid-area: aside;
   border: var(--border);
   border-radius: var(--round-borders);
@@ -129,7 +135,7 @@ aside {
   color: var(--sidebar-text-color);
   position: sticky;
   top: 75px;
-  height: 580px;
+  height: 86vh;
 }
 
 .left-sidebar {
@@ -173,7 +179,8 @@ main {
   background: var(--content-background-color);
   border: var(--border);
   border-radius: var(--round-borders);
-  align-items: start;  
+  align-items: start; 
+  margin-bottom: 0px;
 }
 
 /* -------------------------------------------------------- */
