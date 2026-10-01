@@ -39,7 +39,7 @@
 
 
   .tab-c {
-z-index: 9000;
+z-index:  1;
 position: sticky;
 width: 20px;
 height: 10px;
@@ -135,7 +135,7 @@ aside {
   color: var(--sidebar-text-color);
   position: sticky;
   top: 75px;
-  height: 86vh;
+  height: 88vh;
 }
 
 .left-sidebar {

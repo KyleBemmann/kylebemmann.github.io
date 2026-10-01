@@ -35,8 +35,6 @@
  filter: drop-shadow(0px 4px 6px #888); 
  
 }
-/*
-
 
 .tab-c-bottom {
 
@@ -51,8 +49,21 @@ border-radius: 20px 20px 0 0;
 
 }
 
-/
-*/
+   .tab-c-top {
+ 
+  position: sticky;
+  width: 30px;
+height: 20px;
+left:  -10px;
+top: 70px;
+margin-top: -10px;
+margin-left: -20px;
+padding-top: 0px;
+
+corner-shape: scoop; 
+border-radius: 0 0 20px 0;
+   }
+
 
 .tab-left-bottom {
   z-index: 10;
@@ -98,6 +109,7 @@ header {
 
 .rectangle {
   width: 100%;
+  z-index: 1000;
   height: 75px;
   position: fixed;
   top: 0px;
@@ -173,14 +185,13 @@ border-radius: 0 0 0 20px;
   margin-top: -30px;
   margin-left: -20px;  
   display: block;
-  z-index: 2000;
+  z-index: 1;
   position: sticky;
   top: 65px;
 }
 
 .tab-left-2 {
   background: #000;
-  z-index: 100;
  display: block;
  width: 20px;
  height: 30px;
@@ -191,7 +202,6 @@ border-radius: 0 0 20px 0
 
 .tab-right-2 {
   background: #000;
-  z-index: 100;
  display: block;
  width: 20px;
  height: 30px;
@@ -639,7 +649,7 @@ h2 {
   } 
   
   
-.tab-l-r-2,    .tab-left  {
+.tab-l-r-2,    .tab-left, .tab-c-top  {
   display: none;
   
 }
@@ -647,7 +657,8 @@ h2 {
   .tab-right-bottom {
     margin-left: 760px;
   }
-
+  
+ 
 
 
 }
