@@ -47,9 +47,8 @@ bottom: -10px;
 corner-shape: scoop; 
 border-radius: 20px 20px 0 0;
 
-}
-  
-       
+}    
+    
    .tab-c-top {
  z-index: 500;
   position: sticky;
