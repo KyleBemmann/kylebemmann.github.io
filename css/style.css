@@ -48,14 +48,14 @@ corner-shape: scoop;
 border-radius: 20px 20px 0 0;
 
 }
-
+  
    .tab-c-top {
- 
+ z-index: 1000;
   position: sticky;
   width: 30px;
 height: 20px;
 left:  -10px;
-top: 70px;
+top: 75px;
 margin-top: -10px;
 margin-left: -20px;
 padding-top: 0px;
@@ -63,6 +63,7 @@ padding-top: 0px;
 corner-shape: scoop; 
 border-radius: 0 0 20px 0;
    }
+
 
 
 .tab-left-bottom {
