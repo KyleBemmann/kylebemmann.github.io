@@ -18,11 +18,7 @@
  .carousel, .carousel2 {
   width: 93%
 }
-
-.carousel2::scroll-button(right), .carousel2::scroll-button(left), .carousel2::scroll-button(right):disabled, .carousel2::scroll-button(left):disabled, .carousel::scroll-button(right), .carousel::scroll-button(left), .carousel::scroll-button(right):disabled, .carousel::scroll-button(left):disabled, .card-square::scroll-marker { 
-  display: none;
-}
-      
+   
 #content {
    margin-top: 10px;
 }
