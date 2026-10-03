@@ -716,6 +716,11 @@ nav ul li a:visited:hover {
 
 }
 
+ @media only screen and (max-width: 800px) {  
+   .tab-c-bottom {
+   display: none; 
+   }
+ }
 
 @supports not (corner-shape: scoop) {
 
