@@ -1,10 +1,10 @@
 #content {
-   min-height: 230px;
- }
+min-height: 280px;  
+}
 
 .card {
   border: none;
-  margin: 0 auto;
+  margin: 10 auto;
   padding: 50px;
   display: block;
   max-width: 500px;
@@ -14,7 +14,7 @@
   border-radius: 20px;
   box-shadow: 0 10px 10px -5px #909090;
   position: absolute;
-  top: 130px;
+  top: 140px;
   left: 50%;
   width: 93%;
   transform: translate(-50%, -50%);
@@ -28,7 +28,8 @@
   
 h1 {
   font-size: 1.5em;
-  padding-top: 30px;
+  padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 }

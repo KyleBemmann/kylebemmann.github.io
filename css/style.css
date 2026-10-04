@@ -722,6 +722,7 @@ nav ul li a:visited:hover {
    }
  }
 
+
 @supports not (corner-shape: scoop) {
 
 .tab-left , .tab-right, .tab-l, .tab-r, .tab-left-2, .tab-right-2, .tab-c-bottom,  .tab-l-r-bottom-2,   .tab-right-bottom,   .tab-left-bottom, .tab-l-r-bottom, .tab-left-bottom-2, .tab-right-bottom-2, .tab-c-top {
