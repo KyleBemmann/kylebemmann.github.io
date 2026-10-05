@@ -12,6 +12,7 @@
 h2  {
   margin-left: 10px;
   padding-bottom: 30px;
+  width: 120%;
 }
 
 p { 
@@ -32,6 +33,11 @@ p, ul, li {
 @media (max-width: 798px) {
 p {
   width: 140%;
+}
+ 
+h2  {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
   
 }
