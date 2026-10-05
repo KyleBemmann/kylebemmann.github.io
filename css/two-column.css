@@ -1,6 +1,5 @@
-h2  {
-  margin-left: 10px;
-  padding-bottom: 30px;
+.sidebar-title {
+  text-align: center;
 }
 
 .two-columns {
@@ -10,23 +9,58 @@ h2  {
   margin-right: auto;
 }
 
- #content ul, #content li, #content ol { 
-  padding-right: 5px;
-  margin: 5px;
+h2  {
+  margin-left: 10px;
+  padding-bottom: 30px;
+  width: 120%;
+}
+
+p { 
   text-align: justify;
- }
- 
-#div2 {
-  margin-left: -20px;
-  padding-left: 20px;  
+  width: 170%;
+}
+
+.right-align {
+  font-size: 120px;
+  float: right;
+}
+
+p, ul, li {
+ line-height: 1.5em; 
+}
+
+/* CSS Code for devices < 800px */
+@media (max-width: 798px) {
+p {
+  width: 140%;
 }
  
- @media only screen and (max-width: 798px) {
-
-#content ul, #content li, #content ol {
-  padding-right: 0px;
+h2  {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
- 
+  
+}
 
- }
+
+/* CSS Code for devices < 800px */
+@media (max-width: 600px) {
+.right-align {
+  font-size: 3.4em;
+  float: right;
+  
+  padding-right: 20px;
+}
+  p {
+  width: 210%;
+}
+
+}
+
+
+
+
+
+
+
 

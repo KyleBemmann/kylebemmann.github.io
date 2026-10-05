@@ -1,0 +1,52 @@
+
+.pfp-icons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 3 columns per row */
+  grid-template-rows: repeat(1, auto);    /* 2 rows */
+  gap: 10px;                           /* Space between icons */
+  justify-items: center;
+  padding-bottom: 20px;
+}
+
+
+.pfp-icons-smol {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  grid-template-rows: repeat(1, auto);    /* 2 rows */
+  gap: 10px;                           /* Space between icons */
+  justify-items: center;
+}
+
+.playlist-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  grid-template-rows: repeat(1, auto);    /* 2 rows */
+  gap: 10px;                           /* Space between icons */
+  justify-items: center;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+
+.card-gallery {
+  margin-top: 1em;
+  background-color: #ffffff;
+  padding: 0 0 20px 0;
+  text-align: center;
+  align-content: center;
+  border-radius: 20px;
+}
+
+
+@media only screen and (max-width: 798px) {
+.pfp-icons {
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+}  
+
+.playlist-grid {
+  grid-template-columns: repeat(1, 1fr); /* 3 columns per row */
+
+
+}
+ 
+  
+}
