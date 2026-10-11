@@ -87,7 +87,7 @@ function headerHTML() {
               <a href="/pages/numbers">Numerology</a>
             </li>
             <li>
-              <a href="/pages/secret">Satanic Ritual Abuse</a>
+              <a href="/pages/secret">Secret Societies</a>
             </li>
             <li>
               <a href="/pages/temple">The Third Temple</a>
