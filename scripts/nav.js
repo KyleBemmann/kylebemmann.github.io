@@ -28,7 +28,6 @@ function headerHTML() {
 
 <nav>
 <div class="rectangle"></div>
-  <div class="rectangle2"></div>
     <div class="tab-l"></div>
     <div class="tab-r"></div>
 <section class="navigation">
@@ -256,7 +255,7 @@ function headerHTML() {
                 <a href="/pages/testing">Questioning Reality</a>
               </li>
               <li>
-                <a href="/pages/cinema">The Neverending Story</a>
+                <a href="/pages/virgin">A Virgin Sacrifice</a>
               </li>
               <li>
                 <a href="/pages/moonchild">Stay Wild Moon Child</a>
