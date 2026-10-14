@@ -151,7 +151,7 @@ function headerHTML() {
                 <a href="/pages/catholic">Roman Catholicism</a>
               </li>
               <li>
-                <a href="/pages/urn">Gnosticism Explained</a>
+                <a href="/pages/wedding">Marriage of the Lamb</a>
               </li>
             </ul>
         </li> 
