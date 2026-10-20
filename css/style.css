@@ -756,15 +756,19 @@ nav ul li a:visited:hover {
    .tab-c-bottom {
    display: none; 
    }
-
-
+   
+   
  .pfp-image {
  border-radius: 50%;
  width: 150px;
    
  }
    
+   
+   
  }
+ 
+ 
 
 
 @supports not (corner-shape: scoop) {
