@@ -110,12 +110,15 @@ button:hover {
 
 .layout {
     width: 100%;
-    grid-template: "nav" auto "header" auto "leftSidebar" auto  "main" auto "rightSidebar" auto "footer" auto / 1fr;
+    grid-template: "nav" auto "header" auto "mobileSidebar1" auto "mobileSidebar2" auto "main" auto "footer" auto / 1fr;
 }
 
+.mobile-sidebar-1, .mobile-sidebar-2 {
+display: block;  
+}
 
 .left-sidebar, .right-sidebar { 
-    display: block;
+    display: none;
 }
 
 button {
@@ -125,7 +128,7 @@ button {
 aside {
 position: relative;
 top: 0;
-max-height: 220px;
+height: auto;
 margin-bottom: 0;
 }
 
@@ -181,10 +184,11 @@ padding-top: 5px;
 
 <aside class="left-sidebar" style="margin-top: 10px;">
 
-  <div class="sidebar-title" style="text-align: center;">Hailie Jade</div>
-      <div class="load4" style="" >  
-      <img class="pfp-image" src="/images/christmas/pfp.jpg">
-   </div>
+<img class="pfp-image" src="/images/christmas/pfp.jpg">
+  <div class="sidebar-card" style="">
+    <div class="sidebar-title" style="padding: 0 10px; margin-top: 20px;">Hailie Jade</div>
+<p>Hailie Jade Scott Mathers (born December 25, 1995) is an American social media influencer, podcast host, and designer best known as the only biological daughter of legendary rapper Eminem (Marshall Mathers) and his ex-wife Kim Scott.</p>
+   </div> 
  
 <!-- BUTTONS -->   
 
@@ -197,14 +201,37 @@ padding-top: 5px;
 
 <aside class="right-sidebar" style="margin-top: 10px;">
 
-  <div class="sidebar-title" style="text-align: center;">Holly White</div>
-      <div class="load4" style="" >  
-      <img class="pfp-image" src="/images/christmas/pfp2.jpg">
- </div>
+<img class="pfp-image" src="/images/christmas/pfp2.jpg">
+  <div class="sidebar-card" style="">
+    <div class="sidebar-title" style="padding: 0 10px; margin-top: 20px;">Holly White</div>
+<p>Holly White is the infant daughter of Walter and Skyler White in the AMC crime drama series Breaking Bad. She is the younger sister of Walt Jr.</p>
+   </div> 
  <!-- BUTTONS -->   
 
 
   </aside>
+
+<!-- =============================================== -->
+<!-- MOBILE SIDEBAR -->
+<!-- =============================================== -->
+
+<aside class="mobile-sidebar-1" style="margin-top: 10px;">
+	<div class="sidebar-title">Hailie Jade</div>
+	  <div class="load4" style="" >
+       <img class="pfp-image" style="margin-top: 10px;" src="/images/christmas/pfp.jpg">  
+      </div>
+</aside>
+
+<!-- =============================================== -->
+<!-- MOBILE SIDEBAR -->
+<!-- =============================================== -->
+
+<aside class="mobile-sidebar-2" style="margin-top: 10px;">
+	<div class="sidebar-title">Holly White</div>
+	  <div class="load4" style="" >
+       <img class="pfp-image" style="margin-top: 10px;"  src="/images/christmas/pfp2.jpg">  
+      </div>
+</aside>
 
        
 <!-- =============================================== -->
