@@ -759,11 +759,18 @@ nav ul li a:visited:hover {
    
    
  .pfp-image {
- border-radius: 50%;
- width: 150px;
-   
+border-radius: 50%;
+width: 180px;
+display: none;
  }
    
+   .sidebar-card {
+   margin-top: 0px;
+   border-radius: 20px 20px 20px 20px;
+   width: 86vw;  
+ margin-left: auto;
+ margin-right: auto;
+   }
    
    
  }
@@ -779,7 +786,6 @@ display: none;
 
 }
 }
-
 
 
 

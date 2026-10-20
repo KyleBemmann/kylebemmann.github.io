@@ -182,15 +182,15 @@ body {
 
 .layout {
     width: 100%;
-    grid-template: "nav" auto "header" auto "mobileSidebar" auto "main" auto "footer" auto / 1fr;
+    grid-template: "nav" auto "header" auto "leftSidebar" auto "main" auto "footer" auto / 1fr;
   }
 
-.mobile-sidebar {
-  display: block;
+.mobile-sidebar, .tab-c {
+  display: none;
   }
 
 .left-sidebar { 
-    display: none;
+    display: block;
   }
 .right-sidebar { 
     display: none;
