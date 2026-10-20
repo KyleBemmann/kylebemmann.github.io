@@ -27,15 +27,6 @@
   margin-top: -10px;
 }
 
-.card-gallery {
-  margin-top: 1em;
-  background-color: #ffffff;
-  padding: 0 0 20px 0;
-  text-align: center;
-  align-content: center;
-  border-radius: 20px;
-}
-
 .playlist-grid-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* 3 columns per row */
@@ -46,12 +37,22 @@
   margin-top: -10px;
 }
 
+.card-gallery {
+  margin-top: 1em;
+  background-color: #ffffff;
+  padding: 0 0 20px 0;
+  text-align: center;
+  align-content: center;
+  border-radius: 20px;
+}
+
+
 @media only screen and (max-width: 798px) {
 .pfp-icons {
   grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
 }  
 
-.playlist-grid, .playlist-grid-2 {
+.playlist-grid, .playlist-grid-2  {
   grid-template-columns: repeat(1, 1fr); /* 3 columns per row */
 
 

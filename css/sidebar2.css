@@ -96,6 +96,7 @@ body {
 p {
   text-align: justify;
   padding-top: 10px;
+  line-height: 1.5em;
 }
 
 /* -------------------------------------------------------- */
@@ -149,10 +150,22 @@ aside {
 
 .left-sidebar {
   grid-area: leftSidebar;
+  padding: 15px;
 }
 
 .right-sidebar {
   grid-area: rightSidebar;
+  padding: 15px;
+}
+
+.mobile-sidebar-1 {
+  grid-area: mobileSidebar1;
+  display: none;
+}
+
+.mobile-sidebar-2 {
+  grid-area: mobileSidebar2;
+  display: none;
 }
 
 .sidebar-title {
@@ -172,7 +185,7 @@ aside {
 
 .sidebar-section > *:not(p):not(ul):not(ol):not(blockquote) {
   margin-top: 10px;
-  Border-radius: 50%;
+  border-radius: 50%;
 }
 
 /* Sidebar Blockquote: */
@@ -254,10 +267,7 @@ margin-top: 20px;
     display: none;
 }
 
-aside {
-  padding: 9px;
-  font-size: 0.9em;
-}
+
 
 main {
   max-height: none;

@@ -73,21 +73,6 @@ body {
 }
 
 
-p, ul, li {
- line-height: 1.5em; 
-}
-
-p {
-  text-align: justify;
-  padding: 10px 10px 0 10px;
-}
-
-.card {
-width: 99%;
-margin-right: auto;
-margin-left: auto;
-justify-content: center;
-}
 
 /* -------------------------------------------------------- */
 /* LAYOUT */
@@ -140,6 +125,7 @@ aside {
 
 .left-sidebar {
   grid-area: leftSidebar;
+  padding: 15px;
 }
 
 .mobile-sidebar {
