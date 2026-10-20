@@ -110,16 +110,13 @@ button:hover {
 
 .layout {
     width: 100%;
-    grid-template: "nav" auto "header" auto "mobileSidebar1" auto "mobileSidebar2" auto "main" auto "footer" auto / 1fr;
+    grid-template: "nav" auto "header" auto "leftSidebar" auto "rightSidebar" auto "main" auto "footer" auto / 1fr;
 }
 
-.mobile-sidebar-1, .mobile-sidebar-2 {
-display: block;  
+.left-sidebar, .right-sidebar {
+  display: block;
 }
 
-.left-sidebar, .right-sidebar { 
-    display: none;
-}
 
 button {
  display: none; 
@@ -209,27 +206,7 @@ padding-top: 5px;
 
   </aside>
 
-<!-- =============================================== -->
-<!-- MOBILE SIDEBAR -->
-<!-- =============================================== -->
 
-<aside class="mobile-sidebar-1" style="margin-top: 10px;">
-	<div class="sidebar-title">Hailie Jade</div>
-	  <div class="load4" style="" >
-       <img class="pfp-image" style="margin-top: 10px;" src="/images/christmas/pfp.jpg">  
-      </div>
-</aside>
-
-<!-- =============================================== -->
-<!-- MOBILE SIDEBAR -->
-<!-- =============================================== -->
-
-<aside class="mobile-sidebar-2" style="margin-top: 10px;">
-	<div class="sidebar-title">Holly White</div>
-	  <div class="load4" style="" >
-       <img class="pfp-image" style="margin-top: 10px;"  src="/images/christmas/pfp2.jpg">  
-      </div>
-</aside>
 
        
 <!-- =============================================== -->
