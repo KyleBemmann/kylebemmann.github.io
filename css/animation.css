@@ -12,9 +12,9 @@
   animation-duration: 1.3s;
 }
 
-/* SCROLL
+/* SCROLL*/
 
-.card, .card-gallery, .circle-img, .post-img, .inline-image, .profile-img, .carousel, .carousel2, .carousel3, .carousel4 {
+.card, .card-gallery, .circle-img, .post-img, .inline-image, .profile-img, .pfp-icons {
   
   animation: fade-in linear both;
   animation-timeline: view();
@@ -38,11 +38,11 @@ to {
   
 }
 
-/* DEFAULT LOAD ANIMATION
+/* DEFAULT LOAD ANIMATION*/
 
 .load1 {
 animation-name: animation1;
-  animation-duration: 1s;
+  animation-duration: 1.3s;
 }
 
 
@@ -59,7 +59,7 @@ animation-name: animation1;
 }
 }
 
-/* LONG BOI
+/* LONG BOI*/
 
 .load2 {
 animation-name: animation2;
@@ -69,7 +69,7 @@ animation-name: animation2;
 
 @keyframes animation2 {
   from {
-  opacity: .3;
+  opacity: 1;
   translate: 0 10rem;
 }
   to {
@@ -78,7 +78,7 @@ animation-name: animation2;
 }
 }
 
-/* TIMER
+/* TIMER*/
 
 .load3 {
 animation-name: animation3;
@@ -113,24 +113,6 @@ animation-name: animation4;
   opacity: 1;
   scale: 1;
 }
-}
-
-/* BUTTONS
-
-.load5 {
-animation: animation5 1.4s ease-out forwards;
-}
-
-
-@keyframes animation5 {
-  from {
-    opacity: .6;
-    scale: .8;
-  }
-  to {
-    opacity: 1;
-    scale: 1;
-  }
 }
 
 
