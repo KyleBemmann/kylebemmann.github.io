@@ -48,7 +48,7 @@ animation-name: animation1;
 
 @keyframes animation1 {
   from {
-  opacity: 0;
+  opacity: 0.5;
   translate: 0 1rem;
   scale: .8;
 }
