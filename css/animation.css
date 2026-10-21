@@ -9,7 +9,7 @@
 
 
 ::view-transition-group(root) {
-  animation-duration: 1s;
+  animation-duration: 1.5s;
 }
 
 /* SCROLL
@@ -38,17 +38,17 @@ to {
   
 }
 
-/* DEFAULT LOAD ANIMATION*/
+/* Sidebar */
 
 .load1 {
 animation-name: animation1;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 
 
 @keyframes animation1 {
   from {
-  opacity: .3;
+  opacity: 0;
   translate: 0 1rem;
   scale: .8;
 }
@@ -59,11 +59,11 @@ animation-name: animation1;
 }
 }
 
-/* LONG BOI*/
+/* Posts */
 
 .load2 {
 animation-name: animation2;
-  animation-duration: 1.5s;
+  animation-duration: 2.5s;
 }
 
 
@@ -97,23 +97,6 @@ animation-name: animation3;
 }
 }
 
-/* PROFILE PICTURE
-
-.load4 {
-animation-name: animation4;
-  animation-duration: 1.2s;
-}
-
-@keyframes animation4 {
-  from {
-  opacity: .3;
-  scale: .8;
-}
-  to {
-  opacity: 1;
-  scale: 1;
-}
-}
 
 
 
