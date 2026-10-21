@@ -9,7 +9,7 @@
 
 
 ::view-transition-group(root) {
-  animation-duration: 1.3s;
+  animation-duration: .8s;
 }
 
 /* SCROLL
@@ -42,7 +42,7 @@ to {
 
 .load1 {
 animation-name: animation1;
-  animation-duration: 1.3s;
+  animation-duration: 1.8s;
 }
 
 
