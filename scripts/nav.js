@@ -235,7 +235,7 @@ function headerHTML() {
                 <a href="/pages/sword">The Sword in the Stone</a>
               </li>
               <li>
-                <a href="/pages/watchtower">Collapse of the Watchtower</a>
+                <a href="/pages/watchtower">The Destruction of Reality</a>
               </li>
               <li>
                 <a href="/pages/ether">They Came From The Ether</a>
