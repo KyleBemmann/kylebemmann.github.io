@@ -31,7 +31,7 @@
 /* BASICS */
 /* -------------------------------------------------------- */
 
- .post-img, .card, .card-gallery, .card-square, .pfp-image, .profile-img, .circle-img {
+ .post-img, .card, .card-gallery, .card-square, .pfp-image, .profile-img, .circle-img, .sidebar-card {
  filter: drop-shadow(0px 4px 6px #777); 
  
 }
@@ -44,7 +44,17 @@ aside p {
   text-align: left;
   width: 100%;
   line-height: 1.3em;
+  padding: 10px 10px 0 10px;
 }
+
+
+main ul, main li {
+  text-align: justify;
+
+}
+
+
+
 
  .sidebar-card {
   background-color: #ffffff; 
@@ -52,20 +62,26 @@ aside p {
   margin-top: -10px;
   border-radius: 0px 0px 20px 20px;
   padding: 0 10px;
-  filter: drop-shadow(0px 4px 6px #777); 
 }
 
 p {
- line-height: 1.3em; 
-}
+  width: 98%;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 10px;
+  text-align: justify;
+  line-height: 1.3em; 
+  padding-left: 20px; 
+  padding-right: 10px;
+ } 
 
 ul, li  {
  line-height: 1.3em; 
+
 }
 
-p {
-  text-align: justify;
-  padding: 10px 10px 0 10px;
+main ul, main li {
+  padding-right: 10px;
 }
 
 .card {
@@ -361,19 +377,21 @@ margin-top: 10px; padding-top: 5px; padding-bottom: 0;
   display: table;
 }
 
+
+
 .row {
-  padding: 20px;
-  margin-top: 20px;
+  padding: 0px;
+  margin-top: 0px;
   }
   
   .card {
   scroll-ansp-align: start;
   flex: 0 0 20em; 
   background-color: #ffffff;
-  padding: 0 0 10px 0;
   margin-bottom: 10px;
   border-radius: .5em;
   text-align: center;
+  padding: 0 0 20px 0;
   align-content: center;
   border-radius: 20px;
   border: none;
@@ -457,7 +475,7 @@ h2 {
   padding-top: 5px;
   font-size: 1.8em;
   padding-bottom: 5px;
-    text-align: center;
+  text-align: center;
 }
 
 h3 {
@@ -508,7 +526,7 @@ button {
   cursor: pointer;
   margin: 4px 2px;
   border-radius: 10px;
-  width: 160px;
+  width: 200px;
 }
 
 .button {
@@ -523,6 +541,7 @@ button {
   cursor: pointer;
   margin: 4px 4px;
   border-radius: 10px;
+  width: 200px;
 }
 
 button:hover {
@@ -718,10 +737,14 @@ h2 {
 
 
 
+
 /* Mobile */
 
 @media only screen and (max-width: 798px) {
 
+  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom {
+   display: none;  
+  }
 
    header, main {
  width: 100%; 
@@ -738,6 +761,9 @@ h2 {
 
 }
 
+main h3 {
+font-size: 1.6em
+}
 
 .tab-l-r-2 {
   display: none;

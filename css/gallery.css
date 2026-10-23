@@ -6,15 +6,18 @@
 
 .gallery {
   margin-top: 30px;
-  width: 96%; 
-  margin-left: auto; 
-  margin-right: auto; 
-  padding-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;  
+  padding: 0;
 }
+
+
   
 ul.gallery {
   --numcolumns: 3;
-  --gap: .7em;
+  --gap: 10px;
   --size: calc(100vw / var(--numcolumns));
   display: grid;
   grid-template-columns: repeat(var(--numcolumns), 1fr);
@@ -27,7 +30,7 @@ ul.gallery {
 ul.gallery > li {
   display: block;
   height: 100%;
-  gap: 20px;;
+  gap: 10px;;
 }
 
 ul.gallery > li img {
