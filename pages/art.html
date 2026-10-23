@@ -33,14 +33,10 @@
   
 <style>
 
-@media only screen and (max-width: 798px) {  
-  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,   .tab-c-bottom {
-   display: none;  
-  }
-
-
-} 
-
+h4 {
+text-align: left;
+padding-left: 20px;
+}
  
 /* Background Colors: */
     
@@ -52,29 +48,21 @@
   --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
   --brand-bright: hsl(from var(--background-color) h calc(s - 25) calc(l + 60));
  } 
-   
-  aside,  #header-title, #content {
-    background:  var(--brand-bright);  
- }
 
-
-
-
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-left-2, .tab-right-2, .tab-c-bottom, .tab-right-bottom-2,  .tab-left-bottom-2, .tab-l-r-bottom-2,   .tab-right-bottom,   .tab-left-bottom, .tab-l-r-bottom {
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom,  .tab-c-top{
   background-color:  var(--background-color); 
   
 }
-  
+   
 aside,  #header-title, #content {
     background:  var(--brand-bright);  
  }
-
  
 #myBtn {
     background: var(--brand-lighter); 
  }
  
-#myBtn:hover {
+#myBtn:hover, button:hover {
    background-color:  var(--brand-muted); 
 }
  
@@ -83,110 +71,9 @@ nav ul li a:visited:hover, .nav-mobile {
   background: var(--brand-darker);
 }
  
- 
-.navigation, nav ul li a, nav ul li a:visited {
+button, .navigation, nav ul li a, nav ul li a:visited {
   background: var(--brand-vibrant); 
  }
- 
-
-
-
-
-
-/* BUTTONS */
-
-button {
-width: 200px;
-	background-color:  var(--brand-vibrant);
-}
-
-button:hover {
-background-color: var(--brand-muted); 
-}
-
-/* -------------------------------------------------------- */
-/* CONTENT */
-/* -------------------------------------------------------- */
-
-main {
-  line-height: 1.5;
-}
-
-main p {
-  margin: 0.75em 0;
-}
-
-p {
-  padding: 0 auto auto auto; 
-}
-
-main ol,
-main ul {
-  margin: 0.5em 0;
-  padding-left: 1.5em;
-}
-
-main ol li,
-main ul li {
-  margin-bottom: 0.2em;
-}
-
-h2 {
-  text-align: center;
-  margin-left: 0px;  
-}
-
-h4 {
-  font-weight: bold; 
-  text-align: left;
-}
-  
-main h1, main h2, main h3 {
-  text-align: center; 
-  font-weight: bold;
-  font-size: 2.0em;
-}
-
-main h3 {
- padding-top: 20px; 
-}
-
-aside p {
-  text-align: left;
-  width: 100%;
-}
-
-main p, main ul, main li {
-  text-align: justify;
-
-}
-
-
-
-.card {
-  scroll-ansp-align: start;
-  flex: 0 0 20em; 
-  background-color: #ffffff;
-  padding: 0 0 10px 0;
-  margin-bottom: 10px;
-  border-radius: .5em;
-  text-align: center;
-  align-content: center;
-  border-radius: 20px;
-  border: none;
-	width: 100%;
-}
-
-/* MOBILE RESPONSE */
-
-@media only screen and (max-width: 798px) {
-  
-
-main h3 {
-font-size: 1.6em
-}
-
-}
 
 </style>
 
@@ -316,7 +203,7 @@ font-size: 1.6em
   <img class="playlist-img" src="/images/art/satan.jpg" />
      <h1>The Occult</h1> 
      
-     <div style="padding-left: 20px; padding-right: 20px;">      <p>The left-hand path (LHP) and right-hand path (RHP) are two contrasting approaches to spirituality and magic, often differentiated by their focus on individualism versus conformity. The RHP generally involves following a traditional, external moral code, seeking to unite with a higher power through submission and community. Conversely, the LHP emphasizes self-empowerment and individualism, seeking self-deification by breaking taboos and integrating both the light and the dark aspects of existence.</p>
+     <div style="">      <p style="padding-left: 20px; padding-right: 10px;">The left-hand path (LHP) and right-hand path (RHP) are two contrasting approaches to spirituality and magic, often differentiated by their focus on individualism versus conformity. The RHP generally involves following a traditional, external moral code, seeking to unite with a higher power through submission and community. Conversely, the LHP emphasizes self-empowerment and individualism, seeking self-deification by breaking taboos and integrating both the light and the dark aspects of existence.</p>
           
         <h4>Right-Hand Path (RHP)</h4>
          <ul>
@@ -338,8 +225,8 @@ font-size: 1.6em
   <img class="playlist-img" src="/images/art/thomas.jpg" />
      <h1>My Twin Brother</h1> 
      
-     <div style="padding-left: 20px; padding-right: 20px;">
-   <p>The name Didymus Judas Thomas refers to the apostle Thomas, with "Didymus" (Greek) and "Thomas" (Aramaic) both meaning "twin". Gnostic texts, such as the Gospel of Thomas and the Acts of Thomas, present a tradition that Thomas was the identical twin brother of Jesus and give his full name as Judas Thomas. However, this is not supported by the canonical Gospels, which list Jesus's brothers as James, Joses/Joseph, Simon, and Judas, and clearly distinguish them from the Twelve Apostles. </p>
+     <div style="">
+   <p style="padding-left: 20px; padding-right: 10px;">The name Didymus Judas Thomas refers to the apostle Thomas, with "Didymus" (Greek) and "Thomas" (Aramaic) both meaning "twin". Gnostic texts, such as the Gospel of Thomas and the Acts of Thomas, present a tradition that Thomas was the identical twin brother of Jesus and give his full name as Judas Thomas. However, this is not supported by the canonical Gospels, which list Jesus's brothers as James, Joses/Joseph, Simon, and Judas, and clearly distinguish them from the Twelve Apostles. </p>
 
         <h4>Key details about the tradition of Thomas being Jesus's twin brother</h4>
           <ul>
@@ -355,8 +242,8 @@ font-size: 1.6em
   <img class="playlist-img" src="/images/art/jesus.jpg" />
      <h1>The Middle Way</h1> 
      
-     <div style="padding-left: 20px; padding-right: 20px;">
-        <p>"The middle way" is a concept primarily from Buddhism that advocates for a path of moderation between two extremes: asceticism (self-mortification) and sensual indulgence. This balanced approach, which also refers to the Noble Eightfold Path, serves as a guide for spiritual practice and daily life, and it has a philosophical interpretation that avoids metaphysical extremes of existence and non-existence.</p>
+     <div style="">
+        <p style="padding-left: 20px; padding-right: 10px;">"The middle way" is a concept primarily from Buddhism that advocates for a path of moderation between two extremes: asceticism (self-mortification) and sensual indulgence. This balanced approach, which also refers to the Noble Eightfold Path, serves as a guide for spiritual practice and daily life, and it has a philosophical interpretation that avoids metaphysical extremes of existence and non-existence.</p>
            
            <h4>In Buddhist practice</h4>
            <ul>
@@ -371,8 +258,8 @@ font-size: 1.6em
   <img class="playlist-img" src="/images/art/father-son.jpg" />
        <h1>A Father and Son Disagreement</h1> 
      
-     <div style="padding-left: 20px; padding-right: 20px;">   
-         <p>Walter Jr. (also known as Flynn) is well known in the Breaking Bad series for his significant appetite for breakfast and his frequent appearances in breakfast scenes. The focus on his breakfast consumption became a running joke among fans and a deliberate, symbolic element used by the show's creator, Vince Gilligan, to mark the passing of time and highlight the family dynamic and its eventual breakdown.</p>
+     <div style="">   
+         <p style="padding-left: 20px; padding-right: 10px;">Walter Jr. (also known as Flynn) is well known in the Breaking Bad series for his significant appetite for breakfast and his frequent appearances in breakfast scenes. The focus on his breakfast consumption became a running joke among fans and a deliberate, symbolic element used by the show's creator, Vince Gilligan, to mark the passing of time and highlight the family dynamic and its eventual breakdown.</p>
   </div>
   </div>
   
@@ -386,8 +273,8 @@ font-size: 1.6em
     </a>
   </div>
    
-     <div style="padding-left: 20px; padding-right: 20px;"> 
-      <p>Religion for Breakfast is a YouTube channel dedicated to the academic study of religion. RFB’s goal is to boost religious literacy by producing high-quality educational videos.</p>
+     <div style=""> 
+      <p style="padding-left: 20px; padding-right: 10px;">Religion for Breakfast is a YouTube channel dedicated to the academic study of religion. RFB’s goal is to boost religious literacy by producing high-quality educational videos.</p>
   </div>
   </div>
   </div>

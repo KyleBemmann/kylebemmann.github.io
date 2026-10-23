@@ -33,13 +33,9 @@
    
 <style>
 
-
-@media only screen and (max-width: 798px) {  
-  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
-   display: none;  
-  }
-} 
-
+button {
+  width: 200px;
+}
 
 /* Background Colors: */
 
@@ -51,25 +47,21 @@
   --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
   --brand-bright: rgba(255, 255, 255, 0.8);
   }  
-  
 
-
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom,     .tab-c-top{
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom,  .tab-c-top{
   background-color:  var(--background-color); 
   
 }
-  
-  
+   
 aside,  #header-title, #content {
     background:  var(--brand-bright);  
  }
-
  
 #myBtn {
     background: var(--brand-lighter); 
  }
  
-#myBtn:hover {
+#myBtn:hover, button:hover {
    background-color:  var(--brand-muted); 
 }
  
@@ -78,34 +70,9 @@ nav ul li a:visited:hover, .nav-mobile {
   background: var(--brand-darker);
 }
  
- 
-.navigation, nav ul li a, nav ul li a:visited {
+button, .navigation, nav ul li a, nav ul li a:visited {
   background: var(--brand-vibrant); 
  }
- 
-
-
-
-
-
-
-/* BUTTONS: */ 
-
-  button, .button-parents, .button-mom, .button-dad {
-  background-color:  var(--brand-vibrant);
-}
-
-.button-parents {
-  width: 200px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-button:hover, .button-parents:hover, .button-mom:hover, .button-dad:hover {
-  background-color: var(--brand-muted);
-} 
-
-
 
 </style>
 
@@ -176,10 +143,10 @@ button:hover, .button-parents:hover, .button-mom:hover, .button-dad:hover {
   <div class="card" style="animation: none;" >
   <img class="playlist-img" src="/images/index/my-parents.jpg" />
      <h1>Me At The Zoo</h1> 
- <div class="container2">
-    <a href="https://ascensionglossary.com/index.php/Chochmah" class="button button-parents">Father (Chokmah, 2)</a>
-    <a href="https://ascensionglossary.com/index.php/Binah" class="button button-parents">Mother (Binah, 3)</a>
-    <a href="https://ascensionglossary.com/index.php/Tiphereth" class="button button-parents">Child (Tifereth, 6)</a>
+ <div class="container">
+    <a href="https://ascensionglossary.com/index.php/Chochmah"> <button>Father (Chokmah, 2)</button></a>
+    <a href="https://ascensionglossary.com/index.php/Binah"> <button>Mother (Binah, 3)</button></a>
+    <a href="https://ascensionglossary.com/index.php/Tiphereth"> <button>Child (Tifereth, 6)</button></a>
   </div>
   </div>
  

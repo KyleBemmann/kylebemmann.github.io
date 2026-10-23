@@ -34,14 +34,6 @@
       <script src="/scripts/nav.js"></script>
   
 <style>
- 
-
-@media only screen and (max-width: 798px) {  
-  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom {
-   display: none;  
-  }
-} 
-
    
  /* Background Colors: */ 
  
@@ -53,24 +45,21 @@
   --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
   --brand-bright: rgba(255, 255, 255, 0.8);
   } 
- 
 
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom,     .tab-c-top{
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom,  .tab-c-top{
   background-color:  var(--background-color); 
   
 }
-  
-  
+   
 aside,  #header-title, #content {
     background:  var(--brand-bright);  
  }
-
  
 #myBtn {
     background: var(--brand-lighter); 
  }
  
-#myBtn:hover {
+#myBtn:hover, button:hover {
    background-color:  var(--brand-muted); 
 }
  
@@ -79,72 +68,9 @@ nav ul li a:visited:hover, .nav-mobile {
   background: var(--brand-darker);
 }
  
- 
-.navigation, nav ul li a, nav ul li a:visited {
+button, .navigation, nav ul li a, nav ul li a:visited {
   background: var(--brand-vibrant); 
  }
- 
-
-
-
-
-/* BUTTONS: */
-
-button, .button-twin {
-  background-color:  var(--brand-vibrant);
-}
-
-button:hover, .button-twin:hover {
-  background-color: var(--brand-muted);
-}
-
-.personbtn {
-  display: flex; /* Enables CSS flexbox */
-  justify-content: center; /* Centers horizontally */
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-.container2 {
-  display: grid;
-  justify-content: center; /* Centers horizontally */
-  border-radius: 20px;
-  margin-bottom: 10px;
-  grid-template-columns: repeat(6, 0fr); /* 3 columns per row */
-  grid-template-rows: repeat(2, auto);    /* 2 rows */
-  gap: 4px;                           /* Space between icons */
-  justify-items: center;
-}
-
-.container3 {
-  display: grid;
-  justify-content: center; /* Centers horizontally */
-  border-radius: 20px;
-  margin-bottom: 10px;
-  grid-template-columns: repeat(3, 0fr); /* 3 columns per row */
-  grid-template-rows: repeat(2, auto);    /* 2 rows */
-  gap: 4px;                           /* Space between icons */
-  justify-items: center;
-}
-/* CARD: */
-
-.card {
-  scroll-ansp-align: start;
-  flex: 0 0 20em; 
-  background-color: #ffffff;
-  padding: 0 0 39px 0;
-  margin-bottom: 10px;
-  border-radius: .5em;
-  text-align: center;
-  align-content: center;
-  border-radius: 20px;
-  border: none;
-}
-
 
 
 </style>

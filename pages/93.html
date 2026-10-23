@@ -34,69 +34,6 @@
       
 <style>
 
-
-@media only screen and (max-width: 798px) {  
-  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom {
-   display: none;  
-  }
-} 
-    
-
-
-/* Background Colors: */ 
-
- :root {
-  --background-color: #284B63;
-  --brand-vibrant: hsl(from var(--background-color) h calc(s + 60) calc(l - 2));
-  --brand-darker: hsl(from var(--background-color) h s calc(l - 5));
-  --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
-  --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
-  --brand-bright: rgba(255, 255, 255, 0.8);
-  } 
- 
-
-body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom,     .tab-c-top {
-  background-color:  var(--background-color); 
-  
-}
-
-  
-aside,  #header-title, #content {
-    background:  var(--brand-bright);  
- }
-
- 
-#myBtn {
-    background: var(--brand-lighter); 
- }
- 
-#myBtn:hover {
-   background-color:  var(--brand-muted); 
-}
- 
- nav ul li a:hover,
-nav ul li a:visited:hover, .nav-mobile {
-  background: var(--brand-darker);
-}
- 
- 
-.navigation, nav ul li a, nav ul li a:visited {
-  background: var(--brand-vibrant); 
- }
-
-
-
-
-/* BUTTONS: */
-
-button {
-  background-color:  var(--brand-vibrant);
-}
-
-button:hover {
-  background-color: var(--brand-muted);
-} 
-
 /* TEXT: */
 
 #content li  {
@@ -107,7 +44,7 @@ button:hover {
 }
 
 h1 {
- padding-top: 10px; 
+ padding-top: 20px; 
  text-align: left;
  font-size: 1.8em;
  padding-left: 20px;
@@ -127,18 +64,6 @@ h2 {
   width: 100%;
 }
 
-.card {
-  scroll-ansp-align: start;
-  flex: 0 0 20em; 
-  background-color: #ffffff;
-  padding: 0 0 10px 0;
-  margin-bottom: 10px;
-  border-radius: .5em;
-  border-radius: 20px;
-  border: none;
-}
-
-
 @media (max-width: 798px) {
 #content li, h1 {
   margin: 0;
@@ -149,6 +74,43 @@ h2 {
  padding-left: 20px;  
 }
 }
+
+/* Background Colors: */ 
+
+ :root {
+  --background-color: #284B63;
+  --brand-vibrant: hsl(from var(--background-color) h calc(s + 60) calc(l - 2));
+  --brand-darker: hsl(from var(--background-color) h s calc(l - 5));
+  --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
+  --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
+  --brand-bright: rgba(255, 255, 255, 0.8);
+  } 
+ 
+body, .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom,  .tab-c-bottom,  .tab-c-top{
+  background-color:  var(--background-color); 
+  
+}
+   
+aside,  #header-title, #content {
+    background:  var(--brand-bright);  
+ }
+ 
+#myBtn {
+    background: var(--brand-lighter); 
+ }
+ 
+#myBtn:hover, button:hover {
+   background-color:  var(--brand-muted); 
+}
+ 
+ nav ul li a:hover,
+nav ul li a:visited:hover, .nav-mobile {
+  background: var(--brand-darker);
+}
+ 
+button, .navigation, nav ul li a, nav ul li a:visited {
+  background: var(--brand-vibrant); 
+ }
 
 </style>
 
@@ -256,7 +218,7 @@ h2 {
 </div>
 <div id="div2">
 <div class="card" style="" >
-  <h2>Thelema = Θελημα (93)</h2>
+  <h2 style="padding-top: 20px;">Thelema = Θελημα (93)</h2>
 	      <ul>
           <li>Θ (Theta) = 9</li>
           <li>ε (Epsilon) = 5</li>
