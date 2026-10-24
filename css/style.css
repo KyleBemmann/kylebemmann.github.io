@@ -94,7 +94,7 @@ justify-content: center;
 
 
 .tab-c-bottom {
-
+display: block;
 z-index: 999999;
 position: fixed;
 width: 50px;
@@ -735,16 +735,19 @@ h2 {
 
 }
 
+/* Mobile */
 
+@media only screen and (max-width: 998px) {
+
+  .rectangle, .tab-c, .tab-c-bottom, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom {
+   display: none;  
+  }
 
 
 /* Mobile */
 
 @media only screen and (max-width: 798px) {
-
-  .rectangle, .tab-c, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom {
-   display: none;  
-  }
+ 
 
    header, main {
  width: 100%; 

@@ -60,7 +60,7 @@ nav ul li a:visited {
   background: #262626;
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.8em;
+  font-size: 0.88em;
 }
 
 nav ul li a:hover,
@@ -76,7 +76,7 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 nav ul li ul li {
-  min-width: 160px;
+  min-width: 175px;
 }
 
 nav ul li ul li a {
@@ -103,7 +103,7 @@ nav ul li ul li a {
   width: 70px;
 }
 
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: 998px) {
 
 
 body {
@@ -144,8 +144,8 @@ nav ul li {
 }
   
 nav ul li a {
-  padding: 10px;
-  line-height: 17px;
+  padding: 12px;
+  line-height: 9px;
 }
   
 nav ul li ul li a {
@@ -157,7 +157,7 @@ nav ul li ul li a {
 }
 
 }
-@media screen and (min-width: 799px) {
+@media screen and (min-width: 999px) {
 
 .nav-list {
   display: block !important;
@@ -220,12 +220,7 @@ article {
 
 
 
-@media screen and (min-width: 830px) {
- nav ul li a,
-nav ul li a:visited {
-  padding: 0 11px;
-}
-}
+
 
 
 
