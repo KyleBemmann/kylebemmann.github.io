@@ -39,6 +39,14 @@ function headerHTML() {
 <nav>
   <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
     <ul class="nav-list">
+       <li>
+        <a href="#!">About Your Teacher</a>
+          <ul class="nav-dropdown">
+            <li>
+              <a href="/">Home</a>
+            </li>
+        </ul>
+      </li>
       <li>
         <a href="#!">My Spirituality</a>
           <ul class="nav-dropdown">
@@ -46,7 +54,7 @@ function headerHTML() {
               <a href="/pages/theosophy">The Theosophical Society</a>
             </li>
             <li>
-              <a href="/">About Your Teacher</a>
+              <a href="/pages/philosophy">Philosophy and Religion</a>
             </li>
             <li>
               <a href="/pages/pov">My Point of View</a>
