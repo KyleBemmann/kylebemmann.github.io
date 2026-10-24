@@ -252,7 +252,7 @@ function headerHTML() {
                 <a href="/pages/art">Exposing The Occult</a>
               </li>
               <li>
-                <a href="/pages/testing">Questioning Reality</a>
+                <a href="/pages/testing">The Web of Lies</a>
               </li>
               <li>
                 <a href="/pages/virgin">A Virgin Sacrifice</a>
