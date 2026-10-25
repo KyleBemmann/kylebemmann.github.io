@@ -45,6 +45,12 @@ function headerHTML() {
             <li>
               <a href="/">Home</a>
             </li>
+            <li>
+              <a href="/pages/pov">My Point of View</a>
+            </li>
+            <li>
+              <a href="/pages/life">A Day In My Life</a>
+            </li>
         </ul>
       </li>
       <li>
@@ -56,11 +62,12 @@ function headerHTML() {
             <li>
               <a href="/pages/philosophy">Philosophy and Religion</a>
             </li>
+            
             <li>
-              <a href="/pages/pov">My Point of View</a>
+              <a href="/pages/east">Eastern Religions</a>
             </li>
             <li>
-              <a href="/pages/life">A Day In My Life</a>
+              <a href="/pages/west">Western Religions</a>
             </li>
             <li>
               <a href="/pages/school">Art School</a>
