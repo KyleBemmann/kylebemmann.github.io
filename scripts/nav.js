@@ -43,13 +43,28 @@ function headerHTML() {
         <a href="#!">About Your Teacher</a>
           <ul class="nav-dropdown">
             <li>
-              <a href="/">Home</a>
+              <a href="/">The Abrahamic God</a>
             </li>
             <li>
               <a href="/pages/pov">My Point of View</a>
             </li>
             <li>
               <a href="/pages/life">A Day In My Life</a>
+            </li>
+            <li>
+              <a href="/pages/birthday">My Birthday</a>
+            </li>
+            <li>
+              <a href="/pages/chicken">Challenge Accepted</a>
+            </li>
+            <li>
+              <a href="/pages/grow">Let Both Grow Together</a>
+            </li>
+            <li>
+              <a href="/pages/died">Eventually You Will Die</a>
+            </li>
+            <li>
+              <a href="/pages/only-way">Jesus Is The Only Way</a>
             </li>
         </ul>
       </li>
