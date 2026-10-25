@@ -60,14 +60,14 @@ function headerHTML() {
               <a href="/pages/theosophy">The Theosophical Society</a>
             </li>
             <li>
-              <a href="/pages/philosophy">Philosophy and Religion</a>
+              <a href="/pages/philosophy">Ancient Philosophy</a>
             </li>
             
             <li>
               <a href="/pages/east">Eastern Religions</a>
             </li>
             <li>
-              <a href="/pages/west">Western Religions</a>
+              <a href="/pages/west">Western Esotericism</a>
             </li>
             <li>
               <a href="/pages/school">Art School</a>
