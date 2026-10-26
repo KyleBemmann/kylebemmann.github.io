@@ -166,7 +166,7 @@ function headerHTML() {
                 <a href="/pages/manhood">Ask Seek and Knock</a>
               </li>
               <li>
-                <a href="/pages/choice">My Christian Journey</a>
+                <a href="/pages/choice">My Quest for Knowledge</a>
               </li>
               <li>
                 <a href="/pages/sabbath">The Sabbath</a>
@@ -181,7 +181,7 @@ function headerHTML() {
                 <a href="/pages/catholic">Roman Catholicism</a>
               </li>
               <li>
-                <a href="/pages/wedding">Marriage of the Lamb</a>
+                <a href="/pages/wedding">The Marriage of the Lamb</a>
               </li>
             </ul>
         </li> 
