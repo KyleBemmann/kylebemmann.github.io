@@ -144,8 +144,8 @@ nav ul li {
 }
   
 nav ul li a {
-  padding: 14px;
-  line-height: 7px;
+  padding: 15px;
+  line-height: 12px;
 }
   
 nav ul li ul li a {
@@ -155,6 +155,33 @@ nav ul li ul li a {
 .nav-dropdown {
   position: static;
 }
+
+  /* CRITICAL FIX: Make mobile menu container scrollable */
+  nav ul.nav-list {
+    display: none; /* Toggled open via JS class */
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    max-height: calc(100vh - 50px); /* Restrict height to viewport */
+    overflow-y: auto; /* Enable vertical scrolling */
+    -webkit-overflow-scrolling: touch; /* Momentum scrolling for iOS */
+    background: transparent;
+    padding-bottom: 40px; /* Padding at bottom for comfortable scrolling */
+  }
+  
+  nav ul.nav-list.open {
+    display: block;
+  }
+  
+  nav ul li {
+    float: none;
+  }
+    
+  nav ul li a {
+    padding: 14px 20px;
+    line-height: normal;
+  }
 
 }
 @media screen and (min-width: 999px) {
