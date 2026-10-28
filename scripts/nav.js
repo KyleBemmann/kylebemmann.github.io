@@ -39,6 +39,7 @@ function headerHTML() {
 <nav>
   <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
     <ul class="nav-list">
+    <b>
        <li>
         <a href="#!">About Your Teacher</a>
           <ul class="nav-dropdown">
@@ -52,6 +53,9 @@ function headerHTML() {
               <a href="/pages/life">A Day In My Life</a>
             </li>
             <li>
+              <a href="/pages/parents">Find My Birth Parents</a>
+            </li>
+            <li>
               <a href="/pages/chicken">Challenge Accepted</a>
             </li>
             <li>
@@ -59,9 +63,6 @@ function headerHTML() {
             </li>
             <li>
               <a href="/pages/grow">Let Both Grow Together</a>
-            </li>
-            <li>
-              <a href="/pages/died">Eventually You Will Die</a>
             </li>
             <li>
               <a href="/pages/only-way">Jesus Is The Only Way</a>
@@ -300,7 +301,8 @@ function headerHTML() {
                 <a href="/pages/eventually">Eventually Jesus Will Return</a>
               </li>
           </ul>
-      </li>   
+      </li> 
+      </b>
     </ul>
 </nav>
 </div>
