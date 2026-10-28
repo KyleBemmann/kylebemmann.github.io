@@ -60,7 +60,7 @@ nav ul li a:visited {
   background: #262626;
   color: #ffffff;
   text-decoration: none;
-  font-size: 0.88em;
+  font-size: 0.87em;
 }
 
 nav ul li a:hover,
@@ -142,7 +142,7 @@ nav ul {
 nav ul li {
   float: none;
 }
- 
+  
   
 nav ul li ul li a {
   padding-left: 30px;
