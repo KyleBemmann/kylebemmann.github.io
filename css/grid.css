@@ -37,6 +37,16 @@
   margin-top: -10px;
 }
 
+.playlist-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 columns per row */
+  grid-template-rows: repeat(1, auto);    /* 2 rows */
+  gap: 10px;                           /* Space between icons */
+  justify-items: center;
+  padding-bottom: 20px;
+  margin-top: -10px;
+}
+
 .card-gallery {
   margin-top: 1em;
   background-color: #ffffff;
@@ -58,7 +68,7 @@ display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
 }  
 
-.playlist-grid, .playlist-grid-2 {
+.playlist-grid, .playlist-grid-2, .playlist-grid-4  {
   grid-template-columns: repeat(1, 1fr); /* 3 columns per row */
 
 }
