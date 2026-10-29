@@ -222,7 +222,7 @@ function headerHTML() {
                 <a href="/pages/twin">Didymus Judas Thomas</a>
               </li>
               <li>
-                <a href="/pages/personal">Twin Sisters</a>
+                <a href="/pages/personal">I'm An Orphan</a>
               </li>
               <li>
                 <a href="/pages/apollo">Twin 1</a>
