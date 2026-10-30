@@ -62,10 +62,10 @@ function headerHTML() {
               <a href="/pages/criminal">I'm A Criminal Yo</a>
             </li>
             <li>
-              <a href="/pages/grow">Let Both Grow Together</a>
+              <a href="/pages/cook">Jesse We Need To Cook</a>
             </li>
             <li>
-              <a href="/pages/only-way">Jesus Is The Only Way</a>
+              <a href="/pages/grow">Let Both Grow Together</a>
             </li>
         </ul>
       </li>
