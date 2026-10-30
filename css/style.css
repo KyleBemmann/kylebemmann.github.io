@@ -56,7 +56,8 @@ main ul, main li {
 aside   {
    overflow-y: auto; 
    scrollbar-width: none;
-   -ms-overflow-style: none;  
+   -ms-overflow-style: none; 
+   overflow-x: clip; 
 }
 
 aside::-webkit-scrollbar {
