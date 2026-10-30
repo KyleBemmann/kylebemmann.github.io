@@ -53,10 +53,10 @@ function headerHTML() {
               <a href="/pages/life">A Day In My Life</a>
             </li>
             <li>
-              <a href="/pages/parents">Find My Birth Parents</a>
+              <a href="/pages/chicken">Challenge Accepted</a>
             </li>
             <li>
-              <a href="/pages/chicken">Challenge Accepted</a>
+              <a href="/pages/parents">Find My Birth Parents</a>
             </li>
             <li>
               <a href="/pages/criminal">I'm A Criminal Yo</a>
