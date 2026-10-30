@@ -53,8 +53,15 @@ main ul, main li {
 
 }
 
+aside   {
+   overflow-y: auto; 
+   scrollbar-width: none;
+   -ms-overflow-style: none;  
+}
 
-
+aside::-webkit-scrollbar {
+    display: none;
+}
 
  .sidebar-card {
   background-color: #ffffff; 
@@ -62,6 +69,7 @@ main ul, main li {
   margin-top: -10px;
   border-radius: 0px 0px 20px 20px;
   padding: 0 10px;
+  margin-bottom: 20px;
 }
 
 p {
@@ -72,7 +80,7 @@ p {
   text-align: justify;
   line-height: 1.3em; 
   padding-left: 20px; 
-  padding-right: 10px;
+  padding-right: 20px;
  } 
 
 ul, li  {
@@ -742,7 +750,9 @@ h2 {
   .rectangle, .tab-c, .tab-c-bottom, .tab-left , .tab-right, .tab-l, .tab-r, .tab-l-r-bottom, .tab-right-bottom, .tab-left-bottom {
    display: none;  
   }
+  
 }
+
 
 /* Mobile */
 
