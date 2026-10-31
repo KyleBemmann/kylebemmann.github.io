@@ -11,7 +11,7 @@ body {
   background: #262626;
   display: flex;
    border-radius: 20px 20px 20px 20px;
-   width: 98%;
+   width: 100%;
    max-width: 1000px;
    margin-left: auto;
    margin-right: auto;
@@ -55,7 +55,7 @@ nav ul li {
 nav ul li a,
 nav ul li a:visited {
   display: block;
-  padding: 0 7px;
+  padding: 0 6px;
   line-height: 50px;
   background: #262626;
   color: #ffffff;
@@ -71,8 +71,8 @@ nav ul li a:visited:hover {
 
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
-  padding-left: 4px;
-  content: " ▾";
+  padding-left: 3px;
+  content: "▾";
 }
 
 nav ul li ul li {
@@ -104,6 +104,7 @@ nav ul li ul li a {
 }
 
 @media only screen and (max-width: 998px) {
+
 
 
 body {
