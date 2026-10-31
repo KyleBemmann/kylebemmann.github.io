@@ -303,7 +303,7 @@ function headerHTML() {
           </ul>
       </li> 
       <li>
-          <a href="https://www.google.com">Citing My Sources</a>
+          <a href="/pages/citation">Citing My Sources</a>
       </li>
       
     </ul>
