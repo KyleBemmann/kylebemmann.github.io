@@ -260,7 +260,7 @@ function headerHTML() {
                 <a href="/pages/stone">The Philosopher's Stone</a>
               </li>
               <li>
-                <a href="/pages/elixir">The Elixir of Life</a>
+                <a href="/pages/elixir">The Elixir of Life / Holy Grail</a>
               </li>
               <li>
                 <a href="/pages/sword">The Sword in the Stone</a>
