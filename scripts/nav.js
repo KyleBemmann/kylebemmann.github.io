@@ -39,7 +39,7 @@ function headerHTML() {
 <nav>
   <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
     <ul class="nav-list">
-    <b>
+    
        <li>
         <a href="#!">About Your Teacher</a>
           <ul class="nav-dropdown">
@@ -222,9 +222,6 @@ function headerHTML() {
                 <a href="/pages/twin">Didymus Judas Thomas</a>
               </li>
               <li>
-                <a href="/pages/personal">I'm An Orphan</a>
-              </li>
-              <li>
                 <a href="/pages/apollo">Twin 1</a>
               </li>
               <li>
@@ -232,6 +229,9 @@ function headerHTML() {
               </li>
               <li>
                 <a href="/pages/betrayal">I've Been Betrayed</a>
+              </li>
+              <li>
+                <a href="/pages/personal">The Orphan and Her Parents</a>
               </li>
               <li>
                 <a href="/pages/satire">Satire / Mocking Christianity</a>
@@ -302,7 +302,10 @@ function headerHTML() {
               </li>
           </ul>
       </li> 
-      </b>
+      <li>
+          <a href="https://www.google.com">Citing My Sources</a>
+      </li>
+      
     </ul>
 </nav>
 </div>
