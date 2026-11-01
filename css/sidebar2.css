@@ -25,7 +25,7 @@
   --padding: 20px;
   --border: none;
   --round-borders: 20px;
-  --sidebar-width: 200px;
+  --sidebar-width: 250px;
 }
 
 /* -------------------------------------------------------- */
@@ -106,7 +106,7 @@ p {
 /* -------------------------------------------------------- */
 
 .layout {
-  width: 1000px;
+  width: 1100px;
   display: grid;
   grid-gap: var(--margin);
   grid-template: "nav nav nav" auto "header header header"   auto "leftSidebar main rightSidebar" auto "footer footer footer" auto / var(--sidebar-width) auto var(--sidebar-width);
@@ -154,7 +154,7 @@ aside {
 aside   {
    overflow-y: auto; 
    scrollbar-width: none;
-   -ms-overflow-style: none;  
+   -ms-overflow-style: none;    
    overflow-x: clip;
 }
 
@@ -244,7 +244,7 @@ main {
 /* -------------------------------------------------------- */
 
 /* CSS Code for devices < 798px */
-@media (max-width: 798px) {
+@media (max-width: 998px) {
   
 
 
@@ -256,7 +256,7 @@ main {
 }
 
 /* CSS Code for devices < 800px */
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   body {
   font-size: 14px;
 }
@@ -299,12 +299,12 @@ main {
 
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1100px) {
   
 
  
 
-.tab-right-bottom-2, .tab-left-bottom-2 {
+.tab-right-bottom-2, .tab-left-bottom-2, .tab-left {
   display: none;
 }
 
