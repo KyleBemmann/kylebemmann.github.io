@@ -1,0 +1,27 @@
+
+
+.layout {
+  grid-template-columns: var(--sidebar-width) 1fr;
+}
+      
+aside {
+  width: var(--sidebar-width);  
+}
+      
+@media (max-width: 767px) {
+
+.layout {
+    grid-template-columns: 1fr;
+}
+        
+aside {
+   width: 100%;
+   position: relative;
+   top: 0;
+}
+     
+.pfp-image {
+ display: none;
+}
+
+}
