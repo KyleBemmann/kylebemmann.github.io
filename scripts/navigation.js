@@ -45,7 +45,7 @@ function headerHTML() {
                 <li><a href="/pages/parents">Find My Birth Parents</a></li>
                 <li><a href="/pages/criminal">I'm A Criminal Yo</a></li>
                 <li><a href="/pages/cook">Jesse We Need To Cook</a></li>
-                <li><a href="/siblings">Let Both Grow Together</a></li>
+                <li><a href="/pages/siblings">Let Both Grow Together</a></li>
               </ul>
             </li>
             <li>
@@ -67,7 +67,7 @@ function headerHTML() {
                 <li><a href="/pages/kabbalah">The Kabbalistic Tree of Life</a></li>
                 <li><a href="/pages/fool">The Fool's Journey</a></li>
                 <li><a href="/pages/alphabet">The Hebrew Alphabet</a></li>
-                <li><a href="/pages/astrogeology">Astrology</a></li>
+                <li><a href="/pages/astrology">Astrology</a></li>
                 <li><a href="/pages/numerology">Numerology</a></li>
                 <li><a href="/pages/secret">Secret Societies</a></li>
                 <li><a href="/pages/temple">The Third Temple</a></li>
