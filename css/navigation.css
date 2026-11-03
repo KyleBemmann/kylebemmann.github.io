@@ -118,7 +118,7 @@
           top: calc(100% - 4px);
           left: 0;
           min-width: 230px;
-          background: #ffffff; /* White background card */
+          background: var(--card-background); /* White background card */
           backdrop-filter: none;
           -webkit-backdrop-filter: none;
           border: 1px solid rgba(0, 0, 0, 0.08);
@@ -172,7 +172,7 @@
         height: auto;
         width: 100%;
         border-radius: 8px;
-        color: #2b3e45; /* Dark text for contrast on white background */
+        color: var(--text-2); /* Dark text for contrast on white background */
         font-size: 0.88em;
         font-weight: 500;
         white-space: nowrap;
