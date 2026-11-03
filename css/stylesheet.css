@@ -468,7 +468,7 @@ main .card-item-countdown {
   display: block;
 }
    
-#scroll-top-btn {
+#scroll-top-btn, #theme-switch {
   bottom: 40px; 
  } 
   
