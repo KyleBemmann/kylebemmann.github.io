@@ -374,6 +374,12 @@ main .card-item-countdown {
     border: none;
     z-index: 9999;
    }
+   
+    
+ #theme-switch svg {
+ height: 30px;
+ width: 30px;
+ }
     
   #theme-switch svg:last-child {
     display: none;   
@@ -467,11 +473,25 @@ main .card-item-countdown {
 #mobile-container {
   display: block;
 }
-   
-#scroll-top-btn, #theme-switch {
+
+ #scroll-top-btn {
   bottom: 40px; 
  } 
   
+ #theme-switch {
+  top: 10px;
+  right: 20px;
+  left: auto;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+ }
+ 
+#theme-switch svg {
+  height: 33px;
+  width: 33px;
+ }
+ 
 }
 
 /* -------------------------------------------------------- */
@@ -481,9 +501,23 @@ main .card-item-countdown {
 @media screen and
 (min-width: 768px) and (max-width: 1023px) {
  
- #scroll-top-btn, #theme-switch {
+ #scroll-top-btn {
   bottom: 40px; 
  } 
+ 
+#theme-switch {
+  top: 10px;
+  right: 20px;
+  left: auto;
+  height: 40px;
+  width: 40px;
+  background: transparent;
+ } 
+ 
+ #theme-switch svg {
+  height: 33px;
+  width: 33px;
+ }
   
 }
 
