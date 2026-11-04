@@ -1,181 +1,153 @@
 /**
- * Combined Application Script
- * Features:
- * - Navigation & Mobile Drawer Controls (jQuery)
- * - Persistent Theme Switcher Logic (Vanilla JS)
- * - Scroll-to-Top Button Control (Vanilla JS)
+ * Unified Navigation & Theme Switcher Script
+ * Initializes active link highlighting, dropdown menus, theme switching, 
+ * and smooth scroll functionality for pre-rendered markup.
  */
 
-// ==========================================
-// 1. Theme Switcher (Immediate Restoration)
-// ==========================================
-(function restoreTheme() {
-  try {
-    const savedColor = localStorage.getItem('selectedThemeColor');
-    const savedMode = localStorage.getItem('selectedThemeMode');
+document.addEventListener("DOMContentLoaded", function () {
+  // 1. Initialize active link highlighting for pre-rendered layout
+  giveActiveClassToCurrentPage();
 
-    if (savedColor) {
-      document.documentElement.style.setProperty('--background-color', savedColor);
-    }
-    if (savedMode === 'dark') {
-      document.body.classList.add('darkmode');
-    }
-  } catch (err) {
-    console.warn('Unable to access localStorage for theme restoration:', err);
-  }
-})();
+  // 2. Initialize dropdown interaction handlers
+  initDropdownMenu();
 
-// ==========================================
-// 2. DOM Ready Interactive Logic
-// ==========================================
-document.addEventListener('DOMContentLoaded', () => {
-  // -----------------------------
-  // A. jQuery Navigation Logic
-  // -----------------------------
-  if (typeof jQuery !== 'undefined') {
-    (function ($) {
-      // Handles menu dropdown click, smooth animated toggle, and re-click to close
-      $('nav ul li a:not(:only-child)').on('click', function (e) {
-        e.preventDefault();
-        e.stopPropagation();
-
-        const $parentLi = $(this).parent('li');
-        const isOpen = $parentLi.hasClass('dropdown-open');
-
-        // Close all other open dropdowns
-        $('nav ul li').not($parentLi).removeClass('dropdown-open');
-
-        // Toggle current dropdown: if open, close it; if closed, open it
-        if (isOpen) {
-          $parentLi.removeClass('dropdown-open');
-        } else {
-          $parentLi.addClass('dropdown-open');
-        }
-      });
-
-      // Close dropdown when clicking outside
-      $(document).on('click', function (e) {
-        if (!$(e.target).closest('nav').length) {
-          $('nav ul li').removeClass('dropdown-open');
-        }
-      });
-
-      // Mobile hamburger menu toggle
-      $('#nav-toggle').on('click', function (e) {
-        e.stopPropagation();
-        $(this).toggleClass('active');
-        $('nav ul.nav-list').toggleClass('open');
-      });
-    })(jQuery);
-  } else {
-    console.warn('jQuery is required for navigation script but was not found.');
-  }
-
-  // -----------------------------
-  // B. Theme Switcher Controls
-  // -----------------------------
-  const wrapper = document.getElementById('themeSwitcherWrapper');
-  const switchBtn = document.getElementById('theme-switch-btn');
-  const dropdownButtons = document.querySelectorAll('#themeDropdown button');
-
-  if (wrapper && switchBtn) {
-    // Retrieve saved or fallback theme
-    let savedColor = '#254840';
-    let savedMode = 'light';
-    try {
-      savedColor = localStorage.getItem('selectedThemeColor') || savedColor;
-      savedMode = localStorage.getItem('selectedThemeMode') || savedMode;
-    } catch (err) {
-      console.warn('LocalStorage unavailable:', err);
-    }
-
-    // Apply initially active option styling
-    highlightActiveButton(savedColor);
-
-    // Toggle dropdown menu visibility
-    switchBtn.addEventListener('click', (e) => {
-      e.stopPropagation();
-      wrapper.classList.toggle('open');
-    });
-
-    // Close dropdown on outside click
-    document.addEventListener('click', (e) => {
-      if (!wrapper.contains(e.target)) {
-        wrapper.classList.remove('open');
-      }
-    });
-
-    // Handle color option selection
-    dropdownButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        const color = btn.getAttribute('data-color');
-        const mode = btn.getAttribute('data-mode');
-
-        applyTheme(color, mode);
-
-        // Save choices to localStorage for persistence across refreshes
-        try {
-          localStorage.setItem('selectedThemeColor', color);
-          localStorage.setItem('selectedThemeMode', mode);
-        } catch (err) {
-          console.warn('Failed to save theme to localStorage:', err);
-        }
-
-        // Close dropdown
-        wrapper.classList.remove('open');
-      });
-    });
-
-    /**
-     * Applies the background color variable and toggles dark mode class
-     */
-    function applyTheme(color, mode) {
-      document.documentElement.style.setProperty('--background-color', color);
-
-      if (mode === 'dark') {
-        document.body.classList.add('darkmode');
-      } else {
-        document.body.classList.remove('darkmode');
-      }
-
-      highlightActiveButton(color);
-    }
-
-    /**
-     * Updates button active state in the theme dropdown
-     */
-    function highlightActiveButton(color) {
-      dropdownButtons.forEach((btn) => {
-        if (btn.getAttribute('data-color') === color) {
-          btn.classList.add('active');
-        } else {
-          btn.classList.remove('active');
-        }
-      });
-    }
-  }
-});
-
-// ==========================================
-// 3. Scroll to Top Controls
-// ==========================================
-window.addEventListener('scroll', () => {
-  const scrollBtn = document.getElementById('scroll-top-btn');
-  if (!scrollBtn) return;
-
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollBtn.style.display = 'block';
-  } else {
-    scrollBtn.style.display = 'none';
-  }
+  // 3. Initialize theme switcher interaction handlers
+  initThemeSwitcher();
 });
 
 /**
- * Scroll to top helper function (attachable to onclick on top button)
+ * Calculates page nesting depth relative to domain root
+ * @returns {string} Relative path prefix (e.g., "./" or "../")
+ */
+const nesting = getNesting();
+
+function getNesting() {
+  const numberOfSlashes = window.location.pathname.split("/").length - 1;
+  if (numberOfSlashes === 1) return "./";
+  return "../".repeat(numberOfSlashes - 1);
+}
+
+/**
+ * Modern Vanilla JS implementation for menu toggle, dropdowns, and outside-click handlers
+ */
+function initDropdownMenu() {
+  const navDropdownLinks = document.querySelectorAll("nav ul li a:not(:only-child)");
+
+  navDropdownLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const parentLi = this.parentElement;
+      const isOpen = parentLi.classList.contains("dropdown-open");
+
+      // Close all other open dropdowns
+      document.querySelectorAll("nav ul li").forEach((li) => {
+        if (li !== parentLi) {
+          li.classList.remove("dropdown-open");
+        }
+      });
+
+      // Toggle current dropdown: if open close it, if closed open it
+      if (isOpen) {
+        parentLi.classList.remove("dropdown-open");
+      } else {
+        parentLi.classList.add("dropdown-open");
+      }
+    });
+  });
+
+  // Close navigation dropdowns when clicking outside the <nav> element
+  document.addEventListener("click", function (e) {
+    if (!e.target.closest("nav")) {
+      document.querySelectorAll("nav ul li").forEach((li) => {
+        li.classList.remove("dropdown-open");
+      });
+    }
+  });
+
+  // Mobile Hamburger Toggle
+  const navToggle = document.getElementById("nav-toggle");
+  if (navToggle) {
+    navToggle.addEventListener("click", function (e) {
+      e.stopPropagation();
+      this.classList.toggle("active");
+      const navList = document.querySelector("nav ul.nav-list");
+      if (navList) {
+        navList.classList.toggle("open");
+      }
+    });
+  }
+}
+
+/**
+ * Controls theme switcher toggle button and outside click closing
+ */
+function initThemeSwitcher() {
+  const switchBtn = document.getElementById("theme-switch-btn");
+  const dropdown = document.getElementById("themeDropdown");
+
+  if (switchBtn && dropdown) {
+    switchBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
+      dropdown.classList.toggle("show");
+    });
+
+    // Close theme dropdown when clicking outside the switcher wrapper
+    document.addEventListener("click", function (e) {
+      if (!e.target.closest("#themeSwitcherWrapper")) {
+        dropdown.classList.remove("show");
+      }
+    });
+  }
+}
+
+/**
+ * Assigns 'active' class to current page navigation links based on URL path
+ */
+function giveActiveClassToCurrentPage() {
+  const els = document.querySelectorAll("nav a");
+  els.forEach((el) => {
+    const rawHref = el.getAttribute("href");
+    if (!rawHref) return;
+
+    const href = rawHref.replace(".html", "").replace("#", "");
+    const pathname = window.location.pathname.replace("/public/", "");
+    const currentHref = window.location.href.replace(".html", "") + "END";
+
+    /* Homepage */
+    if (href === "/" || href === "/index.html") {
+      if (pathname === "/" || pathname === "/index") {
+        el.classList.add("active");
+      }
+    } else {
+      /* Other subpages */
+      if (href && currentHref.includes(href + "END")) {
+        el.classList.add("active");
+
+        /* Subnavigation parent highlighting */
+        if (el.closest("details")) {
+          el.closest("details").setAttribute("open", "open");
+          el.closest("details").classList.add("active");
+        }
+
+        if (el.closest("ul")) {
+          const parentUl = el.closest("ul").closest("ul");
+          if (parentUl) {
+            parentUl.classList.add("active");
+          }
+        }
+      }
+    }
+  });
+}
+
+/**
+ * Smoothly scrolls page back to top
  */
 function topFunction() {
   window.scrollTo({
     top: 0,
-    behavior: 'smooth'
+    behavior: "smooth"
   });
 }
