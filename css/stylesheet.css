@@ -148,7 +148,8 @@ main p {
 
 main ul, main li   { 
   text-align: justify;
-  padding: 0  var(--padding);
+  padding: 0 var(--padding);
+  margin-left: 20px;
 }
 
 
