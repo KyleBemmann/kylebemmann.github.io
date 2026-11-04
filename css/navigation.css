@@ -115,7 +115,7 @@
         /* Animated Card Dropdown Menu with White Background */
         .nav-dropdown {
           position: absolute;
-          top: calc(100% - 4px);
+          top: calc(100% - 0px);
           left: 0;
           min-width: 230px;
           background: var(--card-background); /* White background card */
