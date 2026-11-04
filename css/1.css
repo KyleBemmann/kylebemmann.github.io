@@ -8,7 +8,7 @@ aside {
   width: var(--sidebar-width);  
 }
       
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
 .layout {
     grid-template-columns: 1fr;
