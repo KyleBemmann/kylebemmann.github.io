@@ -9,6 +9,7 @@
         --padding: 20px;
         --round-borders: 12px;
         --sidebar-width: 245px;
+        --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         
         --brand-alpha: hsl(from var(--background-color) h s l / 0.8);  
         --brand-alpha-2: hsl(from var(--background-color) h s l / 0.98);
@@ -25,10 +26,10 @@
 
       /* Dark Mode Override */
       .darkmode {
-        --content-background: rgba(25, 25, 25, 0.9);
-        --card-background: #232323;
+        --content-background:  #1E1E1E;
+        --card-background: #282828;
         --text-1: #111111;
-        --text-2: #ffffff;
+        --text-2: #F5F5F5;
         --brand-alpha: hsl(from var(--background-color) h s l / 0.8);  
         --brand-alpha-2: hsl(from var(--background-color) h s l / 0.98);
         --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) calc(l - 10));
@@ -61,13 +62,14 @@
         align-items: center;
         border: none;
         cursor: pointer;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+        box-shadow: var(--shadow);
         transition: background 0.3s ease, transform 0.2s ease;
       }
 
       #theme-switch-btn:hover {
-        transform: scale(1.05);
-      }
+        transform: scale(1.1);
+    }
+      
 
       #theme-switch-btn svg {
         height: 28px;

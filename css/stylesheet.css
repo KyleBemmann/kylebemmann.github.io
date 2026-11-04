@@ -1,45 +1,5 @@
-/* -------------------------------------------------------- */
-/* CSS VARIABLES & BASE STYLES */
-/* -------------------------------------------------------- */
-      :root {
-        --text-color: #000000;
-        --margin: 10px;
-        --padding: 20px;
-        --round-borders: 12px;
-        --sidebar-width: 245px;
-        --brand-alpha: hsl(from var(--background-color) h s l / 0.8);  
-        --brand-alpha-2: hsl(from var(--background-color) h s l / 0.98);
-        --brand-vibrant: hsl(from var(--background-color) h calc(s + 60) calc(l - 2));
-        --brand-darker: hsl(from var(--background-color) h s calc(l - 5));
-        --brand-muted: hsl(from var(--background-color) h calc(s - 30) l);
-        --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
-        
-        --content-background: rgba(255, 255, 255, 0.9);
-        --card-background: #fff;
-        --text-1: #fff;
-        --text-2: #111;
-      }
-      
-  .darkmode {
-        --content-background: rgba(25, 25, 25, 0.9);
-        --card-background: #232323;
-        --text-1: #111;
-        --text-2: #fff;
-        --brand-alpha: hsl(from var(--background-color) h s l / 0.8);  
-        --brand-alpha-2: hsl(from var(--background-color) h s l / 0.98);
-        --brand-vibrant: hsl(from var(--background-color) h calc(s + 20) calc(l - 10));
-        --brand-darker: hsl(from var(--background-color) h s calc(l - 5));
-        --brand-muted: hsl(from var(--background-color) h calc(s - 5) calc(l + 10));
-        --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
-  }
-      
-      
-
-      
-
-      * {
-        box-sizing: border-box;
-        
+ * {
+    box-sizing: border-box;
     scrollbar-width: thin;
     scrollbar-color:  rgba(255, 255, 255, 0.4) transparent;
       }
@@ -218,8 +178,8 @@ main .card-item-countdown {
     text-align: left;
 }
 
-.card-item, .card-main, .card-item-countdown, .post-img {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+.card-item, .card-main, .card-item-countdown, .post-img,  #scroll-top-btn {
+    box-shadow: var(--shadow);
 }
 
 .card-main {
@@ -346,7 +306,7 @@ main .card-item-countdown {
 }
 
 #scroll-top-btn:hover {
-  background-color: var(--brand-muted) ; /* Add a dark-grey background on hover */
+ transform: scale(1.1);
 }
 
   .background-fix {
@@ -356,42 +316,7 @@ main .card-item-countdown {
   z-index: -1;
   background-color:  var(--background-color);  
 }
-
-/* DARK MODE */
-
-   #theme-switch {
-    height: 60px;
-    width: 60px;
-    padding: 0;
-    border-radius: 50%;
-    background: var(--brand-lighter);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    border: none;
-    z-index: 9999;
-   }
-   
-    
- #theme-switch svg {
- height: 28px;
- width: 28px;
- }
-    
-  #theme-switch svg:last-child {
-    display: none;   
-    }
-      
-  .darkmode #theme-switch svg:first-child {
-    display: none;   
-    }  
-    
-  .darkmode #theme-switch svg:last-child {
-    display: block;   
-    } 
+ 
 
 /* GRID */
 
@@ -477,20 +402,7 @@ main .card-item-countdown {
  #scroll-top-btn {
   bottom: 40px; 
  } 
-  
- #theme-switch {
-  top: 10px;
-  right: 20px;
-  left: auto;
-  height: 40px;
-  width: 40px;
-  background: transparent;
- }
- 
-#theme-switch svg {
-  height: 33px;
-  width: 33px;
- }
+
  
 }
 
@@ -505,19 +417,6 @@ main .card-item-countdown {
   bottom: 40px; 
  } 
  
-#theme-switch {
-  top: 10px;
-  right: 20px;
-  left: auto;
-  height: 40px;
-  width: 40px;
-  background: transparent;
- } 
- 
- #theme-switch svg {
-  height: 33px;
-  width: 33px;
- }
   
 }
 
