@@ -391,7 +391,7 @@ main .card-item-countdown {
 /* MOBILE */
 /* -------------------------------------------------------- */
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   
 .pfp-icons {
   grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
@@ -418,7 +418,7 @@ main .card-item-countdown {
 /* -------------------------------------------------------- */
   
 @media screen and
-(min-width: 768px) and (max-width: 1023px) {
+(min-width: 768px) and (max-width: 1024px) {
  
  #scroll-top-btn {
   bottom: 40px; 
