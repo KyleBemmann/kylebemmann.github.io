@@ -146,6 +146,11 @@
       .theme-dropdown button.active {
         font-weight: 700;
         background: rgba(0, 0, 0, 0.05);
+      
+      }
+      
+      .theme-dropdown button.active:hover {
+          color: #777;
       }
 
       .darkmode .theme-dropdown button.active {
