@@ -152,6 +152,12 @@ main ul, main li   {
   margin-left: 20px;
 }
 
+  .thelema-list {
+  margin: auto;
+  list-style-type: none;
+  padding: 0; /* Removes default browser indentation */
+}
+
 
 .hebrew-letter {
   font-size: 64pt;
