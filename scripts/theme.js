@@ -163,10 +163,11 @@ window.addEventListener('scroll', () => {
   const scrollBtn = document.getElementById('scroll-top-btn');
   if (!scrollBtn) return;
 
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollBtn.style.display = 'block';
+  // Toggle the `.is-visible` class to trigger smooth CSS transitions
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 340) {
+    scrollBtn.classList.add('is-visible');
   } else {
-    scrollBtn.style.display = 'none';
+    scrollBtn.classList.remove('is-visible');
   }
 });
 
@@ -179,3 +180,8 @@ function topFunction() {
     behavior: 'smooth'
   });
 }
+
+
+
+
+

@@ -142,12 +142,9 @@ function giveActiveClassToCurrentPage() {
   });
 }
 
-/**
- * Smoothly scrolls page back to top
- */
-function topFunction() {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-}
+
+
+
+
+
+
