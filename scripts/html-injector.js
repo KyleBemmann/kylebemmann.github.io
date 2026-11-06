@@ -49,8 +49,8 @@ function headerHTML() {
           </button>
         </li>
         <li>
-          <button data-theme="burgundy" data-color="#31572C" data-mode="light">
-            <span class="color-dot" style="background: #31572C;"></span> Mossy Meadow 
+          <button data-theme="burgundy" data-color="#054A29" data-mode="light">
+            <span class="color-dot" style="background: #054A29;"></span> Mossy Meadow 
           </button>
         </li>
         <li>
