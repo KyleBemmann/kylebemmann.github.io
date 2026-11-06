@@ -368,6 +368,11 @@
           background: var(--background-color);
           color: #ffffff;
         }
+        
+        .darkmode .nav-dropdown {
+          background: var(--card-background);
+          color: #ffffff;
+        }
 
         .darkmode nav ul li ul li a:hover,
         :root.darkmode nav ul li ul li a:hover {
