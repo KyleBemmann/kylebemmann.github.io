@@ -34,63 +34,58 @@ function headerHTML() {
       <!-- Dropdown Styled like Navigation Card Menu -->
       <ul class="theme-dropdown" id="themeDropdown"> 
         <li>
-          <button data-theme="forest" data-color="#6A040F" data-mode="light">
-            <span class="color-dot" style="background: #6A040F;"></span> Cherry Crush
+          <button data-theme="red" data-color="#8D0801" data-mode="light">
+            <span class="color-dot" style="background: #8D0801;"></span> Red
           </button>
         </li>
         <li>
-          <button data-theme="burgundy" data-color="#CA5310" data-mode="light">
-            <span class="color-dot" style="background: #CA5310;"></span> Spicy Delight
+          <button data-theme="orange" data-color="#CA5310" data-mode="light">
+            <span class="color-dot" style="background: #CA5310;"></span> Orange 
           </button>
         </li>
         <li>
-          <button data-theme="burgundy" data-color="#B69121" data-mode="light">
-            <span class="color-dot" style="background: #B69121;"></span> Golden Harvest
+          <button data-theme="yellow" data-color="#B69121" data-mode="light">
+            <span class="color-dot" style="background: #B69121;"></span> Yellow
           </button>
         </li>
         <li>
-          <button data-theme="burgundy" data-color="#054A29" data-mode="light">
-            <span class="color-dot" style="background: #054A29;"></span> Mossy Meadow 
+          <button data-theme="green" data-color="#254840" data-mode="light">
+            <span class="color-dot" style="background: #254840;"></span> Green
           </button>
         </li>
         <li>
-          <button data-theme="forest" data-color="#254840" data-mode="light">
-            <span class="color-dot" style="background: #254840;"></span> Deep Forest
+          <button data-theme="teal" data-color="#073B3A" data-mode="light">
+            <span class="color-dot" style="background: #073B3A;"></span> Teal
           </button>
         </li>
         <li>
-          <button data-theme="burgundy" data-color="#19535F" data-mode="light">
-            <span class="color-dot" style="background: #19535F;"></span> Minty Fresh
+          <button data-theme="blue1" data-color="#19535F" data-mode="light">
+            <span class="color-dot" style="background: #19535F;"></span> Light Blue
           </button>
         </li>
         <li>
-          <button data-theme="ocean" data-color="#1e3a5f" data-mode="light">
-            <span class="color-dot" style="background: #1e3a5f;"></span> Ocean Deep
+          <button data-theme="blue2" data-color="#1e3a5f" data-mode="light">
+            <span class="color-dot" style="background: #1e3a5f;"></span> Dark Blue
           </button>
         </li>
         <li>
-          <button data-theme="burgundy" data-color="#4A0A77" data-mode="light">
-            <span class="color-dot" style="background: #4A0A77;"></span> Purple Haze
+          <button data-theme="purple" data-color="#4A0A77" data-mode="light">
+            <span class="color-dot" style="background: #4A0A77;"></span> Purple
           </button>
         </li> 
         <li>
-          <button data-theme="burgundy" data-color="#4a1525" data-mode="light">
-            <span class="color-dot" style="background: #4a1525;"></span> Royal Burgundy
+          <button data-theme="pink" data-color="#8A2846" data-mode="light">
+            <span class="color-dot" style="background: #8A2846;"></span> Pink
           </button>
         </li>
         <li>
-          <button data-theme="burgundy" data-color="#AA1155" data-mode="light">
-            <span class="color-dot" style="background: #AA1155;"></span> Pink Panther
+          <button data-theme="brown" data-color="#6F4E37" data-mode="light">
+            <span class="color-dot" style="background: #6F4E37;"></span> Brown
           </button>
         </li>
         <li>
-          <button data-theme="burgundy" data-color="#532C1E" data-mode="light">
-            <span class="color-dot" style="background: #532C1E;"></span> Cozy Cafe
-          </button>
-        </li>
-        <li>
-          <button data-theme="slate" data-color="#343A40" data-mode="light">
-            <span class="color-dot" style="background: #343A40;"></span> Modern Slate
+          <button data-theme="grey" data-color="#343A40" data-mode="light">
+            <span class="color-dot" style="background: #343A40;"></span> Grey
           </button>
         </li>
         <li>
