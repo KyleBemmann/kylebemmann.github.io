@@ -178,16 +178,12 @@
         transition: background 0.15s ease, color 0.15s ease;
       }
 
-      nav ul li ul li a:hover,
-      nav ul li ul li a.active {
+      nav ul li ul li a:hover {
         background: var(--brand-vibrant); /* Vibrant hover fill */
         color: #ffffff; /* White text on hover */
       }
 
-      nav ul li.active-parent > a {
-        background: rgba(255, 255, 255, 0.12);
-        color: #ffffff;
-      }
+ 
 
 
       /* -------------------------------------------------------- */
@@ -368,16 +364,13 @@
           border-radius: 8px;
         }
 
-        nav ul li ul li a:hover,
-        nav ul li ul li a.active {
+        nav ul li ul li a:hover {
           background: var(--background-color);
           color: #ffffff;
         }
 
         .darkmode nav ul li ul li a:hover,
-        .darkmode nav ul li ul li a.active,
-        :root.darkmode nav ul li ul li a:hover,
-        :root.darkmode nav ul li ul li a.active {
+        :root.darkmode nav ul li ul li a:hover {
           background: #000000;
           color: #ffffff;
         }
