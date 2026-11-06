@@ -19,58 +19,58 @@
         <!-- Dropdown Styled like Navigation Card Menu -->
         <ul class="theme-dropdown" id="themeDropdown"> 
           <li>
-            <button type="button" data-theme="red" data-color="#8D0801" data-mode="light">
-              <span class="color-dot" style="background: #8D0801;"></span> Red
+            <button type="button" data-theme="red" data-color="#B71C1C" data-mode="light">
+              <span class="color-dot" style="background: #B71C1C;"></span> Red
             </button>
           </li>
           <li>
-            <button type="button" data-theme="orange" data-color="#CA5310" data-mode="light">
-              <span class="color-dot" style="background: #CA5310;"></span> Orange 
+            <button type="button" data-theme="orange" data-color="#BF360C" data-mode="light">
+              <span class="color-dot" style="background: #BF360C;"></span> Orange 
             </button>
           </li>
           <li>
-            <button type="button" data-theme="yellow" data-color="#B69121" data-mode="light">
-              <span class="color-dot" style="background: #B69121;"></span> Yellow
+            <button type="button" data-theme="yellow" data-color="#FFB300" data-mode="light">
+              <span class="color-dot" style="background: #FFB300;"></span> Yellow
             </button>
           </li>
           <li>
-            <button type="button" data-theme="green" data-color="#177245" data-mode="light">
-              <span class="color-dot" style="background: #177245;"></span> Green
+            <button type="button" data-theme="green" data-color="#1B5E20" data-mode="light">
+              <span class="color-dot" style="background: #1B5E20;"></span> Green
             </button>
           </li>
           <li>
-            <button type="button" data-theme="teal" data-color="#01796f" data-mode="light">
-              <span class="color-dot" style="background: #01796f;"></span> Teal
+            <button type="button" data-theme="teal" data-color="#006064" data-mode="light">
+              <span class="color-dot" style="background: #006064;"></span> Teal
             </button>
           </li>
           <li>
-            <button type="button" data-theme="blue1" data-color="#19535F" data-mode="light">
-              <span class="color-dot" style="background: #19535F;"></span> Light Blue
+            <button type="button" data-theme="blue" data-color="#0D47A1" data-mode="light">
+              <span class="color-dot" style="background: #0D47A1;"></span> Light Blue
             </button>
           </li>
           <li>
-            <button type="button" data-theme="blue2" data-color="#1e3a5f" data-mode="light">
-              <span class="color-dot" style="background: #1e3a5f;"></span> Dark Blue
+            <button type="button" data-theme="indigo" data-color="#1A237E" data-mode="light">
+              <span class="color-dot" style="background: #1A237E;"></span> Indigo
             </button>
           </li>
           <li>
-            <button type="button" data-theme="purple" data-color="#4A0A77" data-mode="light">
-              <span class="color-dot" style="background: #4A0A77;"></span> Purple
+            <button type="button" data-theme="purple" data-color="#4A148C" data-mode="light">
+              <span class="color-dot" style="background: #4A148C;"></span> Purple
             </button>
           </li> 
           <li>
-            <button type="button" data-theme="pink" data-color="#8A2846" data-mode="light">
-              <span class="color-dot" style="background: #8A2846;"></span> Pink
+            <button type="button" data-theme="pink" data-color="#880E4F" data-mode="light">
+              <span class="color-dot" style="background: #880E4F;"></span> Pink
             </button>
           </li>
           <li>
-            <button type="button" data-theme="brown" data-color="#6F4E37" data-mode="light">
-              <span class="color-dot" style="background: #6F4E37;"></span> Brown
+            <button type="button" data-theme="brown" data-color="#58271B" data-mode="light">
+              <span class="color-dot" style="background: #58271B;"></span> Brown
             </button>
           </li>
           <li>
-            <button type="button" data-theme="grey" data-color="#343A40" data-mode="light">
-              <span class="color-dot" style="background: #343A40;"></span> Grey
+            <button type="button" data-theme="grey" data-color="#2D3436" data-mode="light">
+              <span class="color-dot" style="background: #2D3436;"></span> Grey
             </button>
           </li>
           <li>
