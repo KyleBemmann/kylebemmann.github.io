@@ -2,8 +2,8 @@
       /* CSS VARIABLES & BASE STYLES                              */
       /* -------------------------------------------------------- */
       :root {
-        /* Default Theme: Deep Forest */
-        --background-color: #254840;
+        /* Default Theme: Light Blue */
+        --background-color: #19535F;
         --text-color: #000000;
         --margin: 10px;
         --padding: 20px;
@@ -33,7 +33,7 @@
         --brand-alpha: hsl(from var(--background-color) h s l / 0.8);  
         --brand-alpha-2: hsl(from var(--background-color) h s l / 0.98);
         --brand-vibrant: #121212;
-        --brand-darker: hsl(from var(--background-color) h s calc(l - 5));
+        --brand-darker: #121212;
         --brand-muted: hsl(from var(--background-color) h calc(s - 5) calc(l + 10));
         --brand-lighter: hsl(from var(--background-color) h s calc(l + 20));
       }  
