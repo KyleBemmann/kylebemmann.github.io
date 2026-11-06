@@ -7,5 +7,5 @@
 }
 
 ::view-transition-group(root) {
-  animation-duration: 1s;
+  animation-duration: .7s;
 }
