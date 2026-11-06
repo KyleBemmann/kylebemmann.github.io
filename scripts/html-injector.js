@@ -45,7 +45,7 @@
           </li>
           <li>
             <button type="button" data-theme="blue" data-color="#0D47A1" data-mode="light">
-              <span class="color-dot" style="background: #0D47A1;"></span> Light Blue
+              <span class="color-dot" style="background: #0D47A1;"></span> Blue
             </button>
           </li>
           <li>
