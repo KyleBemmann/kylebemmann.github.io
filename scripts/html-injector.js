@@ -49,13 +49,13 @@ function headerHTML() {
           </button>
         </li>
         <li>
-          <button data-theme="green" data-color="#254840" data-mode="light">
-            <span class="color-dot" style="background: #254840;"></span> Green
+          <button data-theme="green" data-color="#177245" data-mode="light">
+            <span class="color-dot" style="background: #177245;"></span> Green
           </button>
         </li>
         <li>
-          <button data-theme="teal" data-color="#073B3A" data-mode="light">
-            <span class="color-dot" style="background: #073B3A;"></span> Teal
+          <button data-theme="teal" data-color="#01796f" data-mode="light">
+            <span class="color-dot" style="background: #01796f;"></span> Teal
           </button>
         </li>
         <li>
