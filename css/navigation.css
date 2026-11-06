@@ -373,5 +373,13 @@
           background: var(--background-color);
           color: #ffffff;
         }
+
+        .darkmode nav ul li ul li a:hover,
+        .darkmode nav ul li ul li a.active,
+        :root.darkmode nav ul li ul li a:hover,
+        :root.darkmode nav ul li ul li a.active {
+          background: #000000;
+          color: #ffffff;
+        }
       }
 
