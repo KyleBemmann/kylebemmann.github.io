@@ -290,7 +290,7 @@
     max-height: calc(100vh - 60px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
-    background: var(--background-color);
+    background: var(--brand-vibrant);
     backdrop-filter: blur(20px) saturate(180%);
     -webkit-backdrop-filter: blur(20px) saturate(180%);   
     padding: 16px 20px 100px;
@@ -363,7 +363,7 @@
         }
 
         nav ul li ul li a:hover {
-          background: var(--brand-vibrant);
+          background: var(--background-color);
           color: #ffffff;
         }
         

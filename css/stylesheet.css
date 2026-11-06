@@ -94,7 +94,7 @@ aside h3 {
 }
 
 .social-links a {
-    background: var(--brand-vibrant);
+    background: var(--background-color);
     color: white;
     width: 46px;
     height: 46px;
@@ -228,7 +228,7 @@ main .card-item-countdown {
 }
 
 .card-btn {
-    background: var(--brand-vibrant);
+    background: var(--background-color);
     color: white;
     border: none;
     padding: 10px 18px;
