@@ -429,17 +429,8 @@ box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 /* TABLET */
 /* -------------------------------------------------------- */
   
-@media screen and
-(min-width: 768px) and (max-width: 1024px) {
- 
- #scroll-top-btn {
-  bottom: 40px; 
- } 
- 
-  
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #scroll-top-btn {
+    bottom: 40px;
+  }
 }
-
-      
-      
-      
-      

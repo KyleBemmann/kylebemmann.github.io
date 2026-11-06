@@ -178,9 +178,15 @@
         transition: background 0.15s ease, color 0.15s ease;
       }
 
-      nav ul li ul li a:hover {
+      nav ul li ul li a:hover,
+      nav ul li ul li a.active {
         background: var(--brand-vibrant); /* Vibrant hover fill */
         color: #ffffff; /* White text on hover */
+      }
+
+      nav ul li.active-parent > a {
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
       }
 
 
@@ -276,9 +282,9 @@
         }
 
     
-/* ======================================================= /
-/ ANIMATED DISPLAY: NONE -> DISPLAY: BLOCK FOR NAV-LIST  /
-/ ======================================================= */
+/* ======================================================= */
+/* ANIMATED DISPLAY: NONE -> DISPLAY: BLOCK FOR NAV-LIST   */
+/* ======================================================= */
 
     nav ul.nav-list {
     display: none;
@@ -362,10 +368,10 @@
           border-radius: 8px;
         }
 
-        nav ul li ul li a:hover {
+        nav ul li ul li a:hover,
+        nav ul li ul li a.active {
           background: var(--background-color);
           color: #ffffff;
         }
-        
-
       }
+

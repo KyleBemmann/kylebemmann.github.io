@@ -16,15 +16,9 @@
     <link rel="stylesheet" href="/css/1.css" />
     <link rel="stylesheet" href="/css/animation.css" />
     <link rel="stylesheet" href="/css/theme.css" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="/scripts/theme.js" defer></script>  
-    <script src="/scripts/html-injector.js"></script>  
-    <script src="/scripts/script.js"></script>
-
-    <style> 
-    
-    </style>
+    <script src="/scripts/theme.js"></script>
+    <script src="/scripts/html-injector.js" defer></script>
+    <script src="/scripts/script.js" defer></script>
    </head>
    
   <body>
@@ -82,48 +76,41 @@
 <!-- =============================================== -->
 <!-- JAVASCRIPT LOGIC -->
 <!-- =============================================== -->
-  
- 
+
     <script>
-  var timeInSecs;
-var ticker;
+      let timeInSecs;
+      let ticker;
 
-function startTimer(secs) {
-timeInSecs = parseInt(secs);
-ticker = setInterval("tick()", 1000); 
-}
+      function startTimer(secs) {
+        timeInSecs = parseInt(secs, 10);
+        ticker = setInterval(tick, 1000);
+      }
 
-function tick( ) {
-var secs = timeInSecs;
-if (secs > 0) {
-timeInSecs--; 
-}
-else {
-clearInterval(ticker);
-startTimer(5*60); // 4 minutes in seconds
-}
+      function tick() {
+        let secs = timeInSecs;
+        if (secs > 0) {
+          timeInSecs--;
+        } else {
+          clearInterval(ticker);
+          startTimer(5 * 60);
+        }
 
+        const hours = Math.floor(secs / 3600);
+        secs %= 3600;
+        const mins = Math.floor(secs / 60);
+        secs %= 60;
+        const pretty =
+          (hours < 10 ? "0" : "") + hours + ":" +
+          (mins < 10 ? "0" : "") + mins + ":" +
+          (secs < 10 ? "0" : "") + secs;
 
-var hours= Math.floor(secs/3600);
-secs %= 3600;
-var mins = Math.floor(secs/60);
-secs %= 60;
-var pretty = ( (hours < 10 ) ? "0" : "" ) + hours + ":" + ( (mins < 10) ? "0" : "" ) + mins + ":" + ( (secs < 10) ? "0" : "" ) + secs;
+        const countdownEl = document.getElementById("countdown");
+        if (countdownEl) {
+          countdownEl.textContent = pretty;
+        }
+      }
 
-document.getElementById("countdown").innerHTML = pretty;
-}
-
-startTimer(60*60*24); // 4 minutes in seconds
-
-//Credits to Philip M from codingforum
+      startTimer(60 * 60 * 24);
     </script>
-   
   </body>
 </html>
-
-
-
-
-
-
-
