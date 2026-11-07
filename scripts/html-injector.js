@@ -69,8 +69,8 @@
             </button>
           </li>
           <li>
-            <button type="button" data-theme="grey" data-color="#2D3436" data-mode="light">
-              <span class="color-dot" style="background: #2D3436;"></span> Grey
+            <button type="button" data-theme="gray" data-color="#2D3436" data-mode="light">
+              <span class="color-dot" style="background: #2D3436;"></span> Gray
             </button>
           </li>
           <li>
