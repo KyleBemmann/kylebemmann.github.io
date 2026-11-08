@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astrology</title>
+
+    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <link href="/images/favicon/zodiac.png" rel="icon" type="image/x-icon" />
+
+    <!-- Dependencies -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />  
+    <link rel="stylesheet" href="/css/navigation.css" />
+    <link rel="stylesheet" href="/css/1.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <script src="/scripts/theme.js"></script>
+    <script src="/scripts/html-injector.js" defer></script>
+    <script src="/scripts/script.js" defer></script>
+   </head>
+   
+  <body>
+  
+  <inject-html>
+  </inject-html>
+
+<!-- =============================================== -->
+<!-- CONTENT LAYOUT -->
+<!-- =============================================== -->
+    
+  <div class="layout">
+    
+<!-- HEADER -->
+
+    <header>
+      
+      <div class="header-image">
+        <picture>
+          <!-- Desktop screens (768px wide and up) -->
+            <source media="(min-width: 768px)" srcset="/images/astrology/header.jpg" width="1952" height="544" loading="eager" decoding="async">
+            <!-- Mobile screens (Default fallback for anything smaller than 768px) -->
+              <img src="/images/astrology/header.png" width="1584" height="672" loading="eager" decoding="async">
+          </picture>
+        </div> 
+        
+        <h1>The Zodiac</h1>
+          
+    </header>
+
+<!-- LEFT SIDEBAR -->
+      
+    <aside>
+      <div class="load-sidebar">
+      
+        <img class="pfp-image" src="/images/astrology/pfp.jpg" width="1024" height="1024" loading="eager" decoding="async">
+          <h3>Astrology</h3>
+            <div class="card-item">
+              <p>Astrology is a divinatory practice that suggests that information about human affairs and personalities can be discerned by studying the relative positions of celestial objects. While it was considered a scholarly tradition prior to the Enlightenment, modern science recognizes it as a pseudoscience.</p>
+          </div>
+      </div>      
+    </aside>
+
+<!-- MAIN CONTENT -->
+     
+<main> 
+  <div class="load-posts"> 
+      
+    <img class="post-img" src="/images/astrology/astrology.jpg" style="animation: none;" width="1364" height="768" loading="eager" decoding="async" />
+ 
+ </div>       
+</main>              
+</div>
+
+<!-- =============================================== -->
+<!-- JAVASCRIPT LOGIC -->
+<!-- =============================================== -->
+  </body>
+</html>

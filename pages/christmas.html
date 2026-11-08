@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christmas</title>
+
+    <!-- FavIcon (small image in tab), change to any image you want: -->
+    <link href="/images/favicon/gift.png" rel="icon" type="image/x-icon" />
+   
+    <!-- Dependencies -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="/css/stylesheet.css" />  
+    <link rel="stylesheet" href="/css/navigation.css" />
+    <link rel="stylesheet" href="/css/2.css" />
+    <link rel="stylesheet" href="/css/animation.css" />
+    <link rel="stylesheet" href="/css/theme.css" />
+    <script src="/scripts/theme.js"></script>
+    <script src="/scripts/html-injector.js" defer></script>
+    <script src="/scripts/script.js" defer></script>
+
+    <style>    
+
+         
+@media (max-width: 767px) {
+        
+aside {
+    display: block; 
+    width: 100%;
+    position: relative;
+    top: 0;
+}
+
+.right-sidebar {
+  display: none;
+}
+
+.right-sidebar-tablet {
+  margin-top: 20px;
+}
+
+.pfp-image {
+ display: none;
+}
+        
+}
+   
+    </style>
+ 
+   </head>
+
+  <body>
+  
+  <inject-html>
+  </inject-html>
+  
+<!-- =============================================== -->
+<!-- CONTENT -->
+<!-- =============================================== -->
+    
+    <div class="layout">
+
+<!-- HEADER -->
+
+    <header>
+    
+      <div class="header-image">
+        <picture>
+          <!-- Desktop screens (768px wide and up) -->
+            <source media="(min-width: 768px)" srcset="/images/christmas/header.jpg" width="1952" height="544" loading="eager" decoding="async">
+            <!-- Mobile screens (Default fallback for anything smaller than 768px) -->
+              <img src="/images/christmas/header.png" width="1584" height="672" loading="eager" decoding="async">
+          </picture>
+        </div>
+   
+        <h1>Christmas</h1>
+          
+    </header>
+
+<!-- LEFT SIDEBAR -->
+      
+    <aside> 
+      <div class="load-sidebar"> 
+   
+        <img class="pfp-image" src="/images/christmas/pfp.jpg" width="1024" height="1024" loading="eager" decoding="async">
+          <h3>Hailie Jade</h3>
+            <div class="card-item">
+              <p>Hailie Jade Scott Mathers (born December 25, 1995) is an American social media influencer, podcast host, and designer best known as the only biological daughter of legendary rapper Eminem (Marshall Mathers) and his ex-wife Kim Scott.</p>
+          </div>
+            
+
+      
+<!-- RIGHT SIDEBAR -->
+      
+      <div class="right-sidebar-tablet">
+      
+         <img class="pfp-image" src="/images/christmas/pfp2.jpg" width="800" height="800" loading="eager" decoding="async">
+          <h3>Holly White</h3>
+            <div class="card-item">
+              <p>Holly White is the infant daughter of Walter and Skyler White in the AMC crime drama series Breaking Bad. She is the younger sister of Walt Jr.</p>
+          </div>
+      </div> 
+    </div>  
+  </aside>
+
+<!-- MAIN -->
+      
+<main>  
+<div class="load-posts"> 
+
+  <img class="post-img" src="/images/christmas/hailie.jpg" style="animation: none;" width="1364" height="768" loading="eager" decoding="async" />
+  <img class="post-img" src="/images/christmas/holly.jpg" width="1364" height="768" loading="lazy" decoding="async" />
+  <img class="post-img" src="/images/christmas/holly-white.jpg" width="2012" height="1006" loading="lazy" decoding="async" />
+  <img class="post-img" src="/images/christmas/holly-white-vanished.jpg" width="1280" height="720" loading="lazy" decoding="async" />
+  <img class="post-img" src="/images/christmas/holly-wheeler.jpg" width="1366" height="768" loading="lazy" decoding="async" />
+  <img class="post-img" src="/images/christmas/i-want-to-die.jpg" width="1263" height="711" loading="lazy" decoding="async" />
+  <img class="post-img" src="/images/christmas/santa.jpg" width="1280" height="720" loading="lazy" decoding="async" />
+  <img class="post-img" src="/images/christmas/prophets.jpg" width="1364" height="768" loading="lazy" decoding="async" />
+  
+</div>
+</main>              
+
+
+
+      
+<!-- RIGHT SIDEBAR -->
+  <div class="right-sidebar">
+  <aside>   
+    <div class="load-sidebar"> 
+   <img class="pfp-image" src="/images/christmas/pfp2.jpg" width="800" height="800" loading="eager" decoding="async">
+          <h3>Holly White</h3>
+            <div class="card-item">
+              <p>Holly White is the infant daughter of Walter and Skyler White in the AMC crime drama series Breaking Bad. She is the younger sister of Walt Jr.</p>
+          </div>
+    </div>     
+  </aside>
+</div>
+</div>
+
+<!-- =============================================== -->
+<!-- JAVASCRIPT -->
+<!-- =============================================== -->
+  </body>
+</html>
