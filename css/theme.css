@@ -171,6 +171,7 @@
   .theme-switcher-wrapper {
     top: 0;
     right: 20px;
+    bottom: auto;
     left: auto;
   }
 
@@ -194,6 +195,7 @@
   .theme-switcher-wrapper {
     top: 0;
     right: 20px;
+    bottom: auto;
     left: auto;
   }
 
