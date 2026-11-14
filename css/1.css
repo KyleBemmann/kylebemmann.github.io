@@ -21,3 +21,21 @@ aside {
     display: none;
   }
 }
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+   .layout {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+
+  .pfp-image {
+    display: none;
+  }
+ 
+ 
+  }

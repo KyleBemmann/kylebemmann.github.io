@@ -312,7 +312,7 @@ main .card-item-countdown {
     z-index: 9999;
     border: none;
     outline: none;
-    background-color: var(--brand-lighter, #007bff);
+    background-color: var(--brand-lighter);
     color: white;
     cursor: pointer;
     padding: 10px;
@@ -438,3 +438,10 @@ box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     bottom: 40px;
   }
 }
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+#mobile-container {
+  display: block;
+}
+ 
+  }

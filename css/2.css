@@ -40,3 +40,15 @@ aside {
     display: block;
   }
 }
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+   .layout {
+    grid-template-columns: 1fr;
+  }
+
+ aside {
+    display: none;
+  }
+ 
+ 
+  }
