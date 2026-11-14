@@ -95,7 +95,7 @@
             </div>
             <ul class="nav-list">
               <li>
-                <a href="#!">About Me</a>
+                <a href="#!">About Your Teacher</a>
                 <ul class="nav-dropdown">
                   <li><a href="/">The Abrahamic God</a></li>
                   <li><a href="/pages/pov">My Point of View</a></li>
