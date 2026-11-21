@@ -327,7 +327,7 @@ main .card-item-countdown {
     transition: opacity 0.3s ease, transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), visibility 0.3s;
     }
 
-   #scroll-top-btn.is-vksible:hover {
+   #scroll-top-btn.is-visible:hover {
 transform: scale(1.1);
 }
 
