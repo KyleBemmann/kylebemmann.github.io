@@ -7,7 +7,7 @@
         left: 0;
         width: 100vw;
         height: 60px;
-        background: var(--brand-alpha);
+        background: var(--background-color);
         webkit-backdrop-filter: saturate(180%) blur(20px); /* Safari & iOS support */
        backdrop-filter: saturate(180%) blur(20px);       
         border-bottom: 1px solid rgba(255, 255, 255, 0.1);
