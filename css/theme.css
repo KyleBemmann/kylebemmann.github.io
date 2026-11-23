@@ -32,7 +32,7 @@
   --card-background: #282828;
   --text-1: #F5F5F5;
   --text-2: #F5F5F5;
-  --brand-alpha: hsl(from var(--background-color) h s l / 0.72);
+  --brand-alpha: rgba(28, 28, 30, 0.75);
   --brand-alpha-2: hsl(from var(--background-color) h s l / 0.98);
   --brand-vibrant: #121212;
   --brand-darker: #1E1E1E;
