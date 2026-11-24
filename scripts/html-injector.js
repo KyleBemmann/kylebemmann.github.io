@@ -97,122 +97,122 @@
               <li>
                 <a href="#!">About Your Teacher</a>
                 <ul class="nav-dropdown">
-                  <li><a href="/">The Abrahamic God</a></li>
-                  <li><a href="/pages/pov">My Point of View</a></li>
-                  <li><a href="/pages/life">A Day In My Life</a></li>
-                  <li><a href="/pages/challenge">Challenge Accepted</a></li>
-                  <li><a href="/pages/parents">Find My Birth Parents</a></li>
-                  <li><a href="/pages/criminal">I'm A Criminal Yo</a></li>
-                  <li><a href="/pages/cook">Jesse We Need To Cook</a></li>
-                  <li><a href="/pages/siblings">Let Both Grow Together</a></li>
+                  <li><a href="/index.html">The Abrahamic God</a></li>
+                  <li><a href="/pages/pov.html">My Point of View.html</a></li>
+                  <li><a href="/pages/life.html">A Day In My Life</a></li>
+                  <li><a href="/pages/challenge.html">Challenge Accepted</a></li>
+                  <li><a href="/pages/parents.html">Find My Birth Parents</a></li>
+                  <li><a href="/pages/criminal.html">I'm A Criminal Yo</a></li>
+                  <li><a href="/pages/cook.html">Jesse We Need To Cook</a></li>
+                  <li><a href="/pages/siblings.html">Let Both Grow Together</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#!">My Spirituality</a>
                 <ul class="nav-dropdown">
-                  <li><a href="/pages/theosophy">The Theosophical Society</a></li>
-                  <li><a href="/pages/philosophy">Ancient Philosophy</a></li>
-                  <li><a href="/pages/east">Eastern Religions</a></li>
-                  <li><a href="/pages/west">Western Esotericism</a></li>
-                  <li><a href="/pages/school">Art School</a></li>
-                  <li><a href="/pages/sex">Sacred Sexuality</a></li>
-                  <li><a href="/pages/woman">A Typical Spiritual Woman</a></li>
-                  <li><a href="/pages/kundalini">Kundalini Yoga</a></li>
+                  <li><a href="/pages/theosophy.html">The Theosophical Society</a></li>
+                  <li><a href="/pages/philosophy.html">Ancient Philosophy</a></li>
+                  <li><a href="/pages/east.html">Eastern Religions</a></li>
+                  <li><a href="/pages/west.html">Western Esotericism</a></li>
+                  <li><a href="/pages/school.html">Art School</a></li>
+                  <li><a href="/pages/sex.html">Sacred Sexuality</a></li>
+                  <li><a href="/pages/woman.html">A Typical Spiritual Woman</a></li>
+                  <li><a href="/pages/kundalini.html">Kundalini Yoga</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#!">Jewish Mysticism</a>
                 <ul class="nav-dropdown">
-                  <li><a href="/pages/kabbalah">The Kabbalistic Tree of Life</a></li>
-                  <li><a href="/pages/fool">The Fool's Journey</a></li>
-                  <li><a href="/pages/alphabet">The Hebrew Alphabet</a></li>
-                  <li><a href="/pages/astrology">Astrology</a></li>
-                  <li><a href="/pages/numerology">Numerology</a></li>
-                  <li><a href="/pages/secret">Secret Societies</a></li>
-                  <li><a href="/pages/temple">The Third Temple</a></li>
-                  <li><a href="/pages/antichrist">The Coming False Messiah</a></li>
+                  <li><a href="/pages/kabbalah.html">The Kabbalistic Tree of Life</a></li>
+                  <li><a href="/pages/fool.html">The Fool's Journey</a></li>
+                  <li><a href="/pages/alphabet.html">The Hebrew Alphabet</a></li>
+                  <li><a href="/pages/astrology.html">Astrology</a></li>
+                  <li><a href="/pages/numerology.html">Numerology</a></li>
+                  <li><a href="/pages/secret.html">Secret Societies</a></li>
+                  <li><a href="/pages/temple.html">The Third Temple</a></li>
+                  <li><a href="/pages/antichrist.html">The Coming False Messiah</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#!">I Need A Hero</a>
                 <ul class="nav-dropdown">
-                  <li><a href="/pages/kingdom">Announcing The Kingdom</a></li>
-                  <li><a href="/pages/nar">New Apostolic Reformation</a></li>
-                  <li><a href="/pages/hermeticism">I'm Just A Messenger</a></li>
-                  <li><a href="/pages/93">Flight In Winter and Sabbath</a></li>
-                  <li><a href="/pages/transhumanism">Transhumanism</a></li>
-                  <li><a href="/pages/gnosticism">The Serpent's Deception</a></li>
-                  <li><a href="/pages/parables">I Speak In Parables</a></li>
-                  <li><a href="/pages/revelation">All Will Be Revealed</a></li>
+                  <li><a href="/pages/kingdom.html">Announcing The Kingdom</a></li>
+                  <li><a href="/pages/nar.html">New Apostolic Reformation</a></li>
+                  <li><a href="/pages/hermeticism.html">I'm Just A Messenger</a></li>
+                  <li><a href="/pages/93.html">Flight In Winter and Sabbath</a></li>
+                  <li><a href="/pages/transhumanism.html">Transhumanism</a></li>
+                  <li><a href="/pages/gnosticism.html">The Serpent's Deception</a></li>
+                  <li><a href="/pages/parables.html">I Speak In Parables</a></li>
+                  <li><a href="/pages/revelation.html">All Will Be Revealed</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#!">Christianity</a>
                 <ul class="nav-dropdown">
-                  <li><a href="/pages/god">God The Father</a></li>
-                  <li><a href="/pages/ask">Ask Seek and Knock</a></li>
-                  <li><a href="/pages/two-become-one">My Quest for Knowledge</a></li>
-                  <li><a href="/pages/sabbath">The Sabbath</a></li>
-                  <li><a href="/pages/holy">Biblical Holy Days</a></li>
-                  <li><a href="/pages/holiday">Worldly Holidays</a></li>
-                  <li><a href="/pages/catholic">Roman Catholicism</a></li>
-                  <li><a href="/pages/wedding">The Marriage of the Lamb</a></li>
+                  <li><a href="/pages/god.html">God The Father</a></li>
+                  <li><a href="/pages/ask.html">Ask Seek and Knock</a></li>
+                  <li><a href="/pages/two-become-one.html">My Quest for Knowledge</a></li>
+                  <li><a href="/pages/sabbath.html">The Sabbath</a></li>
+                  <li><a href="/pages/holy.html">Biblical Holy Days</a></li>
+                  <li><a href="/pages/holiday.html">Worldly Holidays</a></li>
+                  <li><a href="/pages/catholic.html">Roman Catholicism</a></li>
+                  <li><a href="/pages/wedding.html">The Marriage of the Lamb</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#!">Mythology</a>
                 <ul class="nav-dropdown">
-                  <li><a href="/pages/family">My Church Family</a></li>
-                  <li><a href="/pages/arthur">Arthurian Lore</a></li>
-                  <li><a href="/pages/pagan">Paganism and Witchcraft</a></li>
-                  <li><a href="/pages/christmas">The Christmas Baby</a></li>
-                  <li><a href="/pages/sound-doctrine">Defending My Sanity</a></li>
-                  <li><a href="/pages/ascended-masters">The Ascended Masters</a></li>
-                  <li><a href="/pages/hero">The Hero's Journey</a></li>
-                  <li><a href="/pages/stan">I Made This For You</a></li>
+                  <li><a href="/pages/family.html">My Church Family</a></li>
+                  <li><a href="/pages/arthur.html">Arthurian Lore</a></li>
+                  <li><a href="/pages/pagan.html">Paganism and Witchcraft</a></li>
+                  <li><a href="/pages/christmas.html">The Christmas Baby</a></li>
+                  <li><a href="/pages/sound-doctrine.html">Defending My Sanity</a></li>
+                  <li><a href="/pages/ascended-masters.html">The Ascended Masters</a></li>
+                  <li><a href="/pages/hero.html">The Hero's Journey</a></li>
+                  <li><a href="/pages/stan.html">I Made This For You</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#!">Twins</a>
                 <ul class="nav-dropdown">
-                  <li><a href="/pages/thomas">Didymus Judas Thomas</a></li>
-                  <li><a href="/pages/twin-1">Twin 1</a></li>
-                  <li><a href="/pages/twin-2">Twin 2</a></li>
-                  <li><a href="/pages/betrayal">I've Been Betrayed</a></li>
-                  <li><a href="/pages/orphan">The Orphan and Her Parents</a></li>
-                  <li><a href="/pages/satire">Satire / Mocking Christianity</a></li>
-                  <li><a href="/pages/rastafari">I'm Not Schizophrenic</a></li>
-                  <li><a href="/pages/upsidedown">Everything Is Upside Down</a></li>
+                  <li><a href="/pages/thomas.html">Didymus Judas Thomas</a></li>
+                  <li><a href="/pages/twin-1.html">Twin 1</a></li>
+                  <li><a href="/pages/twin-2.html">Twin 2</a></li>
+                  <li><a href="/pages/betrayal.html">I've Been Betrayed</a></li>
+                  <li><a href="/pages/orphan.html">The Orphan and Her Parents</a></li>
+                  <li><a href="/pages/satire.html">Satire / Mocking Christianity</a></li>
+                  <li><a href="/pages/rastafari.html">I'm Not Schizophrenic</a></li>
+                  <li><a href="/pages/upsidedown.html">Everything Is Upside Down</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#!">Alchemy</a>
                 <ul class="nav-dropdown">
-                  <li><a href="/pages/alchemy">Alchemical Symbols</a></li>
-                  <li><a href="/pages/lead-gold">Turning Lead Into Gold</a></li>
-                  <li><a href="/pages/fire-ice">A Collision of Fire and Ice</a></li>
-                  <li><a href="/pages/stone">The Philosopher's Stone</a></li>
-                  <li><a href="/pages/cup">The Elixir of Life / Holy Grail</a></li>
-                  <li><a href="/pages/sword">The Sword in the Stone</a></li>
-                  <li><a href="/pages/watchtower">The Destruction of Reality</a></li>
-                  <li><a href="/pages/ether">They Came From The Ether</a></li>
+                  <li><a href="/pages/alchemy.html">Alchemical Symbols</a></li>
+                  <li><a href="/pages/lead-gold.html">Turning Lead Into Gold</a></li>
+                  <li><a href="/pages/fire-ice.html">A Collision of Fire and Ice</a></li>
+                  <li><a href="/pages/stone.html">The Philosopher's Stone</a></li>
+                  <li><a href="/pages/cup.html">The Elixir of Life / Holy Grail</a></li>
+                  <li><a href="/pages/sword.html">The Sword in the Stone</a></li>
+                  <li><a href="/pages/watchtower.html">The Destruction of Reality</a></li>
+                  <li><a href="/pages/ether.html">They Came From The Ether</a></li>
                 </ul>
               </li>
               <li>
                 <a href="#!">It's A Theory</a>
                 <ul class="nav-dropdown">
-                  <li><a href="/pages/dog">God Backwards</a></li>
-                  <li><a href="/pages/exposed">Exposing The Occult</a></li>
-                  <li><a href="/pages/web">The Web of Lies</a></li>
-                  <li><a href="/pages/virgin">A Virgin Sacrifice</a></li>
-                  <li><a href="/pages/moonchild">Stay Wild Moon Child</a></li>
-                  <li><a href="/pages/new-age">The Birth of a New Age</a></li>
-                  <li><a href="/pages/persecution">Christian Persecution</a></li>
-                  <li><a href="/pages/eventually">Eventually Jesus Will Return</a></li>
+                  <li><a href="/pages/dog.html">God Backwards</a></li>
+                  <li><a href="/pages/exposed.html">Exposing The Occult</a></li>
+                  <li><a href="/pages/web.html">The Web of Lies</a></li>
+                  <li><a href="/pages/virgin.html">A Virgin Sacrifice</a></li>
+                  <li><a href="/pages/moonchild.html">Stay Wild Moon Child</a></li>
+                  <li><a href="/pages/new-age.html">The Birth of a New Age</a></li>
+                  <li><a href="/pages/persecution.html">Christian Persecution</a></li>
+                  <li><a href="/pages/eventually.html">Eventually Jesus Will Return</a></li>
                 </ul>
               </li>
               <li>
-                <a href="/pages/citation">Citation</a>
+                <a href="/pages/citation.html">Citation</a>
               </li>
             </ul>
           </nav>
