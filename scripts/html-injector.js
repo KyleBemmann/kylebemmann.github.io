@@ -98,7 +98,7 @@
                 <a href="#!">About Your Teacher</a>
                 <ul class="nav-dropdown">
                   <li><a href="/index.html">The Abrahamic God</a></li>
-                  <li><a href="/pages/pov.html">My Point of View.html</a></li>
+                  <li><a href="/pages/pov.html">My Point of View</a></li>
                   <li><a href="/pages/life.html">A Day In My Life</a></li>
                   <li><a href="/pages/challenge.html">Challenge Accepted</a></li>
                   <li><a href="/pages/parents.html">Find My Birth Parents</a></li>
